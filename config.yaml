@@ -1,0 +1,41 @@
+baseurl: https://example.org/
+title: Morris Lab
+theme: hugo-creative-portfolio-theme
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
+languageCode: en-us
+disqusShortname: ''
+googleAnalytics: ''
+params:
+  copyright: '&copy;2016 Your name or company'
+  description: Describe your website
+  email: you@yoursite.com
+  navlinks:
+    - home: yes
+      name: Home
+      url: portfolio/
+    - name: About
+      url: about/
+    - name: Get in touch
+      url: contact/
+  sidebarAbout:
+    - I am a creative illustrator and graphic designer with more than 10 years of
+      experience.
+    - Originally from Toronto, currently based in London.
+  social:
+    email: email@example.com
+    facebook: https://www.facebook.com/morris.joanna
+    github: https://github.com/joannamorris
+#    gitlab: full profile url in gitlab
+    googleplus: https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en
+#    instagram: full profile url in instagram
+    linkedin: full profile url in linkedin
+#    stackoverflow: full profile url in stackoverflow
+#    twitter: full profile url in twitter
+#    whatsapp: wa.me service link
+#    youtube: full profile url in youtube
+  style: default
