@@ -1,7 +1,7 @@
 ---
 date: "2016-11-05T19:41:01+05:30"
 draft: false
-image: img/portfolio/business-card-26.jpg
+image: img/portfolio/erp-image.jpg
 showonlyimage: false
 title: What are ERPs?
 weight: 1
