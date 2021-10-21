@@ -1,4 +1,4 @@
-baseurl: https://example.org/
+baseurl: http://www.morrislabpc.org
 title: Morris Lab
 theme: hugo-creative-portfolio-theme
 ignoreFiles:
@@ -23,9 +23,7 @@ params:
     - name: Get in touch
       url: contact/
   sidebarAbout:
-    - I am a creative illustrator and graphic designer with more than 10 years of
-      experience.
-    - Originally from Toronto, currently based in London.
+    - This is the website for the Human Psychophysiology Lab at Providence College, led by Dr. Joanna Morris.  We study human cognition, particularly language, using event related potentials. To learn more about our research please contact us. We would love to hear from you.
   social:
     email: email@example.com
     facebook: https://www.facebook.com/morris.joanna
