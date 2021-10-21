@@ -11,7 +11,7 @@ languageCode: en-us
 disqusShortname: ''
 googleAnalytics: ''
 params:
-  copyright: '&copy;2016 Your name or company'
+  copyright: '&copy;2021 Dr. Joanna Morris Department of Psychology, Providence College'
   description: Describe your website
   email: you@yoursite.com
   navlinks:
@@ -23,9 +23,8 @@ params:
     - name: Get in touch
       url: contact/
   sidebarAbout:
-    - I am a creative illustrator and graphic designer with more than 10 years of
-      experience.
-    - Originally from Toronto, currently based in London.
+    - Our mission is to...
+    - We study EEGs and ERPs to examine how complex words are processed in the brain.
   social:
     email: email@example.com
     facebook: https://www.facebook.com/morris.joanna
