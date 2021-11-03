@@ -1,14 +1,13 @@
 ---
 date: "2016-11-05T18:25:22+05:30"
 draft: false
-image: img/portfolio/a4-paper.jpg
+image: img/tess.png
 showonlyimage: true
 title: Name of the work 1
-weight: 0
+weight: 3
 ---
 
-Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-<!--more-->
+I am a junior who is majoring in Psychology and minoring in Neuroscience.  I will be graduating in 2023.<!--more-->
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
 

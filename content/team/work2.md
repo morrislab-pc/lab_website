@@ -1,7 +1,7 @@
 ---
 date: "2016-11-05T19:41:01+05:30"
 draft: false
-image: img/portfolio/erp-image.jpg
+image: img/aidenne.png
 showonlyimage: false
 title: What are ERPs?
 weight: 1
