@@ -1,7 +1,7 @@
 ---
 date: "2016-11-05T19:50:47+05:30"
 draft: false
-image: ""
+image: img/joemari.png
 showonlyimage: false
 title: Item without image
 weight: 4

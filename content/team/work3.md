@@ -1,7 +1,7 @@
 ---
 date: "2016-11-05T19:44:32+05:30"
 draft: false
-image: img/portfolio/gravity-paper.jpg
+image: img/maeve.png
 showonlyimage: false
 title: What is an EEG?
 weight: 2
