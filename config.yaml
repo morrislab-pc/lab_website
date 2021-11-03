@@ -15,13 +15,17 @@ googleAnalytics: ''
 params:
   copyright: '&copy;2021 Dr. Joanna Morris Department of Psychology, Providence College'
   description: Describe your website
-  email: you@yoursite.com
+  email: jmorris6@providence.edu
   navlinks:
     - home: yes
-      name: Home
-      url: portfolio/
-    - name: About
+      name: Lab Home
       url: about/
+    - name: Our Research Projects
+      url: portfolio/
+    - name: Our Team
+      url: team/
+    - name: Tutorials
+      url: tutorials/
     - name: Get in touch
       url: contact/
   sidebarAbout:
@@ -37,7 +41,7 @@ params:
 #    gitlab: full profile url in gitlab
     googleplus: https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en
 #    instagram: full profile url in instagram
-    linkedin: full profile url in linkedin
+    linkedin: https://www.linkedin.com/in/joanna-morris-3278278/
 #    stackoverflow: full profile url in stackoverflow
 #    twitter: full profile url in twitter
 #    whatsapp: wa.me service link
