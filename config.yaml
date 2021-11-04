@@ -35,7 +35,7 @@ params:
     - This is the website for the Human Psychophysiology Lab at Providence College, led by Dr. Joanna Morris.  We study human cognition, particularly language, using event related potentials. To learn more about our research please contact us. We would love to hear from you.
 
   social:
-    email: email@example.com
+    email: jmorris6@providence.edu
     facebook: https://www.facebook.com/morris.joanna
     github: https://github.com/joannamorris
 #    gitlab: full profile url in gitlab
