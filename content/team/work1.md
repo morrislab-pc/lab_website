@@ -3,7 +3,7 @@ date: "2016-11-05T18:25:22+05:30"
 draft: false
 image: img/tess.png
 showonlyimage: true
-title: Name of the work 1
+title: Tess Rooney
 weight: 3
 ---
 

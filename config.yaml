@@ -13,26 +13,24 @@ languageCode: en-us
 disqusShortname: ''
 googleAnalytics: ''
 params:
-  copyright: '&copy;2021 Logo Alec Nicholson'
-  description: Describe your website
-  email: jmorris6@providence.edu
+  copyright: PCHPL Logo &copy; 2021 Alec Nicholson
+  style: default
+  description: This is the website for the Human Psychophysiology Lab at PC.
+  email: https://formspree.io/f/xyylqddv
   navlinks:
     - home: yes
       name: Lab Home
       url: about/
     - name: Our Research Projects
-      url: portfolio/
+      url: projects/
     - name: Our Team
       url: team/
     - name: Tutorials
-      url: tutorials/
+      url: portfolio/
     - name: Get in touch
       url: contact/
   sidebarAbout:
-
-    
-
-    - This is the website for the Human Psychophysiology Lab at Providence College, led by Dr. Joanna Morris.  We study human cognition, particularly language, using event related potentials. To learn more about our research please contact us. We would love to hear from you.
+    - This is the website for the Human Psychophysiology Lab at Providence College, led by Dr. Joanna Morris. To learn more about our research please contact us. We would love to hear from you.
 
   social:
     email: jmorris6@providence.edu
@@ -46,4 +44,3 @@ params:
 #    twitter: full profile url in twitter
 #    whatsapp: wa.me service link
 #    youtube: full profile url in youtube
-  style: default

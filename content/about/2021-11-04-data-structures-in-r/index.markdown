@@ -1,12 +1,11 @@
 ---
-date: "2016-11-05T18:25:22+05:30"
-draft: false
-image: img/data_structures.png
-showonlyimage: false
 title: Data Structures in R
-weight: 1
+author: R package build
+date: '2021-11-04'
+slug: []
+categories: []
+tags: []
 ---
-
 
 1. R’s base data structures can be organised by their dimensionality (1d, 2d, or nd) and whether they are homogeneous (all contents of the same type) or heterogeneous (the contents are of different types).
 

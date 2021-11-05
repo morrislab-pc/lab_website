@@ -2,9 +2,9 @@
 date: "2016-11-05T19:44:32+05:30"
 draft: false
 image: img/maeve.png
-showonlyimage: false
+showonlyimage: true
 title: What is an EEG?
-weight: 2
+weight: 0
 ---
 
 An electroencephalogram (EEG) is a measure of electrical potentials thought to be produced by postsynaptic potentials in the brain and is measured through electrodes.
