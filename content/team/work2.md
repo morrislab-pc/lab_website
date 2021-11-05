@@ -2,12 +2,12 @@
 date: "2016-11-05T19:41:01+05:30"
 draft: false
 image: img/aidenne.png
-showonlyimage: false
-title: What are ERPs?
+showonlyimage: true
+title: Maeve Garrity
 weight: 1
 ---
 
-Event related potentials (ERPs) are small scalp-recorded voltages generated in the brain in response to stimuli events that demonstrate the psychophysiological effects on brain processes. 
+Event related potentials (ERPs) are small scalp-recorded voltages generated in the brain in response to stimuli events that demonstrate the psychophysiological effects on brain processes.
 <!--more-->
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
