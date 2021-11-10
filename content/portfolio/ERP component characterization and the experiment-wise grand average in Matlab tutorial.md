@@ -1,7 +1,19 @@
-# ERP component characterization and the experiment-wise grand average in Matlab tutorial
-For in depth explanations and analysis of the GA_EW, topographic arrangement, and butterfly plot refer to *EEG Methods for the Psychological Sciences* beginning on page 80.
+---
+date: "2016-11-05T18:25:22+05:30"
+draft: false
+image: img/tutorials/butterfly_plot.png
+showonlyimage: false
+title: Experiment Wise Grand Average
+weight: 1
+---
 
-### Generating the experiment-wise grand average ERP (GA_EW) in ERPlab
+
+The three properties that are most commonly used to define ERP components are: (1) **polarity**, (2), **timing**, and (3) **topographical distribution**. These characteristics of ERP components can be most easily visualized in an experiment-wise grand-average ERP (GA<sub>EW</sub>) . The GA<sub>EW</sub> an average computed over all single subject grand-averages and all conditions.
+For in depth explanations and analysis of the GA<sub>EW</sub>, topographic arrangement, and butterfly plot refer to *EEG Methods for the Psychological Sciences* beginning on page 80.
+
+
+
+### Generating the experiment-wise grand average (GA<sub>EW</sub>) ERP in ERPlab
 ##### Loading the data
 1. ERPLAB>Load existing ERPset
   - select the grand average ERP generated from the dataset of interest (i.e., MORPH15)
@@ -14,7 +26,7 @@ For in depth explanations and analysis of the GA_EW, topographic arrangement, an
   - Adjust this equation accordingly for different datasets that have a different number of bins.
   - Select the ‘Modify existing ERPset (recursive updating)’ option under ‘Mode” and click ‘RUN’.
 
-### Visualizing the GA_EW
+### Visualizing the GA<sub>EW</sub>
 ##### Plot ERPs in topographic arrangement
 3. ERPLAB>Plot ERP Waveforms
   - When the *ERP Plotting GUI* dialog appears enter ‘7:27’ in the ‘Channels to plot’ field. For MORPH15, enter ‘7’  in the ‘Bins to plot’ field or which bin is the GA_EW for that dataset. Enter ‘-200 500’ in the ‘Time range’ field and select the ‘Topographic’ option under ‘Style’. Leave all other default selections. Click ‘PLOT’.
@@ -24,4 +36,4 @@ For in depth explanations and analysis of the GA_EW, topographic arrangement, an
 4. Download ‘ERP_butterfly.m’ from the [EEG Methods Book Data Files](www.sagepub.co.uk/dickter) and make sure a copy of the file is in Matlab’s default directory.
 5. Type the following into the Matlab command line for MORPH15. Adjust the numbers as needed for each particular dataset:
   - ERP_butterfly(ERP,7,[1:6],7:27,[-200 500])
-  - Press ENTER and the new figure window should contain a butterfly plot of the GA_EW in the bottom panel and six topographical maps (one for each condition) in the top panel.
+  - Press ENTER and the new figure window should contain a butterfly plot of the GA<sub>EW</sub> in the bottom panel and six topographical maps (one for each condition) in the top panel.

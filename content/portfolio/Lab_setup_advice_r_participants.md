@@ -1,3 +1,12 @@
+---
+date: "2016-11-05T18:25:22+05:30"
+draft: false
+image: img/tutorials/data_structures.png
+showonlyimage: false
+title: R tutorials
+weight: 10
+---
+
 #Setting Up a Lab (according to Luck)
 **Why is keeping participants happy crucial?**
 It is important to keep subjects awake, happy, and relaxed as it can affect your

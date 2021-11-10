@@ -1,8 +1,0 @@
----
-title: Data Structures in R
-author: R package build
-date: '2021-11-04'
-slug: []
-categories: []
-tags: []
----
