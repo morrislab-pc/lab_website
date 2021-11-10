@@ -14,7 +14,7 @@ googleAnalytics = ""
   description = "Describe your website"
   copyright = "&copy;2016 Your name or company"
   sidebarAbout = [
-    "This is the website for the Human Psychophysiology Lab at Providence College.  We study human cognitive processes, primarily language using event related potentials or ERPs"
+    "Put stuff about you here"
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
