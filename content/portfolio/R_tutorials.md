@@ -1,15 +1,16 @@
 ---
-date: "2016-11-05T18:25:22+05:30"
+date: '2021-11-10'
 draft: false
-image: img/tutorials/data_structures.png
+image: img/portfolio/Rlogo.png
 showonlyimage: false
 title: R tutorials
+slug: r-tutorials
 weight: 0
 ---
 
-
-
 What is R?
+
+<!--more-->
 
 What is Rstudio?
 

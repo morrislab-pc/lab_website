@@ -2,17 +2,18 @@
 title: Data Processing Pipeline
 author: Joanna Morris
 date: '2021-11-10'
-slug: [data-processing-pipeline]
+slug: data-processing-pipeline
 categories: []
 tags: []
 draft: false
-image: /img/pipeline-icon-13.png
+image: img/portfolio/pipeline-icon-13.png
 showonlyimage: false
-weight: 1
+weight: 3
 ---
 
 The following presents an outline of the pre-processing pipeline.
-ERP data analysis involves many processing steps.<!--more-->
+ERP data analysis involves many processing steps.
+<!--more-->
  The order in which these steps should be performed [depends on whether a given processing step involves a *linear* or *nonlinear* operation](https://erpinfo.org/order-of-steps).  The following pipeline is adapted from those followed by a number of ERP labs with which I have collaborated in the past.
 
 We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
@@ -326,3 +327,19 @@ You can also specify a range of stimuli for each bin
 * Choose `One measurement per line (long format)`
 
 * Save output file as `EID_#s_CN.txt`, e.g `M18_24_N400.txt` where `EID` = experiment ID, `#s` is the total number of subjects that have been run in the study, and `CN` is the component name e.g. N400, P300 etc.
+
+# Generating a Grand Average ERP
+
+Once the pre-processing and erpset generation have been completed for all of the individual datasets, the ERPs from each subject and condition are averaged together to create a ‘grand-average’ ERP.
+
+Select the files to be averaged
+1. ERPLAB>Average Across ERPsets (Grand Average)
+
+    * When the *GRAND AVERAGER GUI* appears, select the ‘From ERPset files’ option and click ‘Add Erpset’. This will open a file browser that can be used to navigate the directory containing the ERPset files created. Select all ERPs from the project of interest.
+    
+    * Select the ‘Compute point-by-point standard error of the mean’ option and leave all other default selections. Click ‘RUN’ to generate the grand average.
+    
+    * When the *Save Erpset GUI* dialog appears, select ‘Create a new erpset’ and then enter a suitable name for the grand average. Also select ‘Save ERP as’ and enter a similar name for the file that will be saved to disk. Click ‘OK’.
+
+Steps for different ways to visualize the Grand Average ERP can be found in *EEG Methods for the Psychological Sciences* beginning on page 80.
+

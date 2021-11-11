@@ -1,15 +1,28 @@
-# Installing  git
+---
+date: '2021-11-10'
+draft: false
+image: img/portfolio/Git-Logo-2Color.png
+showonlyimage: false
+title: Git Tutorial
+weight: 0
+slug: git-tutorial
+---
+
+Why use git?
+
+<!--more-->
 
 1. Install git
 
 2. Sign up for a GitHub account
 
 3. In your computer's **file browser** ensure that you can see:
-  - **Invisible files and folders** (On the Mac these start with a period e.g. `.git`)
+  
+  * **Invisible files and folders** (On the Mac these start with a period e.g. `.git`)
 
-  - **File extensions** (This is the part of the filename at the *end* after a period. For example in the filename `test.doc`  the extension is `.doc`)
+  * **File extensions** (This is the part of the filename at the *end* after a period. For example in the filename `test.doc`  the extension is `.doc`)
 
-  ![View Options Window with 'Show Invisibles' and 'Always show file options' checked](Images/invisible_files.png)
+  ![View Options Window with 'Show Invisibles' and 'Always show file options' checked](/img/portfolio/invisible_files.png)
 
   - Many of the files that git needs to function are files that begin with a period which are **invisible files** on the Mac OS (operating system).
 
@@ -37,7 +50,7 @@ to update the central repository with our changes.
 
   - To clone a repository, first find the **URL** for the repository on GitHub
 
-  ![Find the URL for the repository on GitHub](Images/git-url.png)
+  ![Find the URL for the repository on GitHub](/img/portfolio/git-url.png)
 
   - In the terminal, navigate to the **directory** on your computer to which you want to  copy the repository e.g `cd ~/my_git_repos`
 
@@ -116,9 +129,7 @@ to update the central repository with our changes.
 
      - To see both local and remote branches use `git branch -a` or `git branch --all`
 
-     - To see details of each brach use `git branch -v` or `git brach --verbose`
-
-     -
+     - To see details of each brach use `git branch -v` or `git branch --verbose`
 
      - `git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch
 
@@ -128,3 +139,26 @@ to update the central repository with our changes.
 
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
+       
+# Using Git with Rstudio
+
+* Configure git with Rstudio 
+
+* Set your user name and email:
+`usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")`
+
+* Create a personal access token for authentication:
+`usethis::create_github_token() `
+
+* In case `usethis` version < 2.0.0 `usethis::browse_github_token()` (or even better update `usethis`!)
+
+* Set personal access token:
+`credentials::set_github_pat("YourPAT")`
+
+* Or store it manually in `.Renviron`:
+`usethis::edit_r_environ()`
+
+* Store your personal access token with `GITHUB_PAT=xxxyyyzzz` and make sure `.Renviron` ends with a newline.
+
+* Restart R! 
+
