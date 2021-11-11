@@ -2,20 +2,21 @@
 title: Data Processing Pipeline
 author: Joanna Morris
 date: '2021-11-10'
-slug: [data-processing-pipeline]
+slug: data-processing-pipeline
 categories: []
 tags: []
 draft: false
-image: /img/pipeline-icon-13.png
+image: img/portfolio/pipeline-icon-13.png
 showonlyimage: false
-weight: 1
+weight: 2
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>The following presents an outline of the pre-processing pipeline.
-ERP data analysis involves many processing steps.<!--more-->
+ERP data analysis involves many processing steps.
+<!--more-->
 The order in which these steps should be performed <a href="https://erpinfo.org/order-of-steps">depends on whether a given processing step involves a <em>linear</em> or <em>nonlinear</em> operation</a>. The following pipeline is adapted from those followed by a number of ERP labs with which I have collaborated in the past.</p>
 <p>We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
 <a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLAB</a> is an iteractive GUI-based Matlab toolbox for processing electrophysiological data. <a href="https://erpinfo.org/erplab">ERPLAB</a> is a free, open-source Matlab package that extends EEGLAB’s capabilities for ERP processing, visualization, and analysis. Because ERPlab has been designed as a plug-in to EEGlab adding many useful analysis and visualization tools and meaning that many of its functions interact directly with the EEG data structure used by EEGlab.</p>
@@ -258,3 +259,15 @@ eeg_out_selective = erplab_selective_eeg_interp(eeg_in, replace_chans, ignored_c
 <li><p>Choose <code>One measurement per line (long format)</code></p></li>
 <li><p>Save output file as <code>EID_#s_CN.txt</code>, e.g <code>M18_24_N400.txt</code> where <code>EID</code> = experiment ID, <code>#s</code> is the total number of subjects that have been run in the study, and <code>CN</code> is the component name e.g. N400, P300 etc.</p></li>
 </ul>
+<div id="generating-a-grand-average-erp" class="section level1">
+<h1>Generating a Grand Average ERP</h1>
+<p>Once the pre-processing and erpset generation have been completed for all of the individual datasets, the ERPs from each subject and condition are averaged together to create a ‘grand-average’ ERP.</p>
+<p>Select the files to be averaged
+1. ERPLAB&gt;Average Across ERPsets (Grand Average)</p>
+<pre><code>* When the *GRAND AVERAGER GUI* appears, select the ‘From ERPset files’ option and click ‘Add Erpset’. This will open a file browser that can be used to navigate the directory containing the ERPset files created. Select all ERPs from the project of interest.
+
+* Select the ‘Compute point-by-point standard error of the mean’ option and leave all other default selections. Click ‘RUN’ to generate the grand average.
+
+* When the *Save Erpset GUI* dialog appears, select ‘Create a new erpset’ and then enter a suitable name for the grand average. Also select ‘Save ERP as’ and enter a similar name for the file that will be saved to disk. Click ‘OK’.</code></pre>
+<p>Steps for different ways to visualize the Grand Average ERP can be found in <em>EEG Methods for the Psychological Sciences</em> beginning on page 80.</p>
+</div>
