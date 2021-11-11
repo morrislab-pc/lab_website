@@ -129,9 +129,7 @@ to update the central repository with our changes.
 
      - To see both local and remote branches use `git branch -a` or `git branch --all`
 
-     - To see details of each brach use `git branch -v` or `git brach --verbose`
-
-     -
+     - To see details of each brach use `git branch -v` or `git branch --verbose`
 
      - `git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch
 
@@ -141,3 +139,26 @@ to update the central repository with our changes.
 
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
+       
+# Using Git with Rstudio
+
+* Configure git with Rstudio 
+
+* Set your user name and email:
+`usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")`
+
+* Create a personal access token for authentication:
+`usethis::create_github_token() `
+
+* In case `usethis` version < 2.0.0 `usethis::browse_github_token()` (or even better update `usethis`!)
+
+* Set personal access token:
+`credentials::set_github_pat("YourPAT")`
+
+* Or store it manually in `.Renviron`:
+`usethis::edit_r_environ()`
+
+* Store your personal access token with `GITHUB_PAT=xxxyyyzzz` and make sure `.Renviron` ends with a newline.
+
+* Restart R! 
+
