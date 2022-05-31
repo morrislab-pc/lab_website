@@ -23,14 +23,16 @@ params:
       url: about/
     - name: Our Research Projects
       url: projects/
-    - name: Our Team
+    - name: Our Current Students
       url: team/
+    - name: Our Graduates
+      url: graduates/
     - name: Tutorials
       url: portfolio/
     - name: Get in touch
       url: contact/
   sidebarAbout:
-    - This is the website for the Human Psychophysiology Lab at Providence College, led by Dr. Joanna Morris. To learn more about our research please contact us. We would love to hear from you.
+    - This is the website for the Human Psychophysiology Lab at Providence College. To learn more about our research please contact us.
 
   social:
     email: jmorris6@providence.edu
