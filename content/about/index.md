@@ -7,7 +7,7 @@ title: About Us
 
 #### Who we are
 
-Welcome to the Providence College Human Psychophysiology Lab (PC-HPL)run by [Dr. Joanna Morris](https://psychology.providence.edu/faculty-members/joanna-morris/). Here in the lab we examine phenomena at the intersection of cognitive psychology, linguistics and cognitive neuroscience. We are particularly interested in the structure of lexical representations and in applying electrophysiological techniques, in particular event related potentials, to the investigation of word representation and processing as well as other cognitive phenomena.
+Welcome to the Providence College Human Psychophysiology Lab (PC-HPL) run by [Dr. Joanna Morris](https://psychology.providence.edu/faculty-members/joanna-morris/). Here in the lab we examine phenomena at the intersection of cognitive psychology, linguistics and cognitive neuroscience. We are particularly interested in the structure of lexical representations and in applying electrophysiological techniques, in particular event related potentials, to the investigation of word representation and processing as well as other cognitive phenomena.
 
 #### What we do
 
