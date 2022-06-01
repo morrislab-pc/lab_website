@@ -28,7 +28,7 @@ params:
     - name: Our Graduates
       url: graduates/
     - name: Tutorials
-      url: portfolio/
+      url: tutorials/
     - name: Get in touch
       url: contact/
   sidebarAbout:
