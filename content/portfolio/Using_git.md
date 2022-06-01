@@ -10,13 +10,21 @@ slug: git-tutorial
 
 Why use git?
 
+Git is a **version control system**. It maintains a history of all changes made to your files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. The changes are stored in a special database called “repository”
+
 <!--more-->
 
-1. Install git
+In the lab we use git to have a record of who made what changes when, we know who to ask if we have questions later on, and, if needed, revert to a previous version, much like the “undo” feature in an editor.
 
-2. Sign up for a GitHub account
+When several people collaborate in the same project, it’s possible to accidentally overlook or overwrite someone’s changes. The version control system automatically notifies users whenever there’s a conflict between one person’s work and another’s.
 
-3. In your computer's **file browser** ensure that you can see:
+Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
+
+#  IHow to begin
+
+1. Sign up for a GitHub account
+
+2. In your computer's **file browser** ensure that you can see:
   
   * **Invisible files and folders** (On the Mac these start with a period e.g. `.git`)
 
@@ -162,3 +170,6 @@ to update the central repository with our changes.
 
 * Restart R! 
 
+# More on Git (via Software Carpentry)
+
+[Version Control with Git](https://swcarpentry.github.io/git-novice/)
