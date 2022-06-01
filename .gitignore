@@ -7,10 +7,18 @@
 .Rhistory
 .Rapp.history
 
-# Don't commit image files
-.png
-.jpg
+# The blogdown/ directory is used to store cache files, and they are most likely
+# to be useless to the published website. The public/ directory should be 
+# ignored if your website is going to be automatically (re)built on a remote 
+# server such as Netlify.
 
+.DS_Store
+themes/
+public/
+.idea/*
+
+/blogdown/
+/public/
 
 # Temporary files
 *~

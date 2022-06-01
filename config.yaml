@@ -29,6 +29,8 @@ params:
       url: graduates/
     - name: Tutorials
       url: tutorials/
+    - name: General Lab Information
+      url: info/
     - name: Get in touch
       url: contact/
   sidebarAbout:
