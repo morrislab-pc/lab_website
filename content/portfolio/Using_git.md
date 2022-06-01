@@ -8,7 +8,7 @@ weight: 0
 slug: git-tutorial
 ---
 
-Why use git?
+What is git?
 
 Git is a **version control system**. It maintains a history of all changes made to your files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. The changes are stored in a special database called “repository”
 
@@ -20,7 +20,7 @@ When several people collaborate in the same project, it’s possible to accident
 
 Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
 
-#  IHow to begin
+To use git you should:
 
 1. Sign up for a GitHub account
 
@@ -131,7 +131,7 @@ to update the central repository with our changes.
 
     - Git sync does everything in one command meaning pull and push read here
 
-# Branching
+## Branching
 
      - To view the branches in a Git repository, run the command `git branch`
 
@@ -148,7 +148,7 @@ to update the central repository with our changes.
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
        
-# Using Git with Rstudio
+## Using Git with Rstudio
 
 * Configure git with Rstudio 
 
@@ -170,6 +170,6 @@ to update the central repository with our changes.
 
 * Restart R! 
 
-# More on Git (via Software Carpentry)
+## More on Git (via Software Carpentry)
 
 [Version Control with Git](https://swcarpentry.github.io/git-novice/)
