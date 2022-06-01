@@ -3,7 +3,7 @@ date: '2021-11-10'
 draft: false
 image: img/portfolio/eeg-collection.png
 showonlyimage: false
-title: Lab Procedures for Data Collection
+title: Lab Procedures
 weight: 2
 slug: data-collection
 ---
@@ -18,7 +18,7 @@ Accessing the Lab
 
 * Tasks to complete *after* you have run your participant
 
-General Lab Rules
+# General Lab Rules 
 
 1. If you open it, close it.
 2. If you turn it on, turn it off, then unplug it.
@@ -32,3 +32,5 @@ General Lab Rules
 10. If you don't know how to operate it, ask someone to show you or leave it alone. 
 11. If you don’t understand, ask questions.
 12. Treat all co-workers and study participants with respect.
+
+(Source unknown)
