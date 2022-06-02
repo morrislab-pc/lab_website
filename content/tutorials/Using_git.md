@@ -1,16 +1,15 @@
 ---
 date: '2021-11-10'
 draft: false
-image: img/portfolio/Git-Logo-2Color.png
+image: img/tutorials/Git-Logo-2Color.png
 showonlyimage: false
 title: Git Tutorial
 weight: 0
 slug: git-tutorial
 ---
 
-What is git?
 
-Git is a **version control system**. It maintains a history of all changes made to your files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. The changes are stored in a special database called “repository”
+Git is a [version control system](https://about.gitlab.com/topics/version-control/). It maintains a history of all changes made to your files, so you have a record of what has been done, and you can revert to specific versions should you ever need to.
 
 <!--more-->
 
@@ -25,7 +24,7 @@ To use git you should:
 1. Sign up for a GitHub account
 
 2. In your computer's **file browser** ensure that you can see:
-  
+
   * **Invisible files and folders** (On the Mac these start with a period e.g. `.git`)
 
   * **File extensions** (This is the part of the filename at the *end* after a period. For example in the filename `test.doc`  the extension is `.doc`)
@@ -147,10 +146,10 @@ to update the central repository with our changes.
 
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
-       
+
 ## Using Git with Rstudio
 
-* Configure git with Rstudio 
+* Configure git with Rstudio
 
 * Set your user name and email:
 `usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")`
@@ -168,7 +167,7 @@ to update the central repository with our changes.
 
 * Store your personal access token with `GITHUB_PAT=xxxyyyzzz` and make sure `.Renviron` ends with a newline.
 
-* Restart R! 
+* Restart R!
 
 ## More on Git (via Software Carpentry)
 
