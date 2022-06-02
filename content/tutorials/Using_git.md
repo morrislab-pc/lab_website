@@ -130,6 +130,8 @@ to update the central repository with our changes.
 
     - Git `sync` does everything in one command meaning `pull` and `push`.
 
+    - [What is the difference between git `pull` and git `rebase`](https://mislav.net/2013/02/merge-vs-rebase/)
+
 ## Branching
 
      - To view the branches in a Git repository, run the command `git branch`
@@ -147,7 +149,7 @@ to update the central repository with our changes.
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
 
-## Using Git with Rstudio
+## Using GitHub with Rstudio
 
 * Configure git with Rstudio
 
@@ -172,3 +174,7 @@ to update the central repository with our changes.
 ## More on Git (via Software Carpentry)
 
 [Version Control with Git](https://swcarpentry.github.io/git-novice/)
+
+[Using GitHub with the Atom text editor](https://flight-manual.atom.io/using-atom/sections/github-package/)
+
+## More Git Tips
