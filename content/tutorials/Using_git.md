@@ -77,17 +77,17 @@ to update the central repository with our changes.
   - These changes to the forked repository can be merged with the original repository via a **pull request** which is a request to the original the repository owner to merge your changes with (or **pull** your changes into) the original repository.
 
 
-   - Summary of the steps to editing files in a github repositories that you don't onw:
+   - Summary of the steps to editing files in a github repositories that you don't own:
 
-    - ***Step 1***: **Fork** a repository to your_repository own GitHub account.
+      - ***Step 1***: **Fork** a repository to your_repository own GitHub account.
 
-    - ***Step 2***: **Clone** the repository to your local machine.
+      - ***Step 2***: **Clone** the repository to your local machine.
 
-    - ***Step 3***: Edit the files and **commit** these edits to the local repository. You can apply a single commit or multiple commits to the repository. But everything happens on your local system.
+      - ***Step 3***: Edit the files and **commit** these edits to the local repository. You can apply a single commit or multiple commits to the repository. But everything happens on your local system.
 
-    - ***Step 4***: **Push** the modifications to the upstream repository on your account (the fork).
+      - ***Step 4***: **Push** the modifications to the upstream repository on your account (the fork).
 
-    - ***Step 5***: Send a request to the owner of the original repository to merge (pull) the changes into the main central repository.  This is a **pull request**.
+      - ***Step 5***: Send a request to the owner of the original repository to merge (pull) the changes into the main central repository.  This is a **pull request**.
 
 # Linking local and remote repositories
 
@@ -180,15 +180,15 @@ To get [Atom to work with GitHub]((https://flight-manual.atom.io/using-atom/sect
 
 You need to open a command terminal, and execute the following commands:
 
-`cd /Applications/Atom.app/Contents/Resources/app.asar.unpacked/node_modules/dugite/git
+  `cd /Applications/Atom.app/Contents/Resources/app.asar.unpacked/node_modules/dugite/git`
 
-sudo rm bin/git
+  `sudo rm bin/git`
 
-sudo rm libexec/git-core/git
+  `sudo rm libexec/git-core/git`
 
-sudo ln -s /usr/local/bin/git bin/git sudo
+  `sudo ln -s /usr/local/bin/git bin/git sudo`
 
-sudo ln -s /usr/local/bin/git libexec/git-core/git`
+  `sudo ln -s /usr/local/bin/git libexec/git-core/git`
 
 Note that your  `git` installation may not be in `usr/local/bin` but in some other directory.  If so you sh
 
