@@ -128,7 +128,7 @@ to update the central repository with our changes.
     - the `git pull` command is a `git fetch` command followed by a `git merge` command.
 
 
-    - Git sync does everything in one command meaning pull and push read here
+    - Git `sync` does everything in one command meaning `pull` and `push`.
 
 ## Branching
 
