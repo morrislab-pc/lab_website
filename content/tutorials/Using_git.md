@@ -131,7 +131,6 @@ to update the central repository with our changes.
   - Git `sync` does everything in one command meaning `pull` and `push`.
 
 
-
 ## Branching
 
   - To view the branches in a Git repository, run the command `git branch`
@@ -190,7 +189,7 @@ You need to open a command terminal, and execute the following commands:
 
   `sudo ln -s /usr/local/bin/git libexec/git-core/git`
 
-Note that your  `git` installation may not be in `usr/local/bin` but in some other directory.  If so you sh
+Note that your  `git` installation may not be in `usr/local/bin` but in some other directory.  If so you should replace the directory `/usr/local/bin/` with whatever directory your `git` installation in in.
 
 ## More on Git (via Software Carpentry)
 
