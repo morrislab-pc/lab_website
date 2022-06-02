@@ -127,10 +127,12 @@ to update the central repository with our changes.
 
     - the `git pull` command is a `git fetch` command followed by a `git merge` command.
 
+    - It has been suggested that one use `git pull --rebase` instead of `git pull`. See ([What is the difference between git `pull` and git `rebase`])(https://mislav.net/2013/02/merge-vs-rebase/)
+
 
     - Git `sync` does everything in one command meaning `pull` and `push`.
 
-    - [What is the difference between git `pull` and git `rebase`](https://mislav.net/2013/02/merge-vs-rebase/)
+
 
 ## Branching
 
