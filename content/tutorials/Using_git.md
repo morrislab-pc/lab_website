@@ -112,41 +112,39 @@ to update the central repository with our changes.
 
 ## The git commands `fetch`, `pull`, `merge`, `push` and `sync`
 
-    - In git you are not supposed to commit work on remote branches (you are supposed to do your work on local branches)
+  - In git you are not supposed to commit work on remote branches (you are supposed to do your work on local branches)
 
-    - Remote branches should contain copies of commits coming from remotes, never commits created locally.
+  - Remote branches should contain copies of commits coming from remotes, never commits created locally.
 
-    - The command `git fetch origin` **fetches** any new work that has been **pushed** to that server since you **cloned** (or last **fetched** from) it.
+  - The command `git fetch origin` **fetches** any new work that has been **pushed** to that server since you **cloned** (or last **fetched** from) it.
 
-    - The `git fetch` command only downloads the data to your local repository.
+  - The `git fetch` command only downloads the data to your local repository.
 
-    - If I want get changes from the remote repository called `origin` into my local repository I type `git fetch origin`.
+  - If I want get changes from the remote repository called `origin` into my local repository I type `git fetch origin`.
 
-    - It doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.
+  - It doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.
 
+  - the `git pull` command is a `git fetch` command followed by a `git merge` command.
 
-    - the `git pull` command is a `git fetch` command followed by a `git merge` command.
+  - It has been suggested that one use `git pull --rebase` instead of `git pull`. See ([What is the difference between git `pull` and git `rebase`])(https://mislav.net/2013/02/merge-vs-rebase/)
 
-    - It has been suggested that one use `git pull --rebase` instead of `git pull`. See ([What is the difference between git `pull` and git `rebase`])(https://mislav.net/2013/02/merge-vs-rebase/)
-
-
-    - Git `sync` does everything in one command meaning `pull` and `push`.
+  - Git `sync` does everything in one command meaning `pull` and `push`.
 
 
 
 ## Branching
 
-     - To view the branches in a Git repository, run the command `git branch`
+  - To view the branches in a Git repository, run the command `git branch`
 
-     - To see both local and remote branches use `git branch -a` or `git branch --all`
+  - To see both local and remote branches use `git branch -a` or `git branch --all`
 
-     - To see details of each brach use `git branch -v` or `git branch --verbose`
+  - To see details of each brach use `git branch -v` or `git branch --verbose`
 
-     - `git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch
+  - `git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch
 
-     - `git branch BRANCH_NAME` creates a new branch but leaves you on the same branch.
+  - `git branch BRANCH_NAME` creates a new branch but leaves you on the same branch.
 
-     - In other words `git checkout -b BRANCH_NAME` does the following for you:
+  - In other words `git checkout -b BRANCH_NAME` does the following for you:
 
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
@@ -183,9 +181,13 @@ To get [Atom to work with GitHub]((https://flight-manual.atom.io/using-atom/sect
 You need to open a command terminal, and execute the following commands:
 
 `cd /Applications/Atom.app/Contents/Resources/app.asar.unpacked/node_modules/dugite/git
+
 sudo rm bin/git
+
 sudo rm libexec/git-core/git
+
 sudo ln -s /usr/local/bin/git bin/git sudo
+
 sudo ln -s /usr/local/bin/git libexec/git-core/git`
 
 Note that your  `git` installation may not be in `usr/local/bin` but in some other directory.  If so you sh
