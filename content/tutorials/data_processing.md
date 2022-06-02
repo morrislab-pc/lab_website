@@ -13,7 +13,9 @@ weight: 3
 
 The following presents an outline of the pre-processing pipeline.
 ERP data analysis involves many processing steps.
+
 <!--more-->
+
  The order in which these steps should be performed [depends on whether a given processing step involves a *linear* or *nonlinear* operation](https://erpinfo.org/order-of-steps).  The following pipeline is adapted from those followed by a number of ERP labs with which I have collaborated in the past.
 
 We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
