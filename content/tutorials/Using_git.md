@@ -127,8 +127,12 @@ to update the central repository with our changes.
 
     - the `git pull` command is a `git fetch` command followed by a `git merge` command.
 
+    - It has been suggested that one use `git pull --rebase` instead of `git pull`. See ([What is the difference between git `pull` and git `rebase`])(https://mislav.net/2013/02/merge-vs-rebase/)
+
 
     - Git `sync` does everything in one command meaning `pull` and `push`.
+
+
 
 ## Branching
 
@@ -147,7 +151,7 @@ to update the central repository with our changes.
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
 
-## Using Git with Rstudio
+## Using GitHub with Rstudio
 
 * Configure git with Rstudio
 
@@ -168,6 +172,23 @@ to update the central repository with our changes.
 * Store your personal access token with `GITHUB_PAT=xxxyyyzzz` and make sure `.Renviron` ends with a newline.
 
 * Restart R!
+
+
+## Using GitHub with the Atom text editor
+
+You can also edit markdown files and using the [Atom](https://atom.io) text editor
+
+To get [Atom to work with GitHub]((https://flight-manual.atom.io/using-atom/sections/github-package/), you have to use your system `git` installation instead of the one packaged with Atom. On a mac you should navigate to the directory  `/Applications/Atom.app/Contents/Resources/app.asar.unpacked/node_modules/dugite/git` There, you have a `bin` and a `lib exec/git-core/` directory, each of which contains a `git` file. Delete each file, and in its place and build a link to your system `git`.
+
+You need to open a command terminal, and execute the following commands:
+
+`cd /Applications/Atom.app/Contents/Resources/app.asar.unpacked/node_modules/dugite/git
+sudo rm bin/git
+sudo rm libexec/git-core/git
+sudo ln -s /usr/local/bin/git bin/git sudo
+sudo ln -s /usr/local/bin/git libexec/git-core/git`
+
+Note that your  `git` installation may not be in `usr/local/bin` but in some other directory.  If so you sh
 
 ## More on Git (via Software Carpentry)
 
