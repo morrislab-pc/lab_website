@@ -8,4 +8,4 @@ weight: 3
 ---
 
 PC 2024
-Psychology
+Psychology & Computer Science
