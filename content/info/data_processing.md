@@ -11,8 +11,7 @@ showonlyimage: false
 weight: 3
 ---
 
-The following presents an outline of the pre-processing pipeline.
-ERP data analysis involves many processing steps.
+The following presents an outline of the pre-processing pipeline. ERP data analysis involves many processing steps.
 
 <!--more-->
 

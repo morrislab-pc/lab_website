@@ -8,10 +8,12 @@ slug: python
 weight: 0
 ---
 
-[OpenSesame](https://osdoc.cogsci.nl) is a program designed to help researchers develop experiments in the behavioral sciences.
-
+In the lab we use [OpenSesame](https://osdoc.cogsci.nl) an experiment builder based on [Python](https://www.python.org/doc/essays/blurb/) to program our studies.  
+ 
 <!--more-->
 
-For beginners, OpenSesame has a comprehensive graphical, point-and-click interface. For advanced users, OpenSesame supports Python scripting.
+Python is a popular programming language with a  simple, easy to learn syntax that emphasizes readability. [Anaconda](https://www.anaconda.com/products/distribution) is Anaconda is a distribution of Python for scientific computing. Anaconda has many very useful third-party libraries such as Numpy, Pandas, Scrip, and Matplotlib built in, so installing Anaconda is much easier than the regular Python installation. Anaconda Navigator is a GUI tool that is included in the Anaconda distribution and makes it easy to configure, install, and launch tools such as [Jupyter Notebook](https://jupyter.org).
+
+The Jupyter Notebook is an open-source web application that allows data scientists to create and share documents that integrate live code, equations, computational output, visualizations, and other multimedia resources, along with explanatory text in a single document.  [This article](https://odsc.medium.com/why-you-should-be-using-jupyter-notebooks-ea2e568c59f2) explains the benefits of using Jupyter.
 
 To get started with Python follow [this (excellent!) Python tutorial](https://learnpythontherightway.com/#read).
