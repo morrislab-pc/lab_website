@@ -10,11 +10,11 @@ showonlyimage: false
 ---
 
 
-Please read this carefully because NO credit will be awarded to participants who do not meet the criteria below.
+Students if you are signing up for course credit, please read the following information carefully.
 
 <!--more-->
 
-You are eligible to participate if :
+Please note that no credit will be awarded to participants who do not meet the folliwng criteria. You are eligible to participate if :
 
 1. **You ARE right handed**. We need to test right handed individuals because language processing is lateralized in the left hemisphere for these people. Left-handed and ambidextrous individuals show more variety in terms of language localization.
 
