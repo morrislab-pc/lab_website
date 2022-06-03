@@ -1,17 +1,10 @@
 ---
-<<<<<<< HEAD
 title: EEGLAB and ERPLAB
 author: Joanna Morris
 date: '2022-06-03'
 slug: [eeglab-erplab]
 image: img/info/erplab_logo.png
 showonlyimage: false
-=======
-title: Toolkits and data structures
-author: Joanna Morris
-date: '2022-06-03'
-slug: [erp-software-data-structure]
->>>>>>> 6252932c99ab8ad68371a0aaabf239d6e176db7e
 categories: []
 tags: []
 ---
