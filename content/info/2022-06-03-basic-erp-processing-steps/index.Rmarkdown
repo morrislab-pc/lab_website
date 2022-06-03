@@ -9,11 +9,11 @@ categories: []
 tags: []
 ---
 
-To analyse  our ERP data we use [ERPLAB Toolbox](https://erpinfo.org/erplab), an open-source Matlab package, that extended the capabilites of another open-source Matlab package for EEG data analysis, the [EEGLAB Toolbox](https://sccn.ucsd.edu/eeglab/index.php)
+To analyse  our ERP data we use [ERPLAB Toolbox](https://erpinfo.org/erplab), 
 
 <!--more-->
 
-an open-source Matlab package, that extended the capabilites of another open-source Matlab package for EEG data analysis, the [EEGLAB Toolbox](https://sccn.ucsd.edu/eeglab/index.php). 
+which is an open-source Matlab package, that extended the capabilites of another open-source Matlab package for EEG data analysis, the [EEGLAB Toolbox](https://sccn.ucsd.edu/eeglab/index.php). 
 
 This description of the [basic ERPLAB processing steps](https://github.com/lucklab/erplab/wiki/Basic-ERPLAB-Processing-Steps) provides an overview of the typical sequence of operations for analyzing an ERP experiment using the combination of EEGLAB and ERPLAB. 
 
