@@ -8,7 +8,7 @@ slug: python
 weight: 0
 ---
 
-In the lab we use [OpenSesame](https://osdoc.cogsci.nl), an experiment builder based on [Python](https://www.python.org/doc/essays/blurb/), to program our studies.  
+In the lab we use a set of [Python](https://www.python.org/doc/essays/blurb/) libraries, within [OpenSesame](https://osdoc.cogsci.nl) to program our studies.  
  
 <!--more-->
 
