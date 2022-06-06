@@ -9,11 +9,9 @@ slug: git-tutorial
 ---
 
 
-Git is a [version control system](https://about.gitlab.com/topics/version-control/). It maintains a history of all changes made to your files, so you have a record of what has been done, and you can revert to specific versions should you ever need to.
+In the lab we use Git for [version control](https://about.gitlab.com/topics/version-control/). Git maintains a history of all changes made to our files, so we have a record of what has been done, and we can revert to specific versions should we ever need to.
 
 <!--more-->
-
-In the lab we use git to have a record of who made what changes when, we know who to ask if we have questions later on, and, if needed, revert to a previous version, much like the “undo” feature in an editor.
 
 When several people collaborate in the same project, it’s possible to accidentally overlook or overwrite someone’s changes. The version control system automatically notifies users whenever there’s a conflict between one person’s work and another’s.
 
