@@ -19,3 +19,13 @@ Python is a popular programming language with a  simple, easy to learn syntax th
 [Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/) is a GUI tool that is included in the Anaconda distribution and makes it easy to configure, install, and launch tools such as [Jupyter Notebook](https://jupyter.org), an open-source web application that allows data scientists to create and share documents that integrate live code, equations, computational output, visualizations, and other multimedia resources, along with explanatory text in a single document.  [This article](https://odsc.medium.com/why-you-should-be-using-jupyter-notebooks-ea2e568c59f2) explains the benefits of using Jupyter.
 
 To get started with Python follow [this (excellent!) Python tutorial](https://learnpythontherightway.com/#read).
+
+[LinkedIn Learning](https://ihelp.providence.edu/services/linkedin-learning/) is available to all faculty, staff, and students at PC. Access it by logging into to your LinkedIn account with your Providence College email. 
+
+#### LinkedIn Learning Tutorials
+
+[Python for Non Programmers](https://www.linkedin.com/learning/python-for-non-programmers)
+
+[Learning Python](https://www.linkedin.com/learning/learning-python-14393370)
+
+
