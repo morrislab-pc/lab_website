@@ -8,7 +8,7 @@ slug: opensesame
 weight: 0
 ---
 
-[OpenSesame](https://osdoc.cogsci.nl) is a program designed to help researchers develop experiments in the behavioral sciences.
+We design and program our studies using [OpenSesame](https://osdoc.cogsci.nl) a experiment building environment, within which we can run a number of Python libraries specifically designed for implementing experiments in the behavioral sciences.
 
 <!--more-->
 

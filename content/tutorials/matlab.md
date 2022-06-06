@@ -12,7 +12,9 @@ In the lab, we process the EEG data using the EEGLAB and ERPLAB Toolboxes for [M
 
 <!--more-->
 
-Learn MATLAB via these LinkedIn Learning Tutorials.  [LinkedIn Learning](https://ihelp.providence.edu/services/linkedin-learning/) is available to all faculty, staff, and students at PC. It provides thousands of video tutorials that can be accessed anytime from any computer or mobile device.
+[LinkedIn Learning](https://ihelp.providence.edu/services/linkedin-learning/) is available to all faculty, staff, and students at PC. It provides thousands of video tutorials that can be accessed anytime from any computer or mobile device.
+
+Learn MATLAB via these LinkedIn Learning Tutorials:
 
 [Learning MATLAB](https://www.linkedin.com/learning/learning-matlab-2/)
 
