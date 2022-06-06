@@ -8,7 +8,7 @@ tags: []
 draft: false
 image: img/portfolio/pipeline-icon-13.png
 showonlyimage: false
-weight: 3
+weight: 0
 ---
 
 The following presents an outline of the pre-processing pipeline. ERP data analysis involves many processing steps.
@@ -337,10 +337,9 @@ Select the files to be averaged
 1. ERPLAB>Average Across ERPsets (Grand Average)
 
     * When the *GRAND AVERAGER GUI* appears, select the ‘From ERPset files’ option and click ‘Add Erpset’. This will open a file browser that can be used to navigate the directory containing the ERPset files created. Select all ERPs from the project of interest.
-    
+
     * Select the ‘Compute point-by-point standard error of the mean’ option and leave all other default selections. Click ‘RUN’ to generate the grand average.
-    
+
     * When the *Save Erpset GUI* dialog appears, select ‘Create a new erpset’ and then enter a suitable name for the grand average. Also select ‘Save ERP as’ and enter a similar name for the file that will be saved to disk. Click ‘OK’.
 
 Steps for different ways to visualize the Grand Average ERP can be found in *EEG Methods for the Psychological Sciences* beginning on page 80.
-
