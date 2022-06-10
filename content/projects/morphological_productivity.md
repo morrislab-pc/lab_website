@@ -1,10 +1,10 @@
 ---
 date: "2016-11-05T19:44:32+05:30"
 draft: false
-image: img/portfolio/gravity-paper.jpg
+image: img/portfolio/words_1.jpg
 showonlyimage: false
-title: About Morphology
-weight: 0
+title: Morphologial Productivity
+weight: 3
 ---
 
 Words can be simple, consisting of a single morpheme such as "*lock*". Or they can be complex, with 2 or more morphemes such as "*lock-able*" or "*un-lock-able*".  
