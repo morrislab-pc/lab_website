@@ -21,7 +21,7 @@ params:
     - home: yes
       name: Lab Home
       url: about/
-    - name: Our Research Projects
+    - name: Research Projects
       url: projects/
     - name: Our Current Students
       url: team/

@@ -4,7 +4,7 @@ draft: false
 image: img/portfolio/erp-image.jpg
 showonlyimage: false
 title: What are ERPs?
-weight: 1
+weight: 0
 ---
 
 Event related potentials (ERPs) are small scalp-recorded voltages generated in the brain in response to stimuli events that demonstrate the psychophysiological effects on brain processes. 
