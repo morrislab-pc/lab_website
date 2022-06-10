@@ -1,7 +1,7 @@
 ---
 date: "2022-06-10"
 draft: false
-image: img/portfolio/English-Word-Stress-Examples.png
+image: img/portfolio/letters_1.jpg
 showonlyimage: false
 title: Orthographic Cues to Lexical Stress
 weight: 0

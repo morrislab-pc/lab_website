@@ -6,7 +6,7 @@ slug: data-processing-pipeline
 categories: []
 tags: []
 draft: false
-image: img/portfolio/pipeline-icon-13.png
+image: img/info/pipeline_2.png
 showonlyimage: false
 weight: 0
 ---

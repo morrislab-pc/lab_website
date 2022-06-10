@@ -1,7 +1,7 @@
 ---
 date: '2021-11-10'
 draft: false
-image: img/portfolio/eeg-collection.png
+image: img/info/eeg-collection.png
 showonlyimage: false
 title: Lab Procedures
 weight: 0
