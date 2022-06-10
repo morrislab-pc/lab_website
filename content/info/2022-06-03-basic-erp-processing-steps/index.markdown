@@ -3,7 +3,7 @@ title: EEGLAB and ERPLAB
 author: Joanna Morris
 date: '2022-06-03'
 slug: [eeglab-erplab]
-image: img/info/erplab_logo.png
+image: img/info/topograph.png
 showonlyimage: false
 categories: []
 tags: []

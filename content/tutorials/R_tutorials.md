@@ -5,7 +5,7 @@ image: img/tutorials/Rlogo.png
 showonlyimage: false
 title: R tutorials
 slug: r-tutorials
-weight: 0
+weight: 2
 ---
 
 

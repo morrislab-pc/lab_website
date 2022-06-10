@@ -27,7 +27,7 @@ To use git you should:
 
   * **File extensions** (This is the part of the filename at the *end* after a period. For example in the filename `test.doc`  the extension is `.doc`)
 
-  ![View Options Window with 'Show Invisibles' and 'Always show file options' checked](/img/portfolio/invisible_files.png)
+  ![View Options Window with 'Show Invisibles' and 'Always show file options' checked](/img/tutorials/invisible_files.png)
 
   - Many of the files that git needs to function are files that begin with a period which are **invisible files** on the Mac OS (operating system).
 
@@ -55,7 +55,7 @@ to update the central repository with our changes.
 
   - To clone a repository, first find the **URL** for the repository on GitHub
 
-  ![Find the URL for the repository on GitHub](/img/portfolio/git-url.png)
+  ![Find the URL for the repository on GitHub](/img/tutorials/git-url.png)
 
   - In the terminal, navigate to the **directory** on your computer to which you want to  copy the repository e.g `cd ~/my_git_repos`
 

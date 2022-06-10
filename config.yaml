@@ -21,7 +21,7 @@ params:
     - home: yes
       name: Lab Home
       url: about/
-    - name: Our Research Projects
+    - name: Research Projects
       url: projects/
     - name: Our Current Students
       url: team/
@@ -34,7 +34,7 @@ params:
     - name: Get in touch
       url: contact/
   sidebarAbout:
-    - This is the website for the Human Psychophysiology Lab at Providence College. To learn more about our research please contact us.
+    - This is the website for the Human Psychophysiology Lab at Providence College.
 
   social:
     email: jmorris6@providence.edu

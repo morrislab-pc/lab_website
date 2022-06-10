@@ -23,3 +23,5 @@ Here are some websites for help with data visualization in R.
 ['Data visualisation' in *R for Data Science* by Hadley Wickham](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Waffle%20Chart)
 
 [The Best Data Visualization Blogs](https://www.tableau.com/learn/articles/best-data-visualization-blogs)
+
+If you don't want to deal with R, here is a cloud based data visualization tool called [RawGraphs](https://www.rawgraphs.io)
