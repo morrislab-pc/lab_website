@@ -1,11 +1,11 @@
 ---
 date: '2021-11-10'
 draft: false
-image: img/info/eeg-collection.png
+image: img/info/lab_procedures_1.jpg
 showonlyimage: false
 title: Lab Procedures
 weight: 0
-slug: data-collection
+slug: lab_procedures
 ---
 
 This section is a work in progress!  Check back soon for more info.
