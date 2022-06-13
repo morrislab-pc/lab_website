@@ -1,14 +1,12 @@
 ---
-title: Data Processing Pipeline
-author: Joanna Morris
+title: "Data Processing Pipeline"
+author: "Joanna Morris"
 date: '2021-11-10'
-slug: data-processing-pipeline
-categories: []
-tags: []
-draft: false
+draft: no
 image: img/info/pipeline_2.jpg
-showonlyimage: false
+showonlyimage: no
 weight: 0
+slug: data-processing-pipeline
 ---
 
 The following presents an outline of the pre-processing pipeline. ERP data analysis involves many processing steps.
@@ -33,7 +31,7 @@ We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
 * ERPLAB uses a similar set of conventions to store and manipulate averaged ERP waveforms.
 
 
-#### 1. Open MATLAB 
+#### 1. Open MATLAB
 
 * Double click on the MATLAB icon on the desktop
 
@@ -70,13 +68,15 @@ NOTE: If you change the name of the file after recording you will need to change
 
   `ERPLAB > Filter and frequency tools > Filters for EEG data`.
 
+* * Save your file as  `EID_S##_flt.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered).
+
 #### 5. Downsample the data (optional)
 
 * If the data are recorded at 500Hz or above, downsample the data to 250 Hz to save memory and disk storage. Make sure this is done **after** you filter, otherwise you can get **aliasing artifacts**. Downsampling makes the data files MUCH smaller, and things will run faster in subsequent processing steps.
 
   `Tools > Change sampling rate`.
 
-* Save your file as  `EID_S##_flt_rsp.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
+* Save your file as  `EID_S##_flt_rsp.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled).
 
 #### 6. Append the Channel Location file
 
@@ -144,7 +144,7 @@ Done.
 
 * Once you are satisfied with the ocular artifact rejection click `Accept` and save the brand new ICA filtered dataset.
 
-* Save your file as  `EID_S##_flt_rsp_ica.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
+* Save your file as  `EID_S##_flt_rsp_ica.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled, `ica` = ica applied)
 
 #### 8. Re-reference the data
 
@@ -168,11 +168,11 @@ Done.
 
 * To save the re-referenced data set go to `File-> Save current data set as…`
 
-* Save your file as  `EID_S##_flt_rs_ref.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `ref` = re-referenced)
+* Save your file as  `EID_S##_flt_rsp_ica_ref.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced)
 
 #### 9. Replace *one* bad channel (optional)
 
-  `ERPLAB > EEG Channel operations`
+Select  `ERPLAB > EEG Channel operations`
 
 * Clear any existing equations.
 
@@ -182,7 +182,7 @@ Done.
 
 * To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S##_equations.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
 
-* Save your file as  `EID_S##_flt_rs_ref_int.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rs` = resampled, `ref` = re-referenced. `int`= interpolated).
+* Save your file as  `EID_S##_flt_rsp_ica_ref_int.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced, `int`= interpolated).
 
 #### 10.  Replace *more than one* bad channel (optional)
 
@@ -216,11 +216,11 @@ Done.
 
 * To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S##_equations.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
 
-* Save your file as  `EID_S##_flt_rs_ref_int.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rs` = resampled, `ref` = re-referenced. `int`= interpolated).
+* Save your file as  `EID_S##_flt_rsp_ica_ref_int.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced, `int`= interpolated).
 
 #### 11. Create the Event List
 
-    `ERPLAB > EventList > Create EEG EVENTLIST`
+* Select  `ERPLAB > EventList > Create EEG EVENTLIST`
 
 * ERPLAB uses the term 'event code' to refer to the code that marks the onset of an event in the EEG. 
 
@@ -234,11 +234,11 @@ Done.
 
 * Save the Eventlist to a text file as `EID_S##_elist.txt`
 
-* Save your dataset as  `EID_S##_flt_rs_ref_int_el.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `chp` = channel operations applied, ref = re-referenced, `el` = eventlist attached )
+* Save your dataset as  `EID_S##_flt_rsp_ica_ref_int_el.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`;`flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced, `int`= interpolated, `el` = eventlist attached).
 
 #### 12. Assign Bins
 
-    `Run   ERPLAB > Assign bins (BINLISTER)`
+* Select `ERPLAB > Assign bins (BINLISTER)`
 
 * In most experiments, you will need to specify the mapping between events and bins. This involves creating a **bin descriptor file** (BDF), a text file that provides an abstract description of the events that will be averaged together.  For example, you can specify that Bin 3 will consist of targets that were preceded by a non-target and followed 200-1500 ms later by a left-hand button-press response.  This step can also be configured to extract reaction times, which are saved in the `bdf` field of the `EVENTLIST` structure and can be exported to a text file.
 
@@ -269,43 +269,50 @@ Done.
 
 * Check `Read the eventlist from the current dataset`, select `Write the results to the current dataset`, select `Warn if bins have already been assigned`, and select `Transfer the eventlist info to EEG.event`.
 
+  ##### 12.1 Save the binned eventlist  
+
 * Save the binned Eventlist to a text file as `EID_S##_elist_bin.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
 
 * Click `Run`.
 
+  ##### 12.2 Save the dataset
+
+*  Save your file as  `EID_S##_flt_rsp_ica_ref_int_evl_bin.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`;`flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced, `int`= interpolated, `evl` = eventlist attached, `bin` = bins defined).
+
 #### 13. Epoch data
 
-    `ERPLAB > Extract bin-based epochs`
+* Select `ERPLAB > Extract bin-based epochs`
 
 * A window will pop up asking how much time around each event code you want to keep in each epoch. Your choice here will depend on your experiment. For most experiments *-200 through 1000* will be acceptable, but there may be reasons that you want to look at longer (or shorter) time windows after the trigger onset, depending on your experiment design or research question.
 
 * Leave `pre-stimulus baseline` as the default correction.
 
-* Save your dataset as  `EID_S##_flt_rs_ref_int_el_ep.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `chp` = channel operations applied, `ref` = re-referenced, `el` = eventlist attached, `ep` = epoched)
+* Save your dataset as  `EID_S##_flt_rsp_ica_ref_int_evl_bin_epc.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`;`flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced, `int`= interpolated, `evl` = eventlist attached, `bin` = bins defined, `epc` = epochs created).
 
 #### 14. Perform artifact detection to reject bad epochs
 
-    `ERPLAB > Artifact detection in epoched data > Simple voltage threshold`
+* Select `ERPLAB > Artifact detection in epoched data > Simple voltage threshold`
 
 * A voltage value of ±75 or ±100 should screen out most large artifacts and leave the good EEG untouched. Run this only on the scalp channels.
 
 * A window with the EEG will pop up with bad trials highlighted in yellow, and the offending channels highlighted in red. Scroll through the final flagged dataset and make sure it’s rejecting the right trials and keeping the good trials. If things are not working (that is, if bad trials are getting through or good trials are being rejected), change the thresholds accordingly and re-run detection until you find a threshold that works correctly.
 
-* Save your dataset as  `EID_S##_flt_rs_ref_int_el_ep_ar.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `int` = interpolated, `ref` = re-referenced, `el` = eventlist attached, `ep` = epoched, `ar` = artefact rejected )
+* Save your dataset as  `EID_S##_flt_rsp_ica_ref_int_evl_bin_epc_arj.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`;`flt` = filtered, `rsp` = resampled, `ica` = ica applied, `ref` = re-referenced, `int`= interpolated, `evl` = eventlist attached, `bin` = bins defined, `epc` = epochs created, `arj` = artefact rejected).
+
+####  15. Save Artifact Rejection Summary
 
 * You will also want to save the artifact detection results as a text file to your hard drive. You will need this to identify which individuals need to be excluded from data analysis (e.g., anyone with more than 30% rejected trials in any one condition).
 
 * You will also need to report the average number of trials rejected across participants in each condition when you write your experiment up for publication. The text file will help you do this.
 
-    `ERPLAB > Summarize artifact detection > Summarize EEG artifacts in a table`
+* Select  `ERPLAB > Summarize artifact detection > Summarize EEG artifacts in a table`
 
-* Save your artifact detection results as  `EID_S##_arsum.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `arsum` = artifact rejection summary )
+* Save your artifact detection results as  `EID_S##_arj_sum.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `arj_sum` = artifact rejection summary )
 
 
+#### 16. Average the ERPs
 
-#### 15. Average the ERPs
-
-    `ERPLAB > Compute averaged ERPs`
+* Select   `ERPLAB > Compute averaged ERPs`
 
 * Keep the default settings
 
@@ -313,7 +320,7 @@ Done.
 
 #### 16. Measuring amplitudes and latencies with the ERP Measurement Tool
 
-    `ERPLAB > ERP Measurement Tool`
+* Select `ERPLAB > ERP Measurement Tool`
 
 * **Measurements are carried out on the `.erp` file, *not* the `.set` file.**
 
