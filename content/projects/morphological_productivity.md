@@ -7,11 +7,9 @@ title: Morphologial Productivity
 weight: 3
 ---
 
-Words can be simple, consisting of a single morpheme such as "*lock*". Or they can be complex, with 2 or more morphemes such as "*lock-able*" or "*un-lock-able*".  
+Complex words may be recognized either as whole units retrieved from memory or via their constituents, and affix productivity, as reflected in type frequency, may be one dimension along which this distinction is drawn. 
 
 <!--more-->
 
-From these examples, we see that one way to think of a **morpheme**  as  "*the smallest meaningful unit in a given language*". 
+In this masked priming study, we measured ERP responses to stem targets preceded by complex primes with either high- or low-frequency affixes (e.g., “walker-walk” vs “cashier-cash”) and found that the magnitude of priming as measured by response times, as well as by the amplitude of the N250 component—an index of compositionality—was not significantly greater for primes with high frequency affixes than for primes with low frequency affixes. In contrast, these measures were modulated by the relative frequencies of the base and whole word form, i.e., the “parsability” of the derived word. We interpret the findings within a hierarchically organized dual-route model of complex word recognition. 
 
-**Inflectional** morphemes modify a word’s grammatical properties (e.g. tense, number, person, aspect) 
-For example "*lock*" → "*locked*" or "*locks*"  or "*locking*"
