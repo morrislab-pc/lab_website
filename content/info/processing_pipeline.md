@@ -318,7 +318,7 @@ Select  `ERPLAB > EEG Channel operations`
 
 * Save the erp file as `EID_##.erp`, (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`).
 
-#### 16. Measuring amplitudes and latencies with the ERP Measurement Tool
+#### 17. Measuring amplitudes and latencies with the ERP Measurement Tool
 
 * Select `ERPLAB > ERP Measurement Tool`
 
