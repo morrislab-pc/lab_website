@@ -33,30 +33,32 @@ We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
 * ERPLAB uses a similar set of conventions to store and manipulate averaged ERP waveforms.
 
 
-1. Open MATLAB by double clicking on the MATLAB icon on the desktop
+#### 1. Open MATLAB 
 
-2. Load the data
+* Double click on the MATLAB icon on the desktop
 
-3. Invoke EEGLAB by typing  `eeglab`  at the Matlab command prompt and pressing `ENTER`.
+#### 2. Load the data
 
-4. Import an `.vhdr` file into EEGLAB, where it becomes a *dataset*.
+* Invoke EEGLAB by typing  `eeglab`  at the Matlab command prompt and pressing `ENTER`.
+
+* Import an `.vhdr` file into EEGLAB, where it becomes a *dataset*.
 
   `File ➞ Import Data ➞ Using EEGLAB functions and plugins ➞ From Brain Vis. Rec. .vhdr file`
 
-5. Select the appropriate `.vhdr` file from your computer.
+* Select the appropriate `.vhdr` file from your computer.
 NOTE: If you change the name of the file after recording you will need to change the filename  in the `.vhdr` and `.vmrk`  files to match the new filename.  You can do this easily using any text editor program.
 
-6. Leave the `Interval` option and `Channels` options blank. By default this will import all channels and all samples.
+* Leave the `Interval` option and `Channels` options blank. By default this will import all channels and all samples.
 
-7. Save your file as  `EID_S##` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
+* When saving your file use the `BROWSE` button to navigate to the appropriate directory before saving
 
-8. When saving your file use the `BROWSE` button to navigate to the appropriate directory before saving
+* Save your file as  `EID_S##` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
 
-9. Once you have imported the raw EEG, you should view it to make sure everything looks OK.
+#### 3. Once you have imported the raw EEG, you should view it to make sure everything looks OK.
 
   `Plot > Channel data (scroll)`
 
-10. Filter the data
+#### 4. Filter the data
 
 * Filters are a form of controlled distortion. The more heavily you filter your data, the more you are distorting the data. However, mildly filtering the data removes a great deal of noise while causing minimal distortion, making it  worthwhile.  *In most cognitive experiments you will increase your statistical power by filtering the low frequencies with a cutoff of ~0.1 Hz and by filtering the high frequencies with a cutoff of ~30 Hz.*
 
@@ -68,15 +70,23 @@ NOTE: If you change the name of the file after recording you will need to change
 
   `ERPLAB > Filter and frequency tools > Filters for EEG data`.
 
-11. Downsample the data (optional)
+#### 5. Downsample the data (optional)
 
 * If the data are recorded at 500Hz or above, downsample the data to 250 Hz to save memory and disk storage. Make sure this is done **after** you filter, otherwise you can get **aliasing artifacts**. Downsampling makes the data files MUCH smaller, and things will run faster in subsequent processing steps.
 
   `Tools > Change sampling rate`.
 
-12. Save your file as  `EID_S##_flt_rsp.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
+* Save your file as  `EID_S##_flt_rsp.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
 
-13. Conduct ICA
+#### 6. Append the Channel Location file
+
+    `Edit > Channel locations`
+
+* EEGLAB and ERPLAB require electrode coordinates for conducting ICA as well as for plotting topographic maps; you will get an error message if you try to plot a topographic map before you've added the coordinates.
+
+* Click on `Plot 2-D` button to plot all the electrode locations and check for accuracy.  If any locations are missing,  use the `Look up locs` button to get the corresponding locations on BESA or MNI head model. This will add the coordinates to the current dataset.
+
+#### 7. Conduct ICA
 
 * Click on `Tools >> Decompose Data by ICA`.  This calls the function `pop_runica.m`.
 
@@ -120,21 +130,23 @@ Done.
 
 * The entire process may take anywhere from 5 minutes to an hour depending on the size of the dataset.
 
-* When matlab says ICA is done click Edit >> Channel locations >> ok >> ok
+* When MATLAB says ICA is done click `Edit` >> `Channel locations` >> `OK` >> `OK`
 
-* Click on plot >> component properties - when new window pops ip change the settings so it says 1:32 (32 being the total number of electrodes) on top and change 50 to 80 in the bottom - this tells matlab to plot all the electrodes in the ICA and to change the frequency in the x-axis to 80 so that we can visually inspect for line noise which usually peaks at 50 or 60hz
+* Click on `Plot` >> `component properties` - when new window pops UP change the settings so it says `1:32` (32 being the total number of electrodes) on top and change 50 to 80 in the bottom - this tells MATLAB to plot all the electrodes in the ICA and to change the frequency in the x-axis to 80 so that we can visually inspect for line noise which usually peaks at 50 or 60hz
 
-* Click on Tools >> Classify components using IClabel >> labek components >> ok - this tells you the percentage of each artifact or component in your data
+* Click on `Tools` >> `Classify components using IClabel` >> `Label Components` >> `OK` - this tells you the percentage of each artifact or component in your data
 
-* Visually insepct each individual channel or electrode for ocular artifacts relying on both your own wisdom of artifacts and the IClabel
+* Visually inspect each individual channel or electrode for ocular artifacts relying on both your own wisdom of artifacts and the IClabel
 
-* Rejection time! Reject channels with ocular artifacts by clicking on the accept button (it turn red and say reject) >> ok
+* Rejection time! Reject channels with ocular artifacts by clicking on the `Accept` button (it turns red and says reject) >> ok
 
-* Click on tools >> Remove components from data >> Plot single trial plots - enables you to see the change in the data (red before and black after)
+* Click on `Tools` >> `Remove components from data` >> `Plot single trial plots`. This enables you to see the change in the data (red before and black after)
 
-* Once you are satisfied with the ocular artifact rejection click accep and save the brand new ICA filtered dataset.
+* Once you are satisfied with the ocular artifact rejection click `Accept` and save the brand new ICA filtered dataset.
 
-14. Re-reference the data
+* Save your file as  `EID_S##_flt_rsp_ica.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
+
+#### 8. Re-reference the data
 
 * EEG recordings measure differences in electrical potentials between two points (Voltages) and are usually expressed in units of microvolts (μV). The signal displayed at any channel is the difference in electrical potential to some other recording site, generally the ground electrode.
 
@@ -158,7 +170,7 @@ Done.
 
 * Save your file as  `EID_S##_flt_rs_ref.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `ref` = re-referenced)
 
-14. Replace *one* bad channel (optional)
+#### 9. Replace *one* bad channel (optional)
 
   `ERPLAB > EEG Channel operations`
 
@@ -172,7 +184,7 @@ Done.
 
 * Save your file as  `EID_S##_flt_rs_ref_int.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rs` = resampled, `ref` = re-referenced. `int`= interpolated).
 
-15.  Replace *more than one* bad channel (optional)
+#### 10.  Replace *more than one* bad channel (optional)
 
 * If there is **MORE THAN ONE BAD CHANNEL** you will need to do *selective EEG channel interpolation* via the command `Selective EEG Channel Interpolation` using the command line interface.
 
@@ -206,7 +218,7 @@ Done.
 
 * Save your file as  `EID_S##_flt_rs_ref_int.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rs` = resampled, `ref` = re-referenced. `int`= interpolated).
 
-16. Create the Event List
+#### 11. Create the Event List
 
     `ERPLAB > EventList > Create EEG EVENTLIST`
 
@@ -224,7 +236,7 @@ Done.
 
 * Save your dataset as  `EID_S##_flt_rs_ref_int_el.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `chp` = channel operations applied, ref = re-referenced, `el` = eventlist attached )
 
-17. Assign Bins
+#### 12. Assign Bins
 
     `Run   ERPLAB > Assign bins (BINLISTER)`
 
@@ -236,11 +248,11 @@ Done.
 
 * Each set of curly brackets ("{ }") defines an event.  The event following the dot is the time-locking event, and the preceding and following sets of curly brackets define the events that must precede and follow the time-locking event.
 
-        Bin 1
+        bin 1
         Target followed by correct response
         .{100}
 
-You can also specify a range of stimuli for each bin
+* You can also specify a range of stimuli for each bin
 
         bin 1
         Related High
@@ -251,17 +263,17 @@ You can also specify a range of stimuli for each bin
         .{51-100}{250}
 
 
-* A good documentation for bdf syntax for ERPLAB can be found here: https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial
+* A good documentation for bdf syntax for ERPLAB can be found here: [Assigning Events to  Bins with BINLISTER: Tutorial](https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial)
 
 * Find and select the bin descriptor file you created for your experiment.
 
-* Check `Read the eventlist from the current dataset`, select `Write the results to the current dataset`,select `Warn if bins have already been assigned`, and select `Transfer the eventlist info to EEG.event`.
+* Check `Read the eventlist from the current dataset`, select `Write the results to the current dataset`, select `Warn if bins have already been assigned`, and select `Transfer the eventlist info to EEG.event`.
 
 * Save the binned Eventlist to a text file as `EID_S##_elist_bin.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`)
 
 * Click `Run`.
 
-18. Epoch data
+#### 13. Epoch data
 
     `ERPLAB > Extract bin-based epochs`
 
@@ -271,7 +283,7 @@ You can also specify a range of stimuli for each bin
 
 * Save your dataset as  `EID_S##_flt_rs_ref_int_el_ep.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `rs` = resampled, `flt` = filtered, `chp` = channel operations applied, `ref` = re-referenced, `el` = eventlist attached, `ep` = epoched)
 
-19. Perform artifact detection to reject bad epochs
+#### 14. Perform artifact detection to reject bad epochs
 
     `ERPLAB > Artifact detection in epoched data > Simple voltage threshold`
 
@@ -289,15 +301,9 @@ You can also specify a range of stimuli for each bin
 
 * Save your artifact detection results as  `EID_S##_arsum.txt` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `arsum` = artifact rejection summary )
 
-20. Append the Channel Location file
 
-    `Edit > Channel locations`
 
-* EEGLAB and ERPLAB require electrode coordinates for plotting topographic maps; you will get an error message if you try to plot a topographic map before you've added the coordinates.
-
-* Click on `Plot 2-D` button to plot all the electrode locations and check for accurancy.  If any locations are missing,  use the `Look up locs` button to get the corresponding locations on BESA or MNI head model. This will add the coordinates to the current dataset.
-
-21. Average the ERPs
+#### 15. Average the ERPs
 
     `ERPLAB > Compute averaged ERPs`
 
@@ -305,7 +311,7 @@ You can also specify a range of stimuli for each bin
 
 * Save the erp file as `EID_##.erp`, (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`).
 
-11. Measuring amplitudes and latencies with the ERP Measurement Tool
+#### 16. Measuring amplitudes and latencies with the ERP Measurement Tool
 
     `ERPLAB > ERP Measurement Tool`
 
@@ -329,17 +335,25 @@ You can also specify a range of stimuli for each bin
 
 * Save output file as `EID_#s_CN.txt`, e.g `M18_24_N400.txt` where `EID` = experiment ID, `#s` is the total number of subjects that have been run in the study, and `CN` is the component name e.g. N400, P300 etc.
 
-# Generating a Grand Average ERP
+#### 17. Generating a Grand Average ERP
 
-Once the pre-processing and erpset generation have been completed for all of the individual datasets, the ERPs from each subject and condition are averaged together to create a ‘grand-average’ ERP.
+* Once the pre-processing and erpset generation have been completed for all of the individual datasets, the ERPs from each subject and condition are averaged together to create a ‘grand-average’ ERP.
 
-Select the files to be averaged
-1. ERPLAB>Average Across ERPsets (Grand Average)
+* Select the files to be averaged
 
-    * When the *GRAND AVERAGER GUI* appears, select the ‘From ERPset files’ option and click ‘Add Erpset’. This will open a file browser that can be used to navigate the directory containing the ERPset files created. Select all ERPs from the project of interest.
+ `ERPLAB` > `Average Across ERPsets` (Grand Average)
 
-    * Select the ‘Compute point-by-point standard error of the mean’ option and leave all other default selections. Click ‘RUN’ to generate the grand average.
+* When the *GRAND AVERAGER GUI* appears, select the `From ERPset files` option and click `Add Erpset`. This will open a file browser that can be used to navigate the directory containing the ERPset files created. Select all ERPs from the project of interest.
 
-    * When the *Save Erpset GUI* dialog appears, select ‘Create a new erpset’ and then enter a suitable name for the grand average. Also select ‘Save ERP as’ and enter a similar name for the file that will be saved to disk. Click ‘OK’.
+* Select the `Compute point-by-point standard error of the mean` option and leave all other default selections.
 
-Steps for different ways to visualize the Grand Average ERP can be found in *EEG Methods for the Psychological Sciences* beginning on page 80.
+* Click `RUN` to generate the grand average.
+
+* When the *Save Erpset GUI* dialog appears, select `Create a new erpset` and then enter a suitable name for the grand average. Also select `Save ERP as` and enter a similar name for the file that will be saved to disk. Click `OK`.
+
+* Steps for different ways to visualize the Grand Average ERP can be found in [*EEG Methods for the Psychological Sciences* by Cheryl L. Dickter and Paul D Kieffaber](https://us.sagepub.com/en-us/nam/eeg-methods-for-the-psychological-sciences/book238043) beginning on page 80.
+
+
+# Machine Learning
+
+[Mahine Learning Approaches to Analyzing EEG Data](https://neuro.inf.unibe.ch/AlgorithmsNeuroscience/Tutorial_files/Introduction.html)
