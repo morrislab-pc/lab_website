@@ -342,7 +342,7 @@ Select  `ERPLAB > EEG Channel operations`
 
 * Save output file as `EID_#s_CN.txt`, e.g `M18_24_N400.txt` where `EID` = experiment ID, `#s` is the total number of subjects that have been run in the study, and `CN` is the component name e.g. N400, P300 etc.
 
-#### 17. Generating a Grand Average ERP
+#### 18. Generating a Grand Average ERP
 
 * Once the pre-processing and erpset generation have been completed for all of the individual datasets, the ERPs from each subject and condition are averaged together to create a ‘grand-average’ ERP.
 

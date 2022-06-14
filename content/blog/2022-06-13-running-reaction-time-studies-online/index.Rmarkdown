@@ -1,0 +1,12 @@
+---
+title: Running reaction time studies online?
+author: R package build
+date: '2022-06-13'
+slug: []
+categories: []
+tags: []
+---
+
+I have decided that I should try to keep the website fresh by writing a weekly blog post on whatever research issue I'm dealing with at the moment.  So here goes.  This is about running online studies. 
+
+How difficult is it?
