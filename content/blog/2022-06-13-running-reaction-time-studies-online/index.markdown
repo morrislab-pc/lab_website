@@ -7,6 +7,6 @@ categories: []
 tags: []
 ---
 
-I have decided that I should try to keep the website fresh by writing a weekly blog post on whatever research issue I'm dealing with at the moment.  So here goes.  This is about running online studies. 
+![online experiment](images/online.jpg)I have decided that I should try to keep the website fresh by writing a weekly blog post on whatever research issue I'm dealing with at the moment. 
 
-How difficult is it?
+This week's topic... how difficult is it to run online studies?
