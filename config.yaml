@@ -23,14 +23,15 @@ params:
       url: about/
     - name: Research Projects
       url: projects/
+    - name: General Lab Information
+      url: info/
     - name: Our Current Students
       url: team/
     - name: Our Graduates
       url: graduates/
     - name: Tutorials
       url: tutorials/
-    - name: General Lab Information
-      url: info/
+
     - name: Get in touch
       url: contact/
   sidebarAbout:
