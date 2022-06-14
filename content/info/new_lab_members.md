@@ -18,5 +18,6 @@ In our lab, we focus on questions about how we read, and in particular what kind
 
 You can learn more about ERPs by taking [Steve Luck's free online course](https://courses.erpinfo.org/courses/Intro-to-ERPs) designed for people with no prior ERP experience who want to learn the basics of ERPs. It typically takes 3-5 hours to complete.
 
+Here is a [very condensed](https://tinyurl.com/bp5xapx6) overview also by Steve Luck.
 
 Feel free to explore the tutorial links on this page as well as the other tutorials and guides on our website!
