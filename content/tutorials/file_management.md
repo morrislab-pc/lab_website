@@ -1,7 +1,7 @@
 ---
 date: "2016-11-05T18:25:22+05:30"
 draft: false
-image: img/tutorials/file_management.png
+image: img/tutorials/file_management.jpg
 showonlyimage: false
 title: Managing Files
 slug: file_managment
@@ -10,10 +10,11 @@ weight: 1
 
 
 
-Keeping your electronic documents organized can be quite a chore in today's connected world. Wherever the documents are stored it is important to keep them organized and up-to-date. 
+Keeping your electronic documents organized can be quite a chore in today's connected world. 
 
 <!--more-->
 
+Wherever the documents are stored it is important to keep them organized and up-to-date. That's where [file management](https://www.techopedia.com/definition/1832/file-management-system) comes in.  Here are some resources for learning how to work with he files on your computer:
 
 ### Windows
 
