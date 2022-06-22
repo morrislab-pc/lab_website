@@ -25,6 +25,8 @@ Wherever the documents are stored it is important to keep them organized and up-
 
 [Understanding the File And Folder Structure Of Your Mac](https://www.youtube.com/watch?v=3TAEC-1YUZw)
 
+[How to Move Files and Folders on Your Mac](https://www.youtube.com/watch?v=w1izlhicjvQ)
+
 
 ### More about file management
 
