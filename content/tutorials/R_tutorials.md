@@ -28,3 +28,7 @@ R is not just a a statistics application, but a full-fledged programming languag
 [R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz/index.html)
 
 [Learning statistics with R: A tutorial for psychology students and other beginners by Danielle Navarro](https://learningstatisticswithr.com/book/)
+
+# Principle Components Analysis
+
+[R in Action: Chapter 14 Principle Components and Factor Analysis](https://www.manning.com/books/r-in-action#toc)
