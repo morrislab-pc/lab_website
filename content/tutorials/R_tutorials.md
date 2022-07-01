@@ -35,4 +35,7 @@ R is not just a a statistics application, but a full-fledged programming languag
 
 ### Principle Components Analysis
 
+[A Step-by-Step Explanation of Principal Component Analysis ](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
+
 [R in Action: Chapter 14 Principle Components and Factor Analysis by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/chapter-14/)
+
