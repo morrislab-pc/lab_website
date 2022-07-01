@@ -29,8 +29,10 @@ R is not just a a statistics application, but a full-fledged programming languag
 
 [Learning statistics with R: A tutorial for psychology students and other beginners by Danielle Navarro](https://learningstatisticswithr.com/book/)
 
-[R in Action](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
+[R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
+
+[R in Action v.2 by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/welcome/v-9/1)
 
 ### Principle Components Analysis
 
-[R in Action: Chapter 14 Principle Components and Factor Analysis](https://livebook.manning.com/book/r-in-action-third-edition/chapter-14/)
+[R in Action: Chapter 14 Principle Components and Factor Analysis by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/chapter-14/)
