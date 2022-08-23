@@ -21,6 +21,8 @@ R is not just a a statistics application, but a full-fledged programming languag
 
 [R for Non-Programmers: A Guide for Social Scientists by Daniel Dauber](https://bookdown.org/daniel_dauber_io/r4np_book/)
 
+[A ModernDive into R and the Tidyverse by Chester Ismay and Albert Y. Kim](https://moderndive.netlify.app/index.html)
+
 [Advanced R by Hadley Wickham](https://adv-r.hadley.nz/index.html)
 
 [Advanced R Solutions](https://advanced-r-solutions.rbind.io) This is the website for “Advanced R Solutions” which provides solutions to the exercises from Hadley Wickham’s Advanced R, 2nd edition.
