@@ -156,7 +156,9 @@ to update the central repository with our changes.
 * Create a personal access token for authentication:
 `usethis::create_github_token() `
 
-* In case `usethis` version < 2.0.0 `usethis::browse_github_token()` (or even better update `usethis`!)
+* Call `gitcreds::gitcreds_set()` to register this token in the local Git credential store
+  
+OR
 
 * Set personal access token:
 `credentials::set_github_pat("YourPAT")`
@@ -167,6 +169,29 @@ to update the central repository with our changes.
 * Store your personal access token with `GITHUB_PAT=xxxyyyzzz` and make sure `.Renviron` ends with a newline.
 
 * Restart R!
+
+## Configure Git to use the osxkeychain
+
+* By default, git credentials are not cached so you need to tell Git if you want to avoid having to provide them each time Github requires you to authenticate. On Mac, Git comes with an “osxkeychain” mode, which caches credentials in the secure keychain that’s attached to your system account.
+
+* You can tell Git you want to store credentials in the osxkeychain by running the following:- 
+`git config --global credential.helper osxkeychain`
+
+* Add your access token to the osxkeychain
+
+* Now issue a command to interact with Github which requires authentication, eg. `git clone` or `git pull`. 
+
+* When you are prompted to supply your *Password for 'https://username@github.com'* : you enter your **access token** instead. 
+
+* Your token should now get cached in the osxkeychain automatically.
+
+    `$ git clone https://github.com/username/repo.git`
+
+    `Cloning into 'repo'...`
+    
+    `Username for 'https://github.com': your_github_username`
+    
+    `Password for 'https://username@github.com': your_access_token`
 
 
 ## More on Git (via Software Carpentry)
