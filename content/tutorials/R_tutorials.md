@@ -17,11 +17,37 @@ R is not just a a statistics application, but a full-fledged programming languag
 [RStudio](https://www.rstudio.com/products/rstudio/) is a free, open source IDE (integrated development environment) for R. (You must install R before you can install RStudio.) Its interface is organized so that the user can clearly view graphs, data tables, R code, and output all at the same time. It allows users to import CSV, Excel, SAS (*.sas7bdat), SPSS (*.sav), and Stata (*.dta) files into R without having to write the code to do so.
 
 
-**Learn more about R using these books and tutorials**
+## Learn more about R using these books and tutorials
 
-[R for Non-Programmers: A Guide for Social Scientists by Daniel Dauber](https://bookdown.org/daniel_dauber_io/r4np_book/)
+### Introductory Texts
 
-[A ModernDive into R and the Tidyverse by Chester Ismay and Albert Y. Kim](https://moderndive.netlify.app/index.html)
+[*R for Non-Programmers: A Guide for Social Scientists* by Daniel Dauber](https://bookdown.org/daniel_dauber_io/r4np_book/)
+
+This introductory textbook does not assume or expect any prior knowledge or skills in programming or statistical analysis. Instead, this book offers a comprehensive entry to R programming for novices and more experienced analysts wishing to migrate from other computational software.
+
+[*Statistical Inference via Data Science: A ModernDive into R and the Tidyverse* by Chester Ismay and Albert Y. Kim](https://moderndive.netlify.app/index.html)
+
+In this book, students gain experience with the whole data analysis pipeline. In particular, *ModernDive* is one of the few intro stats textbooks that teaches students how to wrangle data. *ModernDive* carefully walks the students through each new function it presents and provides frequent reinforcement through the many Learning checks dispersed throughout the chapters.
+
+
+[*Data Analysis and Processing with R based on IBIS data* by Kevin Donovan](https://bookdown.org/kdonovan125/ibis_data_analysis_r4/)
+
+Donovan notes that much of the and content and structure of these tutorials will be based on Hadley Wickham’s excellent book *R for Data Science*. For those who want more detail and some exercises for the techniques detailed here, he recommmends going through Wickham’s book (see link in "Advanced Texts" below).
+ 
+ [*Data Science in R: A Gentle Introduction* by James Scott](https://bookdown.org/jgscott/DSGI/)
+
+This book assumes no knowledge of R. It is structured as a series of walk-through lessons that cover both the core ideas of data science as well as the concrete software skills that will help translate those ideas into practice.
+
+
+[*R Software Handbook*](https://bookdown.org/aschmi11/RESMHandbook/)
+
+This is an R handbook for ESM (Evaluation, Statistics, and Methodology) students prepared by faculty at the University of Tennessee, Knoxville. This handbook takes students from installation and set up, to data cleaning, analysis, visualization, and reporting. This guide uses survey data from the [RStudio Learning R Survey](https://github.com/rstudio/r-community-survey). It also includes data from built-in R data sets and simulated data.
+
+[*Learning statistics with R: A tutorial for psychology students and other beginners* by Danielle Navarro](https://learningstatisticswithr.com/book/)
+
+In early 2011, Danielle Navarro started teaching an introductory statistics class for psychology students offered at the University of Adelaide, using the R statistical package as the primary tool. The lecture notes for the class were expanded into a book which is freely available, and as of version 0.6 it is released under a creative commons licence (CC BY-SA 4.0)
+
+### Advanced Texts 
 
 [Advanced R by Hadley Wickham](https://adv-r.hadley.nz/index.html)
 
@@ -29,7 +55,7 @@ R is not just a a statistics application, but a full-fledged programming languag
 
 [R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz/index.html)
 
-[Learning statistics with R: A tutorial for psychology students and other beginners by Danielle Navarro](https://learningstatisticswithr.com/book/)
+
 
 [R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
 
