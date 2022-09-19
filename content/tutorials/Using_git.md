@@ -156,7 +156,9 @@ to update the central repository with our changes.
 * Create a personal access token for authentication:
 `usethis::create_github_token() `
 
-* In case `usethis` version < 2.0.0 `usethis::browse_github_token()` (or even better update `usethis`!)
+* Call `gitcreds::gitcreds_set()` to register this token in the local Git credential store
+  
+OR
 
 * Set personal access token:
 `credentials::set_github_pat("YourPAT")`
