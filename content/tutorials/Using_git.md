@@ -194,8 +194,6 @@ OR
     `Password for 'https://username@github.com': your_access_token`
 
 
-
-
 ## More on Git (via Software Carpentry)
 
 [Version Control with Git](https://swcarpentry.github.io/git-novice/)
