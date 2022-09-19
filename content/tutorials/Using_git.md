@@ -1,5 +1,5 @@
 ---
-date: '2021-11-10'
+date: "`r Sys.Date()`"
 draft: false
 image: img/tutorials/Git-Logo-2Color.png
 showonlyimage: false
@@ -46,14 +46,29 @@ To use git you should:
   - Finally, you can make a **pull request**
 to update the central repository with our changes.
 
+## Clone a repository from GitHub. 
 
-2. Cloning a repository from GitHub
+A repository on GitHub exists as a **remote repository**. To work on the files on your own computer, you should **clone** the repository which will create a local copy on your computer. 
 
-  - A repository on GitHub exists as a **remote repository**.
+Choose *one* of the following methods:
 
-  - To work on the files on your own computer, you should **clone** the repository which will create a local copy on your computer.  
+1. R Studio Method
 
-  - To clone a repository, first find the **URL** for the repository on GitHub
+  - Find and copy the **URL** for the repository on GitHub
+
+  ![Find the URL for the repository on GitHub](/img/tutorials/git-url.png)
+
+  - Run the following command:
+  
+  `usethis::create_from_github("https://github.com/YOU/YOUR_REPO.git", destdir = "~/path/to/where/you/want/the/local/repo/")`
+
+The first argument is the URL that you copied from GitHub. The `destdir` argument specifies the parent directory where you want the new folder (and local Git repo) to live. If you don’t specify `destdir`, usethis defaults to the desktop.
+
+
+2. Generic Method
+
+
+  - Find the **URL** for the repository on GitHub
 
   ![Find the URL for the repository on GitHub](/img/tutorials/git-url.png)
 
@@ -62,7 +77,7 @@ to update the central repository with our changes.
   - Once in that directory,  type `git clone https: [your_repository]`.  For example `git clone https://github.com/joannamorris/lab_tutorials.git`
 
 
-3. A note on 'forking' vs 'cloning'
+##  A note on 'forking' vs 'cloning'
 
   - A **fork** is a copy of a repository that is on your GitHub account, as opposed to the account of the original repository owner.
 
@@ -163,10 +178,12 @@ OR
 * Set personal access token:
 `credentials::set_github_pat("YourPAT")`
 
-* Or store it manually in `.Renviron`:
-`usethis::edit_r_environ()`
 
-* Store your personal access token with `GITHUB_PAT=xxxyyyzzz` and make sure `.Renviron` ends with a newline.
+* Verify settings:
+`usethis::git_sitrep()` 
+
+prints info about your current Git, gert, and GitHub setup. "Sitrep" is short for "situation report".
+
 
 * Restart R!
 
@@ -177,9 +194,8 @@ OR
 * You can tell Git you want to store credentials in the osxkeychain by running the following:- 
 `git config --global credential.helper osxkeychain`
 
-* Add your access token to the osxkeychain
 
-* Now issue a command to interact with Github which requires authentication, eg. `git clone` or `git pull`. 
+* To actually *add* your credentials to the osxkeychain you need to  issue a command to interact with Github which requires authentication, e.g. `git clone` or `git pull`. 
 
 * When you are prompted to supply your *Password for 'https://username@github.com'* : you enter your **access token** instead. 
 
