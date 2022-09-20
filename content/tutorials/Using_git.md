@@ -192,7 +192,6 @@ prints info about your current Git, gert, and GitHub setup. "Sitrep" is short fo
 * You can tell Git you want to store credentials in the osxkeychain by running the following:- 
 `git config --global credential.helper osxkeychain`
 
-
 * To actually *add* your credentials to the osxkeychain you need to  issue a command to interact with Github which requires authentication, e.g. `git clone` or `git pull`. 
 
 * When you are prompted to supply your *Password for 'https://username@github.com'* : you enter your **access token** instead. 
