@@ -178,12 +178,10 @@ OR
 * Set personal access token:
 `credentials::set_github_pat("YourPAT")`
 
-
 * Verify settings:
 `usethis::git_sitrep()` 
 
 prints info about your current Git, gert, and GitHub setup. "Sitrep" is short for "situation report".
-
 
 * Restart R!
 
