@@ -61,6 +61,12 @@ In early 2011, Danielle Navarro started teaching an introductory statistics clas
 
 [R in Action v.2 by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/welcome/v-9/1)
 
+### Graphics
+
+[R Graphics Cookbook, 2nd edition by Winston Chang](https://r-graphics.org)
+
+The *R Graphics Cookbook* is a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly, without having to comb through all the details of R’s graphing systems. Each recipe tackles a specific problem with a solution you can apply to your own project, and includes a discussion of how and why the recipe works.
+
 ### Principle Components Analysis
 
 [A Step-by-Step Explanation of Principal Component Analysis ](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
