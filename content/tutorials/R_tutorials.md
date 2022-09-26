@@ -61,7 +61,19 @@ In early 2011, Danielle Navarro started teaching an introductory statistics clas
 
 [R in Action v.2 by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/welcome/v-9/1)
 
-### Principle Components Analysis
+### Graphics
+
+[R Graphics Cookbook, 2nd edition by Winston Chang](https://r-graphics.org)
+
+The *R Graphics Cookbook* is a practical guide that provides more than 150 recipes to help you generate high-quality graphs quickly, without having to comb through all the details of R’s graphing systems. Each recipe tackles a specific problem with a solution you can apply to your own project, and includes a discussion of how and why the recipe works.
+
+#### Plotting Means and Error Bars on a Bar Graph
+
+[Plotting means and error bars in `ggplot2()`](http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/)
+
+### Principle Components Analysis in R
+
+Principal component analysis, or PCA, is a dimensionality-reduction method that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one that still contains most of the information in the large set.
 
 [A Step-by-Step Explanation of Principal Component Analysis ](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
 

@@ -178,12 +178,10 @@ OR
 * Set personal access token:
 `credentials::set_github_pat("YourPAT")`
 
-
 * Verify settings:
 `usethis::git_sitrep()` 
 
 prints info about your current Git, gert, and GitHub setup. "Sitrep" is short for "situation report".
-
 
 * Restart R!
 
@@ -193,7 +191,6 @@ prints info about your current Git, gert, and GitHub setup. "Sitrep" is short fo
 
 * You can tell Git you want to store credentials in the osxkeychain by running the following:- 
 `git config --global credential.helper osxkeychain`
-
 
 * To actually *add* your credentials to the osxkeychain you need to  issue a command to interact with Github which requires authentication, e.g. `git clone` or `git pull`. 
 
