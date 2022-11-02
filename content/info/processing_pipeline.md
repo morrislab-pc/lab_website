@@ -26,6 +26,8 @@ We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
 
 * Each processing step typically operates on the current dataset, creates a new dataset based on some set of operations, and then makes the new dataset the current dataset.
 
+* ICA Indepedent Component Analysis) corrects ocular occular artifacts using a blind source separation technique to separate independent and mixed signals. In "noisy channels", ICA distinguishes indpependent signals from mixed signals. 
+
 * All of the loaded datasets are available from the Datasets menu (see screenshot below), which allows the user to select which dataset is the current dataset (and therefore available from the EEG structure).  This allows the user to apply a series of processing steps to a set of EEG data, save the intermediate steps as cached datasets (with or without storing them as files on disk) and then quickly move back and forth between them.
 
 * ERPLAB uses a similar set of conventions to store and manipulate averaged ERP waveforms.
@@ -88,7 +90,7 @@ NOTE: If you change the name of the file after recording you will need to change
 
 #### 7. Conduct ICA
 * Before beginning, watch "ICA applied to EEG" series, https://www.youtube.com/playlist?list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc.
-* 
+
 * Click on `Tools >> Decompose Data by ICA`.  This calls the function `pop_runica.m`.
 
 * Make sure that `runica` is selected next to "ICA algorithm to use (click to select)"  then press `Ok`.
@@ -129,9 +131,11 @@ Done.
 ```
 * Wait until `Done` appears in the console window.  If you need to interrupt the process, you can do so by pressing the `interrupt` button which appears in a separate window ![interrupt button](/img/tutorials/interrupt.png)
 
-* The entire process may take anywhere from 5 minutes to an hour depending on the size of the dataset.
-
 * When MATLAB says ICA is done click `Edit` >> `Channel locations` >> `OK` >> `OK`
+
+* Click on 'Plot' >> 'Channel data (scroll)'. This allows you to individually inspect for ocular artifacts
+
+* Click on 'Plot' >> 'component properties (scroll)'. This allows you to visualize the time course of ICA components
 
 * Click on `Plot` >> `component properties` - when new window pops UP change the settings so it says `1:32` (32 being the total number of electrodes) on top and change 50 to 80 in the bottom - this tells MATLAB to plot all the electrodes in the ICA and to change the frequency in the x-axis to 80 so that we can visually inspect for line noise which usually peaks at 50 or 60hz
 
@@ -139,7 +143,7 @@ Done.
 
 * Visually inspect each individual channel or electrode for ocular artifacts relying on both your own wisdom of artifacts and the IClabel
 
-* Rejection time! Reject channels with ocular artifacts by clicking on the `Accept` button (it turns red and says reject) >> ok
+* Rejection time! Reject channels with ocular artifacts, as blinks, by clicking on the `Accept` button (it turns red and says reject) >> ok
 
 * Click on `Tools` >> `Remove components from data` >> `Plot single trial plots`. This enables you to see the change in the data (red before and black after)
 
