@@ -87,7 +87,8 @@ NOTE: If you change the name of the file after recording you will need to change
 * Click on `Plot 2-D` button to plot all the electrode locations and check for accuracy.  If any locations are missing,  use the `Look up locs` button to get the corresponding locations on BESA or MNI head model. This will add the coordinates to the current dataset.
 
 #### 7. Conduct ICA
-
+* Before beginning, watch "ICA applied to EEG" series, https://www.youtube.com/playlist?list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc.
+* 
 * Click on `Tools >> Decompose Data by ICA`.  This calls the function `pop_runica.m`.
 
 * Make sure that `runica` is selected next to "ICA algorithm to use (click to select)"  then press `Ok`.
