@@ -55,6 +55,36 @@ NOTE: If you change the name of the file after recording you will need to change
 #### 3. Once you have imported the raw EEG, you should view it to make sure everything looks OK.
 
   `Plot > Channel data (scroll)`
+  
+* To see all the electrode traces you may need to remove the DC offset by clicking on:
+  
+  `Display > Remove DC Offset`
+  
+*  To **increase** the scale of the voltage and hence decrease the size of the amplitudes on the screen, or to **decrease** the voltage scale and hence increase the size of the EEG amplitude on the screen you can enter a value into  “Scale” edit-text box value (you can also click on the ”-“ or "+" button) and press the Enter key to update the scrolling window.
+
+* To adjust the time time range displayed click on
+
+  `Settings >  Time range to display`
+  
+  and enter the desired window length in seconds.
+  
+#### 4.  If there are sections of the EEG that do not contain triggers--i.e. sections of the recording where the participant is not actually doing the task--delete these sections to save space.
+
+* You can delete sections of the eeg by clicking on 
+
+`Tools > Inspect/reject data by eye`
+
+* To erase a selected portion of the data, drag the mouse across the time region of interest. You can mark multiple regions for rejection in this way. 
+
+* To select portions of data that extend out of the plotting window,  drag the mouse over the new region and connect it to a previously marked region.
+
+* To deselect a portion of the data, simply click on the selected region. 
+
+* After marking portions of the data for rejection, press REJECT and a new data set will be created with the rejected data omitted.
+
+* EEGLAB  inserts `boundary` events where data have been rejected,
+
+* One strategy to remove data is to stack the data using the Stack button of the plot windown (upper right corner) and display about 30 seconds of data. This makes it easy to spot and remove trigger-less stretches of data.
 
 #### 4. Filter the data
 
