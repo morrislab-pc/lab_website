@@ -35,7 +35,7 @@ The most obvious shortcoming is that you can only navigate one directory at a ti
 
 On Windows [One Commander](https://www.onecommander.com) is a free replacement for *File Explorer* that allows for dual-pane navigation that allows you to open two different directories in the same window and move files quickly.
 
-On [MacOS Commander]One(https://mac.eltima.com/file-manager.html), also free, provides similar features.
+On MacOS [Commander One](https://mac.eltima.com/file-manager.html), also free, provides similar features.
 
 ### More about file management
 
