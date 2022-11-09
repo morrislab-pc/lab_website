@@ -9,12 +9,14 @@ weight: 1
 ---
 
 
+Efficient file management is **crucial** to enable the lab to run smoothly
 
-Keeping your electronic documents organized can be quite a chore in today's connected world. 
 
 <!--more-->
 
-Wherever the documents are stored it is important to keep them organized and up-to-date. That's where [file management](https://www.techopedia.com/definition/1832/file-management-system) comes in.  Here are some resources for learning how to work with he files on your computer:
+However, keeping  electronic documents organized can be quite a chore in today's connected world.  That's where [file management](https://www.techopedia.com/definition/1832/file-management-system) comes in.
+
+Here are some resources for learning how to work with the files on both Windows and MacOS machines:
 
 ### Windows
 
@@ -27,6 +29,13 @@ Wherever the documents are stored it is important to keep them organized and up-
 
 [How to Move Files and Folders on Your Mac](https://www.youtube.com/watch?v=w1izlhicjvQ)
 
+Both the *Finder* on MacOS and *FileExplorer* on Windows are limited in their functionality. 
+
+The most obvious shortcoming is that you can only navigate one directory at a time. You need to open multiple windows in order to drag and drop files from one folder to another but that is unintuitive at best. 
+
+On Windows [One Commander](https://www.onecommander.com) is a free replacement for *File Explorer* that allows for dual-pane navigation that allows you to open two different directories in the same window and move files quickly.
+
+On [MacOS Commander]One(https://mac.eltima.com/file-manager.html), also free, provides similar features.
 
 ### More about file management
 
@@ -35,8 +44,6 @@ Wherever the documents are stored it is important to keep them organized and up-
 [How to Create a Document Management System](https://www.thebalancesmb.com/creating-a-document-management-system-2948084)
 
 [10 Tips for Managing Files or Folders in Finder on Your Mac](https://www.makeuseof.com/finder-file-management-tips-mac/)
-
-
 
 
 
