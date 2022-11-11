@@ -35,7 +35,7 @@ To record brainwaves from participants we use the **BrainVision Recorder** softw
 
 - In the `Data File Settings` dialog box... 
 
-- ...the `Raw File Folder` setting specifies the destination directory for the EEG data. By default this is `C:\Vision\Raw Files`.  You should specify a **sub-directory* for each specific project, e.g. `C:\Vision\Raw Files\M21`
+- ...the `Raw File Folder` setting specifies the destination directory for the EEG data. By default this is `C:\Vision\Raw Files`.  You should specify a **sub-directory** for each specific project, e.g. `C:\Vision\Raw Files\M21`
 
 - The `Automatic Filename Generation` setting generates automatic file names consisting of a `Prefix` and `Counter`. 
 
