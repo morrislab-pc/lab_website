@@ -8,14 +8,14 @@ weight: 0
 slug: recording_procedures
 ---
 
-To record brainwaves from participants we use the *BrainVision Recorder- software program from Brain Products.
+To record brainwaves from participants we use the **BrainVision Recorder** software program from Brain Products.
 
 <!--more-->
 
 
-- You must start *Recorder- in administrator mode..
+- You must start *Recorder* in administrator mode..
 
-- Right-click on the *Recorder- icon and choose `Run as administrator`.
+- Right-click on the *Recorder* icon and choose `Run as administrator`.
 
 ### The toolbar
 
@@ -29,7 +29,7 @@ To record brainwaves from participants we use the *BrainVision Recorder- softwar
 
 ###  `workspace` files 
 
-- A **workspace*- saves all amplifier-specific settings and some basic project settings. Workspace files have the extension `.rwksp`
+- A **workspace** saves all amplifier-specific settings and some basic project settings. Workspace files have the extension `.rwksp`
 
 - Open the default 32-channel workspace and edit it to create  a new workspace for **each project**. 
 
@@ -56,13 +56,10 @@ To record brainwaves from participants we use the *BrainVision Recorder- softwar
 
 
 
-
-
-
 ###  Checking Impedences and Recording Data
 
 - To check if the amplifier is working properly click on the `Start Monitoring` button.
 
 - If no errors are encountered, EEG waves appear in the Recorder window running from left to right.
 
-- Note: At the end of the channel list there is a **scaling bar* that helps you to assess the signal size.
+- Note: At the end of the channel list there is a **scaling bar** that helps you to assess the signal size.
