@@ -108,7 +108,15 @@ NOTE: If you change the name of the file after recording you will need to change
 
 * EEGLAB  inserts `boundary` events where data have been rejected,
 
-* One strategy to remove data is to stack the data using the Stack button of the plot windown (upper right corner) and display about 30 seconds of data. This makes it easy to spot and remove trigger-less stretches of data.
+* One strategy to remove data is to stack the data using the Stack button of the plot window (upper right corner) and display about 30 seconds of data. This makes it easy to spot and remove trigger-less stretches of data.
+
+##### Delete  Time Segments automatically
+
+It is sometimes useful to delete "crazy" sections of the continuous EEG (e.g., prior to performing ICA). Procedures for this are described on this page. Note that these procedures actually delete sections of data (as opposed to simply marking them for rejection). Note that you should not use these procedures for "ordinary" artifacts (eye blinks, etc.
+
+[This page](https://github.com/lucklab/erplab/wiki/Preprocessing-Continuous-EEG-Data#delete-time-segments) details one way of doing this.  The section belows details another.
+
+
 
 * * Save your file as  `EID_S##_flt_rsp_trm.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled, `trm` = trimmed).
 
