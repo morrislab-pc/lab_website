@@ -24,7 +24,7 @@ To record brainwaves from participants we use the **BrainVision Recorder** softw
   ![toolbar](/img/info/toolbar.png)
   
 - From left to right the buttons are (1) `Start Monitoring` (2) `Impedence Check`, (3) `Generate square wave` (4) `Start Recording` (5) `Pause Recording` (6) `Stop Recording` (7) `Stop Monitoring` (8) `Zoom Out` (9) `Zoom In` (10) `Increase the scaling factor` (11) `Decrease the scaling factor` (12) `Decrease the number of channels shown` (13) `Increase the number of channels shown` (14) `Switch to the next group of channels` (15) `Switch to the prior group of channels` (16) `Baseline Correction in Display` (note only the baseline of the display is changed, and not the actual data)
-  
+
   
 
 ###  `workspace` files 
