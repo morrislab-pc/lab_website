@@ -74,6 +74,10 @@ The *R Graphics Cookbook* is a practical guide that provides more than 150 recip
 
 [Plotting means and error bars in `ggplot2()`](http://www.cookbook-r.com/Graphs/Plotting_means_and_error_bars_(ggplot2)/)
 
+[Plotting with colour in `ggplot2` from datanovia.com](https://www.datanovia.com/en/blog/ggplot-colors-best-tricks-you-will-love/#viridis-color-palettes)
+
+[Plotting with colour in `ggplot2` from sthda.com](http://www.sthda.com/english/wiki/ggplot2-colors-how-to-change-colors-automatically-and-manually)
+
 ### Principle Components Analysis in R
 
 Principal component analysis, or PCA, is a dimensionality-reduction method that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one that still contains most of the information in the large set.
