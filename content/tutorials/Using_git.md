@@ -210,3 +210,11 @@ prints info about your current Git, gert, and GitHub setup. "Sitrep" is short fo
 ## More on Git (via Software Carpentry)
 
 [Version Control with Git](https://swcarpentry.github.io/git-novice/)
+
+
+
+# Accessing GitHub via SSH
+
+You can also [connect to GitHub using the Secure Shell Protocol (SSH)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), which provides a secure channel over an unsecured network.
+
+
