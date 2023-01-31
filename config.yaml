@@ -31,8 +31,11 @@ params:
       url: graduates/
     - name: Tutorials
       url: tutorials/
+    - name: Lab Blog
+      url: blog
     - name: Get in touch
       url: contact/
+
   sidebarAbout:
     - This is the website for the Human Psychophysiology Lab at Providence College.
 
