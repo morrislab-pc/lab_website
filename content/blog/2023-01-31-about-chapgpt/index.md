@@ -8,6 +8,6 @@ tags: []
 image: img/blog/chatgpt.jpg
 ---
 
-[ChatGPT](https://chat.openai.com/chat) is a large language model developed by OpenAI. It uses deep learning techniques to generate human-like text based on a given prompt.
+[ChatGPT](https://chat.openai.com/chat) is a large language model developed by OpenAI. It uses [deep learning](https://www.mathworks.com/discovery/deep-learning.html) techniques to generate human-like text based on a given prompt.
 
 The model is trained on a large dataset of text and learns to predict words in a sentence based on context.
