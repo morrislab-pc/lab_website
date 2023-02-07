@@ -17,11 +17,24 @@ When several people collaborate in the same project, it’s possible to accident
 
 Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
 
+# Installing `git`
+
 To use git you should:
 
-1. Sign up for a GitHub account
+1. Make sure that you have git installed on your computer.
 
-2. In your computer's **file browser** ensure that you can see:
+There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
+
+`$ git --version`
+
+If you don’t have it installed already, it will prompt you to install it.
+
+There are also a few ways to install Git on Windows. The most official build is available for download on the [Git website](https://git-scm.com/download/win) and the download will start automatically. Note that this is a project called [Git for Windows](https://gitforwindows.org), which is separate from Git itself.
+
+
+2. Sign up for a GitHub account
+
+3. In your computer's **file browser** ensure that you can see:
 
   * **Invisible files and folders** (On the Mac these start with a period e.g. `.git`)
 
