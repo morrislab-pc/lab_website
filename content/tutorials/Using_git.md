@@ -17,6 +17,8 @@ When several people collaborate in the same project, it’s possible to accident
 
 Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
 
+For a comprehensive overview, log in to your [LinkedIn Learning](https://www.linkedin.com/learning) account with your PC ID and complete the [Git from Scratch](https://www.linkedin.com/learning/git-from-scratch) course.
+
 # Installing `git`
 
 To use git you should:
