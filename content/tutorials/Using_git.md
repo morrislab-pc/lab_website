@@ -136,6 +136,49 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
   - You should now add  *another* link to the original upstream repo called 'upstream' that will allow you to pull changes from the original repo
 `$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 
+# `git init` vs `git clone`
+
+  - If your project already exists locally (on your computer), but is not yet under version control with git, use the `git init` command to transform the folder containing your files into a Git repository. This is only run once, even if other collaborators share the project.
+  
+  - Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with *README*, license, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
+
+  - In the command line, navigate to the root directory of your project.
+
+  - Initialize the local directory as a Git repository. If you’re using Git 2.28.0 or a later version, you can set the name of the default branch using `-b`
+  
+        `git init -b main`
+  
+  - If you’re using Git 2.27.1 or an earlier version, you can set the name of the default branch the following command: 
+  
+        `git init && git symbolic-ref HEAD refs/heads/main`
+        
+  - You can tell Git which files and directories to ignore when you make a commit by creating a `.gitignore` file in your repository's root directory using the following command: 
+  
+        `touch .gitignore`
+        
+  - You can then edit the file to include the list of file to ignore. GitHub maintains an official list of recommended `.gitignore` files for many popular operating systems, environments, and languages in the [`github/gitignore` public repository](https://github.com/github/gitignore).
+
+  - To share the ignore rules with other users who clone the repository, commit the `.gitignore` file in to your repository.  
+
+  - Add the files in your new local repository. This stages them for the first commit..  
+  
+        `git add .` 
+        
+  - Commit the files that you've staged    
+        
+        `git commit -m "initial commit"`
+  
+  - Copy the URL for the remote repository on Github and set the remote locally using the following command:
+  
+        `git remote add origin <REMOTE_URL>`
+        
+  - Verify the new remote URL:
+  
+        `git remote -v`
+        
+  - Push the changes in your local repository to GitHub.com
+  
+        `git push -u origin main`
 
 
 ## The git commands `fetch`, `pull`, `merge`, `push` and `sync`
