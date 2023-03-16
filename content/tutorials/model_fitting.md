@@ -19,9 +19,11 @@ A statistical model is means to capture the structure of the data as simply as p
 
 &nbsp;
 
-# Model Fitting
+# Linear Mixed Effects Models
 
 [Introduction to linear mixed models](https://ourcodingclub.github.io/tutorials/mixed-models/)
+
+[Mixed Models with R](https://m-clark.github.io/mixed-models-with-R/)
 
 [*R for Statistical Learning* by David Dalpiaz. Chapter 4 Modeling Basics in R](https://daviddalpiaz.github.io/r4sl/modeling-basics-in-r.html)
 
