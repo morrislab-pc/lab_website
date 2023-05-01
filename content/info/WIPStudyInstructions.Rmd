@@ -3,6 +3,10 @@ title: "EEG Study Instructions"
 author: "Emma Kealey"
 date: "2023-04-26"
 output: html_document
+draft: false
+showonlyimage: false
+slug: complete_guide_to_morph21
+weight: 1
 ---
 
 ## The Complete Guide to Running the Morph21 EEG Study
