@@ -18,7 +18,9 @@ Please make sure to bring the following items with you:
 -   PC ID card
 -   PC network credentials
 -   GitHub credentials
+
 #### Preparing the Lab for a Participant
+
 1.  Arrive at the lab at least 15 minutes before the scheduled start time
 
 2.  Unlock the control room (Sowa Hall room 0148) by swiping your ID card and entering your pin. Use the door stop to prop open the door. Put down any personal items in the control room except for your ID card.
