@@ -1,6 +1,6 @@
 ---
 date: '2021-11-10'
-draft: false
+draft: true
 image: img/info/lab_procedures_1.jpg
 showonlyimage: false
 title: Lab Procedures
