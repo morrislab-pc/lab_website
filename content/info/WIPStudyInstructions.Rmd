@@ -45,7 +45,7 @@ Please make sure to bring the following items with you:
     -   Reopen the zip file
     -   Copy the entire VSL_trigs_local folder to your desktop
     -   Here's what your desktop should look like before the participant arrives:
-        ![](images/openSesameVslFolderDesktop-01.png)
+        ![](/images/openSesameVslFolderDesktop-01.png)
 
 8.  Once the files have been downloaded, we want to make sure we are able to run both portions of the experiment as expected. This way, if there are any technical difficulties, we can troubleshoot them [before]{.underline} the participant arrives and switch accounts if needed.
 
@@ -252,7 +252,7 @@ Please make sure to bring the following items with you:
     -   ![](images/metricideBowl.jpg){width="375"}
 
 22. Lastly, tidy up the experimental room and ensure that all of the supplies are back where they belong.
-    -   ![](images/labSetUpCartExample.jpg){width="500"}
+    -   ![](~/Documents/GitHub/lab_website/content/info/images/labSetUpCartExample.jpg){width="500"}
 
 23. If any supplies are running low, please let both Emma and Joanna know so they can restock them before the next participant.
 
