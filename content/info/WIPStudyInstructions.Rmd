@@ -52,7 +52,7 @@ Please make sure to bring the following items with you:
     -   Drag the M21 OpenSesame Experiment files to your desktop
     -   Reopen the zip file
     -   Copy the entire VSL_trigs_local folder to your desktop
-    -   Here's what your desktop should look like before the participant arrives: ![](/img/complete_guide/openSesameVslFolderDesktop.png){height="375"}
+    -   Here's what your desktop should look like before the participant arrives: ![](/img/complete_guide/openSesameVslFolderDesktop.png){width="375"}
 
 8.  Once the files have been downloaded, we want to make sure we are able to run both portions of the experiment as expected. This way, if there are any technical difficulties, we can troubleshoot them [before]{.underline} the participant arrives and switch accounts if needed.
 
