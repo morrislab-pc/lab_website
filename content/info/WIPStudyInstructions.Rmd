@@ -10,17 +10,17 @@ weight: 1
 
 ## The Complete Guide to Running the Morph21 EEG Study
 
-Buckle up! This document covers everything you need to know to run a participant through the Morph21 EEG study including (i) supplies to bring, (ii) preparing for a participant, (iii) running a participant, and (iv) cleaning up after a participant. Please carefully read through all of the information below before your first experimental run. Slack Emma with any questions.
+Buckle up! This document covers everything you need to know to run a participant through the Morph21 EEG study.
+
+Below, you will find information regarding (i) supplies to bring, (ii) preparing for a participant, (iii) running a participant, and (iv) cleaning up after a participant. Please carefully read through all of the information below before your first experimental run. Slack Emma with any questions.
 
 #### Things to Bring
 
 Please make sure to bring the following items with you:
 
--   PC ID card
-
--   PC network credentials
-
--   GitHub credentials
+\- PC ID Card
+- PC Network Credentials
+- GitHub Credentials
 
 #### Preparing the Lab for a Participant
 
@@ -49,7 +49,7 @@ Please make sure to bring the following items with you:
     -   Drag the M21 OpenSesame Experiment files to your desktop
     -   Reopen the zip file
     -   Copy the entire VSL_trigs_local folder to your desktop
-    -   Here's what your desktop should look like before the participant arrives: ![](/img/complete_guide/openSesameVslFolderDesktop){width="375"}
+    -   Here's what your desktop should look like before the participant arrives: ![](/img/complete_guide/openSesameVslFolderDesktop.png){width="375"}
 
 8.  Once the files have been downloaded, we want to make sure we are able to run both portions of the experiment as expected. This way, if there are any technical difficulties, we can troubleshoot them [before]{.underline} the participant arrives and switch accounts if needed.
 
@@ -111,13 +111,13 @@ Please make sure to bring the following items with you:
 
 15. Take the ground electrode from the designated shelf. Connect the ground electrode to the system and then to the EEG cap.
 
-    -   ![](/img/complete_guide/groundElectrodePluggedIntoAmp.jpg){width="302"}
+    -   ![](/img/complete_guide/groundElectrodePluggedIntoAmp.HEIC){width="302"}
 
     -   ![](/img/complete_guide/groundElectrodeInHousing.JPG){width="302"}
 
 16. Here's what your final set up should look like:
 
-    -   ![](/img/complete_guide/completeSetUpWithEEGandAmp.jpg){width="302"}
+    -   ![](/img/complete_guide/completeSetUpWithEEGandAmp.jpg){width="502"}
 
         *Please note that the cap should be on the participant at this point, not on the mannequin!*
 
@@ -125,13 +125,13 @@ Please make sure to bring the following items with you:
 
 18. Click on the eye icon in the upper left corner of the program to start recording. There will be very little waves, if any since you have not gelled the participant yet. Your page should look like so:
 
-    -   ![](/img/complete_guide/brainVisionBlankRecording.png){width="300"}
+    -   ![](/img/complete_guide/brainVisionBlankRecording.png){width="500"}
 
 19. Confirm the battery level and work space. Both of these items are shown in the bottom right corner of the BrainVision window. Battery level should be above 5amps and the work space should be "ACHP_332"
 
 20. Click on the button directly to the right of the eye icon to start the impedance check. You should see a diagram of the EEG and all electrodes should be red to start.
 
-    -   ![](/img/complete_guide/startImpedanceCheck.png){width="305"}
+    -   ![](/img/complete_guide/startImpedanceCheck.png){width="505"}
 
 21. Next, you will want to reset the control levels to the right of the screen. We want 'good' levels to start at 25 kOhms. This will make it easier to activate the cap. To change the levels, hover over the BrainVision icon along the bottom of your screen and click to open the second browser window (actiCHamp Window):
 
@@ -139,11 +139,11 @@ Please make sure to bring the following items with you:
 
 22. In the new window, adjust the *Good Level [kOhm]* to 25. Click *Update* to save:
 
-    -   ![](/img/complete_guide/actichampMenuAdjustGood.png){width="305"}
+    -   ![](/img/complete_guide/actichampMenuAdjustGood.png){width="505"}
 
 23. Check to make sure the graph and numbers have updated on the right side of your screen:
 
-    -   ![](/img/complete_guide/updatedGoodLevelsGraph.png){width="305"}
+    -   ![](/img/complete_guide/updatedGoodLevelsGraph.png){width="505"}
 
 24. Now we can start gelling the participant. Go back into the experimental room and find the gel in syringes on the tool cart. Take off the red cap and screw on one of the purple needle tips like so:
 
@@ -215,7 +215,7 @@ Please make sure to bring the following items with you:
 
 2.  Then, navigate to *This PC \> Local Disc (C:) \> Vision*
 
-    -   ![](/img/complete_guide/localDisk>Vision.png){width="500"}
+    -   ![](/img/complete_guide/localDisk%3EVision.png){width="500"}
 
 3.  Navigate to Vision \> Recorder \> Log \> actiCHAMP. Here's what the battery log looks like:
 
