@@ -14,7 +14,13 @@ Buckle up! This document covers everything you need to know to run a participant
 
 #### Things to Bring
 
-Please make sure to bring the following items with you: - PC ID card - PC network credentials - GitHub credentials
+Please make sure to bring the following items with you:
+
+-   PC ID card
+
+-   PC network credentials
+
+-   GitHub credentials
 
 #### Preparing the Lab for a Participant
 
@@ -44,6 +50,8 @@ Please make sure to bring the following items with you: - PC ID card - PC networ
     -   Reopen the zip file
     -   Copy the entire VSL_trigs_local folder to your desktop
     -   Here's what your desktop should look like before the participant arrives: ![](/img/tutorials/interrupt.png)
+
+    ![](/img/tutorials/groundElectrodePluggedIntoAmp.png)
 
 8.  Once the files have been downloaded, we want to make sure we are able to run both portions of the experiment as expected. This way, if there are any technical difficulties, we can troubleshoot them [before]{.underline} the participant arrives and switch accounts if needed.
 
