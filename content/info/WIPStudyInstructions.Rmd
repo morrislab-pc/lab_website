@@ -57,7 +57,7 @@ Please make sure to bring the following items with you: - PC ID card - PC networ
 
 2.  Once the participant has filled out the survey, it is time to get them fitted with an EEG cap. First, use the tape measure (top rack of the back supplies cart) to measure the circumference of their head [**in centimeters**]{.underline}. You will want to measure through the nasion (bridge of the nose) and the inion (inward curve at the back of the head) but above the ears. Refer to the diagram below. Write down the measurement -- this will determine which cap you use.
 
-    ![](images/nasionToInionOverHead.JPG){width="375"}
+    ![](/img/complete_guide/nasionToInionOverHead.JPG){width="375"}
 
 3.  Look through the caps available in the supply closet. The size of the cap is listed in centimeters on the tag at the back of the cap. It is the last two numbers on the first line (Cat-No). We have four caps in the lab: 54cm, 56cm, 58cm, and 60cm. See reference photo of the 60cm cap below. Choose the cap size closest to the circumference measurement from step 2. If between sizes, have the participant try on both sizes and ask them which is more comfortable.
 
