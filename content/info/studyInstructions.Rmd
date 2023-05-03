@@ -2,7 +2,7 @@
 title: "EEG Study Instructions"
 author: "Emma Kealey"
 date: "2023-04-26"
-draft: false
+draft: true
 image: img/info/lab_procedures_1.jpg
 showonlyimage: false
 slug: complete_guide_to_morph21
