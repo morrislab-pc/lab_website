@@ -12,6 +12,7 @@ weight: 1
 ## The Complete Guide to Running the Morph21 EEG Study
 
 Buckle up! This document covers everything you need to know to run a participant through the Morph21 EEG study.
+
 <!--more-->
 
 Below, you will find information regarding (i) supplies to bring, (ii) preparing for a participant, (iii) running a participant, and (iv) cleaning up after a participant. Please carefully read through all of the information below before your first experimental run. Slack Emma with any questions.
