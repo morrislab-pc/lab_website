@@ -1,0 +1,59 @@
+---
+title: "The Complete Guide to the Morph21 EEG Study"
+author: "Emma Kealey"
+date: "2023-05-03"
+draft: false
+image: img/info/lab_procedures_1.jpg
+showonlyimage: false
+weight: 1
+slug: lab_procedures
+---
+
+Buckle up! This document covers everything you need to know to run a participant through the Morph21 EEG study.
+
+<!--more-->
+
+Below, you will find information regarding (i) supplies to bring, (ii) preparing for a participant, (iii) running a participant, and (iv) cleaning up after a participant. Please carefully read through all of the information below before your first experimental run. Slack Emma with any questions.
+
+#### Things to Bring
+
+Please make sure to bring the following items with you:
+*PC ID Card
+*PC Network Credentials
+*GitHub Credentials
+
+#### Preparing the Lab for a Participant
+
+1.  Arrive at the lab at least 15 minutes before the scheduled start time
+
+2.  Unlock the control room (Sowa Hall room 0148) by swiping your ID card and entering your pin. Use the door stop to prop open the door. Put down any personal items in the control room except for your ID card.
+
+3.  Turn on the computers in the control room. Log in with your PC credentials.
+
+4.  Unlock the experimental room (Sowa Hall room 0149). Walk through the room and ensure that it is clean and properly prepped for the study. Refer to the supplies sheet hanging under the electrodes for a checklist of needed supplies. Slack Emma if any items are missing or running low.
+
+5.  Turn on the computers in the experimental room and log in with your PC credentials.
+
+6.  Check to see if the following files and folder are already downloaded to the desktop:
+
+    -   *VSL_trigs_local folder*
+    -   *m21-ba-4-19-2023.osexp*
+    -   *FIN_AB_M21_7\_10_17_ani_version*
+
+7.  If the files are not on your desktop, you'll need to open a browser, log onto GitHub, and download them:
+
+    -   Open the morrislab-pc repo in GitHub
+    -   Navigate to the m21_vsl repo
+    -   Click the green *Code* button and select *Local \> Download Zip*
+    -   Open the zip file
+    -   Drag the M21 OpenSesame Experiment files to your desktop
+    -   Reopen the zip file
+    -   Copy the entire VSL_trigs_local folder to your desktop
+    -   Here's what your desktop should look like before the participant arrives: ![](/img/complete_guide/openSesameVslFolderDesktop.png){width="375"}
+
+8.  Once the files have been downloaded, we want to make sure we are able to run both portions of the experiment as expected. This way, if there are any technical difficulties, we can troubleshoot them [before]{.underline} the participant arrives and switch accounts if needed.
+
+9.  Double click on one of the OpenSesame files. Make sure you can launch the experiment as expected.
+
+10. Next, check the VSL portion of the experiment in Presentation. Open the desktop folder and double click on the VSL_triggers_2023 experiment file (not the scenario file!).
+
