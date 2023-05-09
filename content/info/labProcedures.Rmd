@@ -172,7 +172,7 @@ Please make sure to bring the following items with you:
 
 32. Once you have confirmed that the EEG is working as expected, it is time to start the experiment. Go back into the experimental room and open OpenSesame.
 
-33. Click *File \> Open* and select the correct version of the experiment from your desktop. You'll either use AB or BA. Please refer to participant numbering (we're starting at 200 and going up consecutively -- odd numbered participants receive AB and even numbered participants receive BA) and sorting guidelines to determine which set of the experiment to use.
+33. Click *File \> Open* and select the correct version of the experiment from your desktop. You'll either use the AB version of the experiment or the BA version. Please refer to participant numbering (we're starting at 200 and going up consecutively -- odd numbered participants receive AB and even numbered participants receive BA) and sorting guidelines to determine which set of the experiment to use.
 
     -   ![](/img/complete_guide/openSesameFileOpen.png){width="500"}
 
@@ -184,7 +184,7 @@ Please make sure to bring the following items with you:
 
 36. The starting screen for the participant should start to load. At this point, you can retreat to the control room while the participant completes the lexical decision task.
 
-37. Once the lexical decision task has come to an end, re-enter the experimental room and pull up the Visual Statistical Learning task. Click on the desktop folder and open the experimental file named "VSL_trigger_2023":
+37. Once the lexical decision task has come to an end, re-enter the experimental room and pull up the Visual Statistical Learning task. Click on the desktop folder and open the file named "m21_VSL_experiment.exp":
 
     -   ![](/img/complete_guide/vslFolderPresentationExperiment.png){width="500"}
 
@@ -289,3 +289,4 @@ Please make sure to bring the following items with you:
 25. [**UNPLUG THE actiCHamp BATTERY**]{.underline}
 
 26. Gather your personal items and close the lab doors behind you as you leave. Make sure the doors are locked.
+

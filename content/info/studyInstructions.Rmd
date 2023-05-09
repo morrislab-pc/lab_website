@@ -18,9 +18,9 @@ Below, you will find information regarding (i) supplies to bring, (ii) preparing
 #### Things to Bring
 
 Please make sure to bring the following items with you:
-* PC ID Card
-* PC Network Credentials
-* GitHub Credentials
+*PC ID Card
+*PC Network Credentials
+*GitHub Credentials
 
 #### Preparing the Lab for a Participant
 
