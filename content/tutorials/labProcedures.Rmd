@@ -2,7 +2,7 @@
 title: "The Complete Guide to the Morph21 EEG Study"
 author: "Emma Kealey"
 date: "2023-05-03"
-draft: false
+draft: true
 image: img/info/lab_procedures_1.jpg
 showonlyimage: false
 weight: 1
