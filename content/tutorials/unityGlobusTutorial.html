@@ -1,0 +1,88 @@
+---
+author: "Emma Kealey"
+date: "2023-05-09"
+draft: false
+image: img/unityInstructions/serverPhoto.jpeg
+showonlyimage: false
+title: Accessing and Navigating Unity with Globus
+slug: accessing_unity
+weight: 1
+---
+
+
+
+<p>Our lab uses the URI Unity Cluster to store data and analyses. Here’s a breakdown of accessing and navigating through the data with Globus</p>
+<!--more-->
+<p>Please note that in order to access the data stored on Unity, you’ll need to request affiliate access to URI and be added to the lab’s directory. Talk to Joanna or Emma for help with these steps!</p>
+<div id="general-access" class="section level4">
+<h4>General Access</h4>
+<p>The easiest way to access the data stored on Unity is through Globus as outlined below:</p>
+<ul>
+<li><p>Navigate to app.globus.org</p></li>
+<li><p>Select “University of Rhode Island” as your organization from the drop down menu and click <em>Continue</em></p></li>
+<li><p>Sign in with your Microsoft URI credentials</p></li>
+<li><p>If prompted, authenticate with DUO or one of the other listed options</p></li>
+<li><p>If this is your first time logging in, you’ll be prompted to grant Globus access to your account. You may also be prompted to link accounts. This should be your only Globus account so click your URI email address and continue. Eventually, you should end up on the File Manager page like so:</p></li>
+</ul>
+<p><img src="/img/unityInstructions/globusHomePage.jpeg" /></p>
+<ul>
+<li>Search for “Unity” in the Collection search bar along the top of the screen. Click on the first result that appears (Unity Mapped Collection GCS):</li>
+</ul>
+<p><img src="/img/unityInstructions/globusUnitySearch.png" /></p>
+<ul>
+<li><p>By default, this will open your personal directory in Unity. The path should be something like “/home/[your URI email address]/”. You can store personal documents here if needed. However, for the most part you’ll want to work in the lab directory.</p></li>
+<li><p>To access the lab directory, change the path to /work/pi_joanna_morris_uri_edu/ :</p></li>
+</ul>
+<p><img src="/img/unityInstructions/globusLabDirectoryPath.png" /></p>
+<ul>
+<li>You can now click on the Human Physiology Lab folder and browse through the lab directory!</li>
+</ul>
+</div>
+<div id="uploading-download-files" class="section level4">
+<h4>Uploading / Download Files</h4>
+<p>To upload/ download/ sync files to or from your local computer and the lab directory, you’ll need to install Globus Personal Connection. Google “Globus Personal Connection” and download the version for your operating system.</p>
+<p>Once you have downloaded Globus Personal Connection, follow the instructions to install the program on your device and set up your local connection to your desktop.</p>
+<p>After you have set up GPC, go back to your app.globus.org window and click on the double pane toggle in the top right corner:</p>
+<p><img src="/img/unityInstructions/globusPanels.png" /></p>
+<p>In the new panel that opens up, click on the <em>Collections</em> section and navigate to <em>Your Collections</em>. Select your local device from the list:</p>
+<p><img src="/img/unityInstructions/globusYourConnections.png" /></p>
+<p>Your home page should look like so with the lab directory on the left and your personal computer directory on the right:</p>
+<p><img src="/img/unityInstructions/globusLabPersonalDirectory.png" /></p>
+<p>Now that you have both directories loaded, you can start moving files. Start by selecting the files you’d like to upload from your personal directory. Click the checkbox next to each file/folder you’d like to upload:</p>
+<p><img src="/img/unityInstructions/globusPersonalFilesSelected.png" /></p>
+<p>After selecting the correct file(s), switch to the Unity pane and navigate to where you’d like the selected files to live in the Unity Cluster:</p>
+<p><img src="/img/unityInstructions/globusUnityLocationSelected.png" /></p>
+<p>Click <em>Transfer or Sync to…</em> from the middle menu. This should shift focus back to your personal half of the window.</p>
+<p>[Optional] click on <em>Transfer &amp; Timer Options</em> to open the modal menu. From this menu, you can adjust how files are synced / transferred, adjust the timing of the transfer, and give your transfer a name:</p>
+<p><img src="/img/unityInstructions/globusTransferTimerMenu.png" /></p>
+<p>Finally, click the blue Start button to start the transfer. You’ll want to press Start fom the side where the files currently live:</p>
+<p><img src="/img/unityInstructions/globusStartTransfer.png" /></p>
+<p>Your job will start and continue on until it completes or errors out. Check out the Activity tab along the left hand menu for more information!</p>
+</div>
+<div id="teams-files" class="section level4">
+<h4>Teams Files</h4>
+<p>Oh the dreaded Teams files. If you’re trying to upload files that currently live in Microsoft Teams, you may run into some trouble. Here’s what I’ve learned so far:</p>
+<p>You’ll want to set up Teams to sync with your desktop automatically. This way, Globus Personal Connection can access the files via your desktop. Check out <a href="https://support.microsoft.com/en-us/office/sync-sharepoint-and-teams-files-with-your-computer-6de9ede8-5b6e-4503-80b2-6190f3354a88">this article</a> for more information.</p>
+<p>Sometime synced files still won’t upload (boo Microsoft). In that case, your best bet is to download the files that are causing trouble and upload them directly from your desktop via Globus. You can check which files are specifically causing trouble by following the steps below:</p>
+<ol style="list-style-type: decimal">
+<li>Go to the Activity tab from the left side Globus Menu:</li>
+</ol>
+<p><img src="/img/unityInstructions/globusActivityMenu.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Click on one of the errors listed (file not found in the example)</li>
+</ol>
+<p><img src="/img/unityInstructions/globusActivityError.png" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Open the <em>Event Log</em></li>
+</ol>
+<p><img src="/img/unityInstructions/globusActivityEventLog.png" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Click on one of the errors shown in the Event Log. Click <em>View Details</em> and identify the path of the problematic file:</li>
+</ol>
+<p><img src="/img/unityInstructions/globusErrorFilePath.png" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Cancel the current Transfer and try reinitiating the transfer without that file.</p></li>
+<li><p>Download the problematic file to your desktop</p></li>
+<li><p>Try reuploading the problematic file from your desktop to Unity via Globus.</p></li>
+</ol>
+</div>
