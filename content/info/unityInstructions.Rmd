@@ -24,11 +24,11 @@ The easiest way to access the data stored on Unity is through Globus as outlined
 -   If prompted, authenticate with DUO or one of the other listed options
 -   If this is your first time logging in, you'll be prompted to grant Globus access to your account. You may also be prompted to link accounts. This should be your only Globus account so click your URI email address and continue. Eventually, you should end up on the File Manager page like so:
 
-![](img/unityInstructions/globusHomePage.png)
+![](img/unityInstructions/globusHomePage.jpg)
 
 -   Search for "Unity" in the Collection search bar along the top of the screen. Click on the first result that appears (Unity Mapped Collection GCS):
 
-![](img/unityInstructions/globusUnitySearch)
+![](img/unityInstructions/globusUnitySearch.png)
 
 -   By default, this will open your personal directory in Unity. The path should be something like "/home/[your URI email address]/". You can store personal documents here if needed. However, for the most part you'll want to work in the lab directory.
 
