@@ -1,9 +1,9 @@
 ---
-title: EEGLAB and ERPLAB
+title: LaTeX
 author: Joanna Morris
 date: '2022-06-03'
 slug: [eeglab-erplab]
-image: img/info/topograph.png
+image: img/tutorials/LaTeX_logo.png
 showonlyimage: false
 categories: []
 tags: []
