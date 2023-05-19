@@ -86,3 +86,15 @@ Principal component analysis, or PCA, is a dimensionality-reduction method that 
 
 [R in Action: Chapter 14 Principle Components and Factor Analysis by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/chapter-14/)
 
+
+# Blogdown and R Markdown
+
+We use the an R package called [blogdown](https://bookdown.org/yihui/blogdown/) to create our website. Blogdown creates web content using either [Markdown](https://www.markdownguide.org/getting-started/) or [RMarkdown](https://rmarkdown.rstudio.com) 
+
+
+# Quarto
+
+Quarto is a multi-language, next generation version of R Markdown. Like R Markdown, Quarto uses `knitr` to execute R code, and is therefore able to render most existing .Rmd files without modification.
+
+[Comprehensive guide to using Quarto](https://quarto.org/docs/guide/)
+
