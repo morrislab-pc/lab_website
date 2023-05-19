@@ -46,9 +46,11 @@ There are also a few ways to install Git on Windows. The most official build is 
 
   - Many of the files that git needs to function are files that begin with a period which are **invisible files** on the Mac OS (operating system).
 
-# The GitHub Workflow for Repos that you don't own
+To get started you can either clone someone else's repository from GitHub, or create a repository from scratch on your computer and then upload it to GitHub
 
-1. Workflow:  fork, clone, edit, commit, push, pull request
+# Cloning a repository from GitHub 
+
+Here is the GitHub Workflow for Repos that you don't own: 
 
   - Start by **forking** (made an individual copy of) the  repo to your github.com account.
 
@@ -61,13 +63,11 @@ There are also a few ways to install Git on Windows. The most official build is 
   - Finally, you can make a **pull request**
 to update the central repository with our changes.
 
-## Clone a repository from GitHub. 
-
 A repository on GitHub exists as a **remote repository**. To work on the files on your own computer, you should **clone** the repository which will create a local copy on your computer. 
 
 Choose *one* of the following methods:
 
-1. R Studio Method
+1A. R Studio Method
 
   - Find and copy the **URL** for the repository on GitHub
 
@@ -80,7 +80,7 @@ Choose *one* of the following methods:
 The first argument is the URL that you copied from GitHub. The `destdir` argument specifies the parent directory where you want the new folder (and local Git repo) to live. If you don’t specify `destdir`, usethis defaults to the desktop.
 
 
-2. Generic Method
+1B. Generic Method
 
 
   - Find the **URL** for the repository on GitHub
@@ -117,7 +117,7 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
 
       - ***Step 5***: Send a request to the owner of the original repository to merge (pull) the changes into the main central repository.  This is a **pull request**.
 
-# Linking local and remote repositories
+## Linking local and remote repositories
 
    - Using the terminal, The `remote` command shows which remote repositories are currently connected to your local repository.
 
@@ -136,7 +136,7 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
   - You should now add  *another* link to the original upstream repo called 'upstream' that will allow you to pull changes from the original repo
 `$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 
-# `git init` vs `git clone`
+# Creating a repository from locally on your computer
 
   - If your project already exists locally (on your computer), but is not yet under version control with git, use the `git init` command to transform the folder containing your files into a Git repository. This is only run once, even if other collaborators share the project.
   
@@ -165,7 +165,9 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
   - Push the changes in your local repository to GitHub.com: `git push -u origin main`
 
 
-## The git commands `fetch`, `pull`, `merge`, `push` and `sync`
+# Fetching, Pulling, Pushing, Merging and Syncing
+
+  - The git commands `fetch`, `pull`, `merge`, `push` and `sync`
 
   - In git you are not supposed to commit work on remote branches (you are supposed to do your work on local branches)
 
@@ -186,7 +188,7 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
   - Git `sync` does everything in one command meaning `pull` and `push`.
 
 
-## Branching
+# Branching
 
   - To view the branches in a Git repository, run the command `git branch`
 
@@ -203,7 +205,7 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
        `git branch BRANCH_NAME    # create a new branch`
        `git switch BRANCH_NAME    # then switch to the new branch`
 
-## Using GitHub with Rstudio
+# Using GitHub with Rstudio
 
 * Configure git with Rstudio
 
@@ -249,12 +251,10 @@ prints info about your current Git, gert, and GitHub setup. "Sitrep" is short fo
     `Password for 'https://username@github.com': your_access_token`
 
 
-## More on Git (via Software Carpentry)
-
-[Version Control with Git](https://swcarpentry.github.io/git-novice/)
-
-# Accessing GitHub via SSH
+## Accessing GitHub via SSH
 
 You can also [connect to GitHub using the Secure Shell Protocol (SSH)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), which provides a secure channel over an unsecured network.
 
+## More on Git (via Software Carpentry)
 
+[Version Control with Git](https://swcarpentry.github.io/git-novice/)
