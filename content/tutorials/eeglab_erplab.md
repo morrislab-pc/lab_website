@@ -9,11 +9,11 @@ categories: []
 tags: []
 ---
 
-To analyse  our ERP data we use [ERPLAB Toolbox](https://erpinfo.org/erplab), 
+To analyse  our ERP data we use [ERPLAB Toolbox](https://erpinfo.org/erplab). 
 
 <!--more-->
 
-which is an open-source Matlab package, that extended the capabilites of another open-source Matlab package for EEG data analysis, the [EEGLAB Toolbox](https://sccn.ucsd.edu/eeglab/index.php). 
+ERPLAB is an open-source Matlab package, that extended the capabilites of another open-source Matlab package for EEG data analysis, the [EEGLAB Toolbox](https://sccn.ucsd.edu/eeglab/index.php). 
 
 This description of the [basic ERPLAB processing steps](https://github.com/lucklab/erplab/wiki/Basic-ERPLAB-Processing-Steps) provides an overview of the typical sequence of operations for analyzing an ERP experiment using the combination of EEGLAB and ERPLAB. 
 
@@ -21,6 +21,6 @@ In order to use EEGLAB and ERPLAB efficiently, and particularly to use EEGLAB fu
 
 These include the [EEG and ALLEEG structures](https://eeglab.org/tutorials/ConceptsGuide/Data_Structures.html#eeg-and-alleeg) and the [STUDY structure](https://eeglab.org/tutorials/ConceptsGuide/Data_Structures.html#the-study-structure).
 
-Access the ERPLAB tutorial [here](https://github.com/lucklab/erplab/wiki/Getting-Started:-Tutorial).
+Access the ERPLAB tutorial [here](https://github.com/lucklab/erplab/wiki/Getting-Started:-Tutorial). Access the EEGLAB tutorial [here](https://eeglab.org/tutorials/).
 
-Access the EEGLAB tutorial [here](https://eeglab.org/tutorials/).
+Although a graphical user interface for EEGLAB and ERPLAB makes it easy for beginners to learn,  Matlab scripting provides much greater power and flexibility. Access the scripting tutorial [here](https://github.com/lucklab/erplab/wiki/Scripting-Guide)
