@@ -9,11 +9,13 @@ categories: []
 tags: []
 ---
 
-LaTeX (pronounced lay-tech or, alternatively, la as in lava and tech as in technology) was initially invented as a typesetting language for mathematical notation.
+In the lab we use LaTex (pronounced lay-tech or, alternatively, la as in lava and tech as in technology) for writing papers and general documentation. 
 
 <!--more-->
 
+LaTeX is a [markup](https://en.wikipedia.org/wiki/Markup_language) language.  
 
+The advantages of using a markup language like LaTeX rather than a [WYSISYG text editor](https://en.wikipedia.org/wiki/WYSIWYG) like MS Word is that your documents are written in plain text, so it is easier to collaborate with others and to manage drafts using version control software like [`git`](https://www.morrislabpc.org/tutorials/git-tutorial/). LaTeX handles mathematical formulas much better than many word processors and it is platform independent.
 
 - [What is LaTex?](https://guides.lib.wayne.edu/latex/home)
 
