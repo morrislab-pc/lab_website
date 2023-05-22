@@ -60,7 +60,7 @@ Please make sure to bring the following items with you:
 
 #### Running a Participant
 
-1.  Greet the participant when they arrive and explain the study to them. Ask them to fill out the questionnaire. The questionnaire lives in Qualtrics and can be found HERE [link]
+1.  Greet the participant when they arrive and explain the study to them. Ask them to fill out the questionnaire. The questionnaire lives in Qualtrics and can be found [HERE](https://providence.az1.qualtrics.com/jfe/form/SV_5BYBWCrPez7ADA2).
 
 2.  Once the participant has filled out the survey, it is time to get them fitted with an EEG cap. First, use the tape measure (top rack of the back supplies cart) to measure the circumference of their head [**in centimeters**]{.underline}. You will want to measure through the nasion (bridge of the nose) and the inion (inward curve at the back of the head) but above the ears. Refer to the diagram below. Write down the measurement -- this will determine which cap you use.
 
