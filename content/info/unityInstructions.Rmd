@@ -1,7 +1,7 @@
 ---
 author: "Emma Kealey"
 date: "2023-05-09"
-draft: true
+draft: false
 image: img/unityInstructions/serverPhoto.jpeg
 showonlyimage: false
 title: Accessing and Navigating Unity with Globus
