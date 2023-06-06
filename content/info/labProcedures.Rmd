@@ -58,11 +58,13 @@ Please make sure to bring the following items with you:
 
 10. Next, check the VSL portion of the experiment in Presentation. Open the desktop folder and double click on the VSL_triggers_2023 experiment file (not the scenario file!).
 
+11. Pull up the [Qualtrics questionnaire](https://shorturl.at/uEGMX) in a browser window.
+
 #### Running a Participant
 
-1.  Greet the participant when they arrive and explain the study to them. Ask them to fill out the questionnaire. The questionnaire lives in Qualtrics and can be found [HERE](https://providence.az1.qualtrics.com/jfe/form/SV_5BYBWCrPez7ADA2).
+1.  Greet the participant when they arrive and explain the study to them. Ask them to fill out the Informed Consent portion of the questionnaire.
 
-2.  Once the participant has filled out the survey, it is time to get them fitted with an EEG cap. First, use the tape measure (top rack of the back supplies cart) to measure the circumference of their head [**in centimeters**]{.underline}. You will want to measure through the nasion (bridge of the nose) and the inion (inward curve at the back of the head) but above the ears. Refer to the diagram below. Write down the measurement -- this will determine which cap you use.
+2.  Once the participant has filled out the Informed Consent survey question, ask them to pause so you can take their head measurements. First, use the tape measure (top rack of the back supplies cart) to measure the circumference of their head [**in centimeters**]{.underline}. You will want to measure through the nasion (bridge of the nose) and the inion (inward curve at the back of the head) but above the ears. Refer to the diagram below. Write down the measurement -- this will determine which cap you use.
 
     ![](/img/complete_guide/nasionToInionExample.png){width="375"}
 
@@ -72,7 +74,7 @@ Please make sure to bring the following items with you:
 
 4.  Once you have selected the correct cap size, ask the participant to try on the cap if they haven't already. Make sure the cap is well fitted and the participant is comfortable.
 
-5.  Once you have selected the correct cap and ensured proper fit, ask the participant to remove the cap once more so you can populate the cap with electrodes.
+5.  Once you have selected the correct cap and ensured proper fit, ask the participant to remove the cap once more so you can populate the cap with electrodes. The participant can now resume the rest of the Qualtrics questionnaire.
 
 6.  Please the cap over the mannequin head. Grab the electrodes from the designated hook shelf. Find electrode #1 and put that to your left side. Place the splitter box on your back and drape the electrodes over either shoulder. Sit down with the mannequin head in between your legs and begin sliding the electrodes into place.
 
