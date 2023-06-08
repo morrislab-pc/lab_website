@@ -361,7 +361,7 @@ Select  `ERPLAB > EEG Channel operations`
 
 * A window with the EEG will pop up with bad trials highlighted in yellow, and the offending channels highlighted in red. Scroll through the final flagged dataset and make sure it’s rejecting the right trials and keeping the good trials. If things are not working (that is, if bad trials are getting through or good trials are being rejected), change the thresholds accordingly and re-run detection until you find a threshold that works correctly.
 
-* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_int_lst_bin_epc_arj.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, `INT`= interpolated, `ELS` = eventlist attached, `BIN` = bins defined, `EPC` = epochs created, `ARJ` = artefact rejected).
+* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_INT_ELS_BIN_EPC_ARJ.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, `INT`= interpolated, `ELS` = eventlist attached, `BIN` = bins defined, `EPC` = epochs created, `ARJ` = artefact rejected).
 
 ####  17. Save Artifact Rejection Summary
 
