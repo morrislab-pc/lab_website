@@ -69,7 +69,7 @@ NOTE: If you change the name of the file after recording you will need to change
   
   and enter the desired window length in seconds.
   
-
+  
 #### 4. Filter the data
 
 * Filters are a form of controlled distortion. The more heavily you filter your data, the more you are distorting the data. However, mildly filtering the data removes a great deal of noise while causing minimal distortion, making it  worthwhile.  *In most cognitive experiments you will increase your statistical power by filtering the low frequencies with a cutoff of ~0.1 Hz and by filtering the high frequencies with a cutoff of ~30 Hz.*
@@ -119,15 +119,16 @@ It is sometimes useful to delete "crazy" sections of the continuous EEG (e.g., p
 
 #### 6. Append the Channel Location file
 
-    `Edit > Channel locations`
+* EEGLAB and ERPLAB require electrode coordinates for conducting ICA as well as for plotting topographic maps.  To add co-ordinates, click on:
 
-* EEGLAB and ERPLAB require electrode coordinates for conducting ICA as well as for plotting topographic maps; you will get an error message if you try to plot a topographic map before you've added the coordinates.
+    `Edit > Channel locations`
 
 * Click on `Plot 2-D` button to plot all the electrode locations and check for accuracy.  If any locations are missing,  use the `Look up locs` button to get the corresponding locations on BESA or MNI head model. This will add the coordinates to the current dataset.
 
 #### 8. Conduct ICA
-* Before beginning, watch "ICA applied to EEG" series, https://www.youtube.com/playlist?list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc.
-* 
+
+* Before beginning, watch the [ICA applied to EEG video series](https://www.youtube.com/playlist?list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc).
+
 * Click on `Tools >> Decompose Data by ICA`.  This calls the function `pop_runica.m`.
 
 * Make sure that `runica` is selected next to "ICA algorithm to use (click to select)"  then press `Ok`.
@@ -170,15 +171,13 @@ Done.
 
 * The entire process may take anywhere from 5 minutes to an hour depending on the size of the dataset.
 
-* When MATLAB says ICA is done click `Edit` >> `Channel locations` >> `OK` >> `OK`
-
-* Click on `Plot` >> `component properties` - when new window pops UP change the settings so it says `1:32` (32 being the total number of electrodes) on top and change 50 to 80 in the bottom - this tells MATLAB to plot all the electrodes in the ICA and to change the frequency in the x-axis to 80 so that we can visually inspect for line noise which usually peaks at 50 or 60hz
-
-* Click on `Tools` >> `Classify components using IClabel` >> `Label Components` >> `OK` - this tells you the percentage of each artifact or component in your data
+* When MATLAB says ICA is done click on `Tools` >> `Classify components using IClabel` >> `Label Components` >> `OK` - this tells you the percentage of each artifact or component in your data
 
 * Visually inspect each individual channel or electrode for ocular artifacts relying on both your own wisdom of artifacts and the IClabel
 
-* Rejection time! Reject channels with ocular artifacts by clicking on the `Accept` button (it turns red and says reject) >> ok
+* Label artifact components by clicking on `Classify components using IClabel` >> `Flag components as artifacts`.  Set 
+
+* Double check artifact components flagged for rejection by clicking on `Inspect\label components by map`
 
 * Click on `Tools` >> `Remove components from data` >> `Plot single trial plots`. This enables you to see the change in the data (red before and black after)
 
@@ -196,6 +195,35 @@ Done.
 
 * Typically you want the reference site to be *equidistant from all electrodes*, in order to not establish a hemispheric bias. Thus we want to set the reference as an average of BOTH mastoids.
 
+* We first need to add the reference channel in the channel editor. The potential difference of the reference electrode site to itself is always zero, thus, it is not ordinarily stored this as a separate signal channel.  To add the channel click on `Edit >> Channel locations`
+
+* Use the forward arrow `>` to navigate to channel 21 and then click on `Insert chan` .  This will create a new blank channel 21.
+
+![Edit channel information](/img/info/edit_channel_info.png)
+
+![Insert channel](/img/info/insert_channel.png)
+
+* Enter "TP10" into the `Channel label ("label")` field and then click on `Look up locs` and then on `Ok` in the next dialog box to add the co-ordinates.
+
+![Add TP10](/img/info/add_tp10.png)
+
+![Look up channel locations](/img/info/look_up_locs.png)
+
+![Add channel co-ordinates](/img/info/add_coords.png)
+
+* Click on `Set reference` .  This will bring up a small dialog box prompting you for the Reference channel index and label.  Type "21" into the upper box for the channel index, and "TP10" into the lower box for the channel label, then click on `Ok`. The main dialog box should now show `TP10` as the reference.
+
+![Set reference](/img/info/set_ref.png)
+
+![TP10 reference](/img/info/ref_tp10.png)
+
+
+* Click on `Ok` then go to the menu `Tools > Re-reference`. 
+
+You will be able to select your new reference channels, exclude some channels etc...
+
+Note that Andreas code below will work although it will not update the channel location structure and perform other checks.
+
 * To re-reference the data, go to
 
   `ERPLAB > EEG Channel operations`
@@ -210,13 +238,13 @@ Done.
 
 * Save your file as  `EID_S##_flt_rsp_trm_ica_ref.set` (`EID` = 3 letter experiment ID; `S##` = S plus two digit subject number e.g. `S08`, `S19`; `flt` = filtered, `rsp` = resampled, `trm` = trimmed, `ica` = ica applied, `ref` = re-referenced)
 
-#### 10. Replace *one* bad channel (optional)
+#### 10. Replace *one* bad channel (skip this step if there are no bad electrodes)
 
 Select  `ERPLAB > EEG Channel operations`
 
 * Clear any existing equations.
 
-* We use a spherical spline interpolation that takes into account all of the electrode sites (i.e., using EEGLAB's `eeg_interp` function).  To do this with EEG Channel Operations, you must first make sure that your dataset contains electrode location information (not just the name, but the 3-D coordinates).  You would then use the `chinterpol` function in your Channel Operations equation.  For example, to replace channel 12 with interpolated values, you would write an equation like this: `nch12 = chinterpol`
+* We use a spherical spline interpolation that takes into account all of the electrode sites (i.e., using EEGLAB's `eeg_interp` function). To do this with EEG Channel Operations, you must first make sure that your dataset contains electrode location information (not just the name, but the 3-D coordinates). You would then use the `chinterpol` function in your Channel Operations equation. For example, to replace channel 12 with interpolated values, you would write an equation like this: `nch12 =chinterpol`
 
 * Create a new dataset by checking `Create new dataset` radio button.
 
