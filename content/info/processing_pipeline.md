@@ -1,7 +1,7 @@
 ---
 title: "Data Processing Pipeline"
 author: "Joanna Morris"
-date: '2021-11-10'
+date: '2023-06-13'
 draft: no
 image: img/info/pipeline_2.jpg
 showonlyimage: no
@@ -40,36 +40,30 @@ We use the MATLAB toolboxes EEGLAB and ERPLAB for processing our data.
 
 * Invoke EEGLAB by typing  `eeglab`  at the Matlab command prompt and pressing `ENTER`.
 
-* Import an `.vhdr` file into EEGLAB, where it becomes a *dataset*.
 
-  `File ➞ Import Data ➞ Using EEGLAB functions and plugins ➞ From Brain Vis. Rec. .vhdr file`
+* Select  `File ➞ Import Data ➞ Using EEGLAB functions and plugins ➞ From Brain Vis. Rec. .vhdr file`
 
-* Select the appropriate `.vhdr` file from your computer.
-NOTE: If you change the name of the file after recording you will need to change the filename  in the `.vhdr` and `.vmrk`  files to match the new filename.  You can do this easily using any text editor program.
+* Select the appropriate `.vhdr` file from your computer. This will import a `.vhdr` file into EEGLAB, where it becomes a *dataset*, with a `.set` file extension.
+
+* IMPORTANT: If you change the name of the file after recording you will need to change the filename in the `.vhdr` and `.vmrk`  files to match the new filename.  You can do this easily using any text editor program.
 
 * Leave the `Interval` option and `Channels` options blank. By default this will import all channels and all samples.
 
 * When saving your file use the `BROWSE` button to navigate to the appropriate directory before saving
 
-* Save your file as  `EID_S###_TID` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID)
+* Save your file as  `EID_S###` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
 
 #### 3. Once you have imported the raw EEG, you should view it to make sure everything looks OK.
 
-  `Plot > Channel data (scroll)`
+Select  `Plot > Channel data (scroll)`
   
-* To see all the electrode traces you may need to remove the DC offset by clicking on:
-  
-  `Display > Remove DC Offset`
+* To see all the electrode traces you may need to remove the DC offset by selecting  `Display > Remove DC Offset`
   
 *  To **increase** the scale of the voltage and hence decrease the size of the amplitudes on the screen, or to **decrease** the voltage scale and hence increase the size of the EEG amplitude on the screen you can enter a value into  “Scale” edit-text box value (you can also click on the ”-“ or "+" button) and press the Enter key to update the scrolling window.
 
-* To adjust the time time range displayed click on
+* To adjust the time time range displayed select  `Settings >  Time range to display`  and enter the desired window length in seconds.
+  
 
-  `Settings >  Time range to display`
-  
-  and enter the desired window length in seconds.
-  
-  
 #### 4. Filter the data
 
 * Filters are a form of controlled distortion. The more heavily you filter your data, the more you are distorting the data. However, mildly filtering the data removes a great deal of noise while causing minimal distortion, making it  worthwhile.  *In most cognitive experiments you will increase your statistical power by filtering the low frequencies with a cutoff of ~0.1 Hz and by filtering the high frequencies with a cutoff of ~30 Hz.*
@@ -80,27 +74,23 @@ NOTE: If you change the name of the file after recording you will need to change
 
 * Use either a **2nd** or **4th** order filter (12 or 24 dB/octave roll off). Higher order filters will cause more distortion in your data.
 
-  `ERPLAB > Filter and frequency tools > Filters for EEG data`.
+* Select  `ERPLAB > Filter and frequency tools > Filters for EEG data`.
 
-* * Save your file as  `EID_S###_TID_FLT.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered).
+* Save your file as  `EID_S###_TID_FLT.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered).
 
 #### 5. Downsample the data 
 
 * If the data are recorded at 500Hz or above, downsample the data to 200 Hz to save memory and disk storage. Make sure this is done **after** you filter, otherwise you can get **aliasing artifacts**. Downsampling makes the data files MUCH smaller, and things will run faster in subsequent processing steps.
 
-  `Tools > Change sampling rate`.
+* Select  `Tools > Change sampling rate`.
 
-* Save your file as  `EID_S###_TID_FLT_rsp.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered, `RSP` = resampled).
+* Save your file as  `EID_S###_TID_FLT_RSP.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled).
 
 #### 6.  Delete sections of the EEG that do not contain triggers
 
-It is sometimes useful to delete "crazy" sections of the continuous EEG (e.g., prior to performing ICA). Procedures for this are described on this page. Note that these procedures actually delete sections of data (as opposed to simply marking them for rejection). Note that you should not use these procedures for "ordinary" artifacts (eye blinks, etc.
+* It is sometimes useful to delete "crazy" sections of the continuous EEG (e.g., prior to performing ICA). Procedures for this are described on this page. Note that these procedures actually delete sections of data (as opposed to simply marking them for rejection). Note that you should not use these procedures for "ordinary" artifacts (eye blinks, etc.
 
-[This page](https://github.com/lucklab/erplab/wiki/Preprocessing-Continuous-EEG-Data#delete-time-segments) details one way of doing this.  The section belows details another.
-
-* You can delete sections of the eeg by clicking on 
-
-`Tools > Inspect/reject data by eye`
+* You can delete sections of the eeg by selecting  `Tools > Inspect/reject data by eye`
 
 * To erase a selected portion of the data, drag the mouse across the time region of interest. You can mark multiple regions for rejection in this way. 
 
@@ -114,22 +104,22 @@ It is sometimes useful to delete "crazy" sections of the continuous EEG (e.g., p
 
 * One strategy to remove data is to stack the data using the Stack button of the plot window (upper right corner) and display about 30 seconds of data. This makes it easy to spot and remove trigger-less stretches of data.
 
-* Save your file as  `EID_S###_TID_FLT_RSP_TRM.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed).
+* Save your file as  `EID_S###_TID_FLT_RSP_TRM.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed).
 
 
 #### 6. Append the Channel Location file
 
-* EEGLAB and ERPLAB require electrode coordinates for conducting ICA as well as for plotting topographic maps.  To add co-ordinates, click on:
+Select  `Edit > Channel locations`
 
-    `Edit > Channel locations`
+* EEGLAB and ERPLAB require electrode coordinates for conducting ICA as well as for plotting topographic maps; you will get an error message if you try to plot a topographic map before you've added the coordinates.
 
 * Click on `Plot 2-D` button to plot all the electrode locations and check for accuracy.  If any locations are missing,  use the `Look up locs` button to get the corresponding locations on BESA or MNI head model. This will add the coordinates to the current dataset.
 
 #### 8. Conduct ICA
 
-* Before beginning, watch the [ICA applied to EEG video series](https://www.youtube.com/playlist?list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc).
+* Before beginning, watch the the first video of the ["ICA applied to EEG" video series](https://www.youtube.com/playlist?list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc).
 
-* Click on `Tools >> Decompose Data by ICA`.  This calls the function `pop_runica.m`.
+To conduct the ICA, select  `Tools > Decompose Data by ICA`.  This calls the function `pop_runica.m`.
 
 * Make sure that `runica` is selected next to "ICA algorithm to use (click to select)"  then press `Ok`.
 
@@ -171,21 +161,16 @@ Done.
 
 * The entire process may take anywhere from 5 minutes to an hour depending on the size of the dataset.
 
-* When MATLAB says ICA is done click on `Tools` >> `Classify components using IClabel` >> `Label Components` >> `OK` - this tells you the percentage of each artifact or component in your data
+* When MATLAB says ICA is done click on `Tools > Classify components using IClabel > Label Components > OK` . This tells you the percentage of each artifact or component in your data
 
-* Visually inspect each individual channel or electrode for ocular artifacts relying on both your own wisdom of artifacts and the IClabel
+* Label artifact components by clicking on `Classify components using IClabel > Flag components as artifacts`. 
+Double check artifact components flagged for rejection by clicking on `Inspect\label components by map`.
 
-* Label artifact components by clicking on `Classify components using IClabel` >> `Flag components as artifacts`.  Set 
+* Click on `Tools > Remove components from data > Plot single trials`. This enables you to see the change in the data (red before and black after)
 
-* Double check artifact components flagged for rejection by clicking on `Inspect\label components by map`
+* Once you are satisfied with the ocular artifact rejection click `Accept` and save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied)
 
-* Click on `Tools` >> `Remove components from data` >> `Plot single trial plots`. This enables you to see the change in the data (red before and black after)
-
-* Once you are satisfied with the ocular artifact rejection click `Accept` and save the brand new ICA filtered dataset.
-
-* Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied)
-
-#### 9. Add the reference channel in preparation for re-referencing
+#### 9. Re-reference the data
 
 * EEG recordings measure differences in electrical potentials between two points (Voltages) and are usually expressed in units of microvolts (μV). The signal displayed at any channel is the difference in electrical potential to some other recording site, generally the ground electrode.
 
@@ -193,60 +178,35 @@ Done.
 
 * The reference itself is not displayed as a channel in your data. Changing the reference offline after recording is called **re-referencing**. The idea behind re-referencing is to express the voltage at the EEG scalp channels with respect to another, new reference. It can be composed of any recorded channel or an average of several channels. This ultimate reference for your data will also affect your analysis.
 
-* Typically you want the reference site to be *equidistant from all electrodes*, in order to not establish a hemispheric bias. Thus we want to set the reference as an average of BOTH mastoids.
+* Typically you want the reference site to be *equidistant from all electrodes*, in order to not establish a hemispheric bias. In our case, we want to set the reference as an average of `TP9` and `TP10` (the recording reference).
 
-* We first need to add the reference channel in the channel editor. The potential difference of the reference electrode site to itself is always zero, thus, it is not ordinarily stored this as a separate signal channel.  To add the channel click on `Edit >> Channel locations`
+* To re-reference the data select  `ERPLAB > EEG Channel operations`
 
-* Use the forward arrow `>` to navigate to channel 21 and then click on `Insert chan` .  This will create a new blank channel 21.
+* The channel operations GUI will then pop up. You can type equations directly into the channel operations GUI or load in a `.txt` file.
 
-![Edit channel information](/img/info/edit_channel_info.png)
+* Click on `Load list` and load the file called [`reref_eq_pc.txt`](/files/reref_eq_pchpl.txt)(Right-click or control-click on the link to download the file).  The equations from the `.txt` file will appear in the equations window. Then hit `RUN`.
 
-![Insert channel](/img/info/insert_channel.png)
+* Make sure the `Create new dataset` radio button is checked. The `Modify existing dataset` option does *recursive updating* and `Create new dataset` does *non-recursive updating*.  For re-referencing data, always use the `Create new dataset` option. Keep in mind the syntax for the two options is slightly different. For merely adding channels to the bottom of a list, modifying the data set is fine.
 
-* Enter "TP10" into the `Channel label ("label")` field and then click on `Look up locs` and then on `Ok` in the next dialog box to add the co-ordinates.
+* To save the re-referenced data set go to `File > Save current data set as…`
 
-![Add TP10](/img/info/add_tp10.png)
+* Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced)
 
-![Look up channel locations](/img/info/look_up_locs.png)
-
-![Add channel co-ordinates](/img/info/add_coords.png)
-
-* Click on `Set reference` .  This will bring up a small dialog box prompting you for the Reference channel index and label.  Type "21" into the upper box for the channel index, and "TP10" into the lower box for the channel label, then click on `Ok`. The main dialog box should now show `TP10` as the reference.
-
-![Set reference](/img/info/set_REF.png)
-
-![TP10 reference](/img/info/ref_tp10.png)
-
-
-* Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = reference channel added)
-
-#### 10. Re-reference the data
-
-* Go to the menu `Tools > Re-reference the data`. 
-
-* Click on `Add old ref. channel back to the data` then click on `Ok`.
-
-* Go to the menu `Tools > Re-reference the data` again.
-
-* This time, click on `Re-reference data to channel(s):`.  This brings up a small dialog box with a list of the channels.  Hold the control key and click on "TP9" and "TP10".  Click on `Ok`
-
-* Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_RRF.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered; `RSP` = resampled; `TRM` = trimmed; `ICA` = ica applied; `REF` = reference channel added; `RRF` = data re-referenced to the average of TP9 and TP10)
-
-#### 11. Replace *one* bad channel (skip this step if there are no bad electrodes)
+#### 10. Replace *one* bad channel (optional)
 
 Select  `ERPLAB > EEG Channel operations`
 
 * Clear any existing equations.
 
-* We use a spherical spline interpolation that takes into account all of the electrode sites (i.e., using EEGLAB's `eeg_interp` function). To do this with EEG Channel Operations, you must first make sure that your dataset contains electrode location information (not just the name, but the 3-D coordinates). You would then use the `chinterpol` function in your Channel Operations equation. For example, to replace channel 12 with interpolated values, you would write an equation like this: `nch12 =chinterpol`
+* We use a spherical spline interpolation that takes into account all of the electrode sites (i.e., using EEGLAB's `eeg_interp` function). To do this with EEG Channel Operations, you must first make sure that your dataset contains electrode location information (not just the name, but the 3-D coordinates). You would then use the `chinterpol` function in your Channel Operations equation. For example, to replace channel 12 with interpolated values, you would write an equation like this: `nch12 = chinterpol`
 
 * Create a new dataset by checking `Create new dataset` radio button.
 
-* To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_interp_equations.txt` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`)
+* To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_int_eqs.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
 
-* Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_RRF_(INT).set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, `INT`= interpolated).
+* Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF(_INT).set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated)).
 
-#### 12.  Replace *more than one* bad channel 
+#### 11.  Replace *more than one* bad channel 
 
 * If there is **MORE THAN ONE BAD CHANNEL** you will need to do *selective EEG channel interpolation* via the command `Selective EEG Channel Interpolation` using the command line interface.
 
@@ -276,11 +236,11 @@ Select  `ERPLAB > EEG Channel operations`
       ignored_chans     = [4 5 6 7 8 9 10 11   14 15 16]; % Interpolate using electrodes 12 & 13
       eeg_out_selective = erplab_selective_eeg_interp(eeg_in, replace_chans, ignored_chans);`
 
-* To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_equations.txt` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`)
+* To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_int_eqs.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
 
-* Save your file as  `EID_S###_TID_FLT_RSP_ICA_REF_RRF_(INT).set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated).
+* Save your file as  `EID_S###_TID_FLT_RSP_ICA_REF(_INT).set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated)).
 
-#### 13. Create the Event List
+#### 12. Create the Event List
 
 * Select  `ERPLAB > EventList > Create EEG EVENTLIST`
 
@@ -296,9 +256,9 @@ Select  `ERPLAB > EEG Channel operations`
 
 * Save the Eventlist to a text file as `EID_S###_TID_ELS.txt`
 
-* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_(INT)_ELS.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated), `ELS` = eventlist attached).
+* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF(_INT)_ELS.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated), `ELS` = eventlist attached).
 
-#### 14. Assign Bins
+#### 13. Assign Bins
 
 * Select `ERPLAB > Assign bins (BINLISTER)`
 
@@ -333,15 +293,15 @@ Select  `ERPLAB > EEG Channel operations`
 
   ##### 12.1 Save the binned eventlist  
 
-* Save the binned Eventlist to a text file as `EID_S###_TID_ELS_BIN.txt` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `ELS_BIN` = binned event list)
+* Save the binned Eventlist to a text file as `EID_S###_TID_ELS_BIN.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
 
 * Click `Run`.
 
   ##### 12.2 Save the dataset
 
-*  Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_(INT)_ELS_BIN.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated), `ELS` = eventlist attached, `BIN` = bins defined).
+*  Save your file as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF(_INT)_ELS_BIN.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated), `ELS` = eventlist attached, `BIN` = bins defined).
 
-#### 15. Epoch data
+#### 14. Epoch data
 
 * Select `ERPLAB > Extract bin-based epochs`
 
@@ -349,9 +309,9 @@ Select  `ERPLAB > EEG Channel operations`
 
 * Leave `pre-stimulus baseline` as the default correction.
 
-* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_int_lst_bin_epc.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, `INT`= interpolated, `ELS` = eventlist attached, `BIN` = bins defined, `EPC` = epochs created).
+* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF(_INT)_ELS_BIN_EPC.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated), `ELS` = eventlist attached, `BIN` = bins defined, `EPC` = epochs created).
 
-#### 16. Perform artifact detection to reject bad epochs
+#### 15. Perform artifact detection to reject bad epochs
 
 * Given the use of ICA decomposition, we should have eliminated most eyeblinks so at the stage we are only rejecting epochs with other types of artifact such as rigourous muscle movement which should be rare
 
@@ -361,9 +321,9 @@ Select  `ERPLAB > EEG Channel operations`
 
 * A window with the EEG will pop up with bad trials highlighted in yellow, and the offending channels highlighted in red. Scroll through the final flagged dataset and make sure it’s rejecting the right trials and keeping the good trials. If things are not working (that is, if bad trials are getting through or good trials are being rejected), change the thresholds accordingly and re-run detection until you find a threshold that works correctly.
 
-* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF_INT_ELS_BIN_EPC_ARJ.set` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, `INT`= interpolated, `ELS` = eventlist attached, `BIN` = bins defined, `EPC` = epochs created, `ARJ` = artefact rejected).
+* Save your dataset as  `EID_S###_TID_FLT_RSP_TRM_ICA_REF(_INT)_ELS_BIN_EPC_ARJ.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated), `ELS` = eventlist attached, `BIN` = bins defined, `EPC` = epochs created, `ARJ` = artefact rejected).
 
-####  17. Save Artifact Rejection Summary
+####  16. Save Artifact Rejection Summary
 
 * You will also want to **save the artifact detection results** as a text file to your hard drive. You will need this to identify which individuals need to be excluded from data analysis (e.g., anyone with more than 30% rejected trials in any one condition).
 
@@ -371,16 +331,16 @@ Select  `ERPLAB > EEG Channel operations`
 
 * Select  `ERPLAB > Summarize artifact detection > Summarize EEG artifacts in a table`
 
-* Save your artifact detection results as  `EID_S###_TID_ARJ_SUM.txt` (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`; `TID` = 3 letter task ID; `ARJ_SUM` = artifact rejection summary )
+* Save your artifact detection results as  `EID_S###_TID_ARJ_SUM.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `ARJ_SUM` = artifact rejection summary )
 
 
-#### 18. Average the ERPs
+#### 17. Average the ERPs
 
 * Select   `ERPLAB > Compute averaged ERPs`
 
 * Keep the default settings
 
-* Save the erp file as `EID_S###.erp`, (`EID` = 3 letter experiment ID; `S###` = S plus three digit subject number e.g. `S008`, `S019`).
+* Save the erp file as `EID_S###.erp`, (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`).
 
 
 ### Part II: Measuring Latencies from the ERP files
@@ -407,7 +367,7 @@ Measuring amplitudes and latencies with the ERP Measurement Tool
 
 * Choose `One measurement per line (long format)`
 
-* Save output file as `EID_###_MW######_BL######BL.txt` (e.g `M21_025_MW200300_BL150050.txt` where `EID` = experiment ID, `###` is the total number of subjects that have been run in the study,  `MW######` is the beginning and end of the measurement window in milliseconds—e.g `MW200300` for a 200 to 300 ms window, and `BL######` is the baseline correction window in milliseconds—e.g. `BL200000` for a -200 to 0 millisecond baseline or `BL150050` for a -150 to 50 millisecond baseline.)
+* Save output file as `EID_#s_CN.txt`, e.g `M18_24_N400.txt` where `EID` = experiment ID, `#s` is the total number of subjects that have been run in the study, and `CN` is the component name e.g. N400, P300 etc.
 
 ### Part III: Generating a Grand Average ERP
 
@@ -423,7 +383,7 @@ Measuring amplitudes and latencies with the ERP Measurement Tool
 
 * Click `RUN` to generate the grand average.
 
-* When the *Save Erpset GUI* dialog appears, select `Create a new erpset` and save the file as `EID_GDA_###` (e.g `M21_GDA_024.txt` where `EID` = experiment ID, `###` is the total number of subjects that have been run in the study,   Also select `Save ERP as` and enter a similar name for the file that will be saved to disk. Click `Ok`.
+* When the *Save Erpset GUI* dialog appears, select `Create a new erpset` and then enter a suitable name for the grand average. Also select `Save ERP as` and enter a similar name for the file that will be saved to disk. Click `OK`.
 
 * Steps for different ways to visualize the Grand Average ERP can be found in [*EEG Methods for the Psychological Sciences* by Cheryl L. Dickter and Paul D Kieffaber](https://us.sagepub.com/en-us/nam/eeg-methods-for-the-psychological-sciences/book238043) beginning on page 80.
 
