@@ -36,7 +36,7 @@ params:
     - name: Get in touch
       url: contact/
     - name: M21 Qualtrics!
-      url: qualtrics/
+      url: https://providence.az1.qualtrics.com/jfe/form/SV_5BYBWCrPez7ADA2
 
   sidebarAbout:
     - This is the website for the Human Psychophysiology Lab at Providence College.
@@ -49,6 +49,7 @@ params:
     googleplus: https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en
 #   instagram: full profile url in instagram
     linkedin: https://www.linkedin.com/in/joanna-morris-3278278/
+    qualtrics: https://providence.az1.qualtrics.com/jfe/form/SV_5BYBWCrPez7ADA2
 #   stackoverflow: full profile url in stackoverflow
 #   twitter: full profile url in twitter
 #   whatsapp: wa.me service link
