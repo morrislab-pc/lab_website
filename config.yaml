@@ -35,6 +35,8 @@ params:
       url: blog
     - name: Get in touch
       url: contact/
+    - name: M21 Qualtrics!
+      url: qualtrics/
 
   sidebarAbout:
     - This is the website for the Human Psychophysiology Lab at Providence College.
