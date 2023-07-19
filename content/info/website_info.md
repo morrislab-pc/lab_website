@@ -5,7 +5,6 @@ image: img/tutorials/pchpl_logo_chrome_2.png
 showonlyimage: false
 title: Website Info
 slug: website_info
-weight: 1
 ---
 
 
