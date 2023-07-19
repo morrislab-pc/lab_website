@@ -4,7 +4,6 @@ draft: false
 image: img/info/BrainVision_Recorder.jpg
 showonlyimage: false
 title: Data Recording Procedures
-weight: 0
 slug: recording_procedures
 ---
 
