@@ -5,7 +5,6 @@ date: '2023-06-13'
 draft: no
 image: img/info/pipeline_2.jpg
 showonlyimage: no
-weight: 0
 slug: data-processing-pipeline
 ---
 

@@ -5,7 +5,6 @@ date: "2023-05-03"
 draft: false
 image: img/info/lab_procedures_1.jpg
 showonlyimage: false
-weight: 1
 slug: lab_procedures
 ---
 
