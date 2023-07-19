@@ -6,6 +6,7 @@ image: img/unityInstructions/serverPhoto.jpeg
 showonlyimage: false
 title: Accessing and Navigating Unity with Globus
 slug: accessing_unity
+
 ---
 
 Our lab uses the URI Unity Cluster to store data and analyses. Here's a breakdown of accessing and navigating through the data with Globus
