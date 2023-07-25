@@ -8,3 +8,5 @@ weight: 5
 ---
 
 ![Insensitive Group \-- Hits minus Correct Rejections](images/insHmCr-03.gif)
+
+![Insensitive Hits Correct Reject.](/img/portfolio/insHmCr.gif){width="302"}
