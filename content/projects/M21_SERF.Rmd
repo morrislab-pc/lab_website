@@ -9,4 +9,4 @@ weight: 5
 
 QR Code here
 
-![](images/insHmCr.gif)
+![](img/portfolio/insHmCr.gif)
