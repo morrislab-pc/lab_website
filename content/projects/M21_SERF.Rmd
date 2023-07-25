@@ -6,4 +6,7 @@ showonlyimage: false
 title: N400 & Visual Statistical Learning
 weight: 5
 ---
+
 QR Code here
+
+![](images/insHmCr.gif)
