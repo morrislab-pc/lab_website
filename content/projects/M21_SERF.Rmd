@@ -7,9 +7,4 @@ title: N400 & Visual Statistical Learning
 weight: 5
 ---
 
-QR Code here
-
-![](img/portfolio/insHmCr.gif)
-```{r, echo=FALSE, out.width = '100%'}
-knitr::include_graphics("animation.gif", error = FALSE)
-```
+![Insensitive Group \-- Hits minus Correct Rejections](images/insHmCr-03.gif)
