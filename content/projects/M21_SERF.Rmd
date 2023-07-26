@@ -7,6 +7,6 @@ title: N400 & Visual Statistical Learning
 weight: 5
 ---
 
-![Insensitive Group \-- Hits minus Correct Rejections](images/insHmCr-03.gif)
+![Insensitive difference wave Hits - Correct Reject.](/img/portfolio/insHmCr.gif){width="302"}
 
-![Insensitive Hits Correct Reject.](/img/portfolio/insHmCr.gif){width="302"}
+![Insensitive difference wave Hits - False Alarms.](/img/portfolio/insHmFa.gif){width="302"}
