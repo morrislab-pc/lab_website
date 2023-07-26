@@ -48,7 +48,9 @@ There are also a few ways to install Git on Windows. The most official build is 
 
 To get started you can either clone someone else's repository from GitHub, or create a repository from scratch on your computer and then upload it to GitHub
 
-# Cloning a repository from GitHub 
+# Creating A Repository
+
+## Method 1: Cloning a repository from GitHub 
 
 Here is the GitHub Workflow for Repos that you don't own: 
 
@@ -67,7 +69,7 @@ A repository on GitHub exists as a **remote repository**. To work on the files o
 
 Choose *one* of the following methods:
 
-1A. R Studio Method
+**(1) R Studio Method**
 
   - Find and copy the **URL** for the repository on GitHub
 
@@ -80,7 +82,7 @@ Choose *one* of the following methods:
 The first argument is the URL that you copied from GitHub. The `destdir` argument specifies the parent directory where you want the new folder (and local Git repo) to live. If you don’t specify `destdir`, usethis defaults to the desktop.
 
 
-1B. Generic Method
+ **(2) Generic Method**
 
 
   - Find the **URL** for the repository on GitHub
@@ -92,7 +94,7 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
   - Once in that directory,  type `git clone https: [your_repository]`.  For example `git clone https://github.com/joannamorris/lab_tutorials.git`
 
 
-##  A note on 'forking' vs 'cloning'
+ **A note on 'forking' vs 'cloning'**
 
   - A **fork** is a copy of a repository that is on your GitHub account, as opposed to the account of the original repository owner.
 
@@ -117,7 +119,8 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
 
       - ***Step 5***: Send a request to the owner of the original repository to merge (pull) the changes into the main central repository.  This is a **pull request**.
 
-## Linking local and remote repositories
+
+**Linking local and remote repositories**
 
    - Using the terminal, The `remote` command shows which remote repositories are currently connected to your local repository.
 
@@ -136,17 +139,18 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
   - You should now add  *another* link to the original upstream repo called 'upstream' that will allow you to pull changes from the original repo
 `$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 
-# Creating a repository from locally on your computer
+## Method 2: Creating a repository from local files on your computer
 
-  - If your project already exists locally (on your computer), but is not yet under version control with git, use the `git init` command to transform the folder containing your files into a Git repository. This is only run once, even if other collaborators share the project.
+  - If your project already exists locally (on your computer), but is not yet under version control with git, you must transform the folder containing your files into a Git repository. This is only run once, even if other collaborators share the project.
   
   - Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with *README*, license, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
 
   - In the command line, navigate to the root directory of your project.
 
-  - Initialize the local directory as a Git repository. If you’re using Git 2.28.0 or a later version, you can set the name of the default branch using the command  `git init -b main`
+  - If you’re using ***Git 2.27.1 or an earlier version***, you can set the name of the default branch the following command: `git init && git symbolic-ref HEAD refs/heads/main`
   
-  - If you’re using Git 2.27.1 or an earlier version, you can set the name of the default branch the following command: `git init && git symbolic-ref HEAD refs/heads/main`
+    - Initialize the local directory as a Git repository. If you’re using ***Git 2.28.0 or a later version***, you can set the name of the default branch using the command  `git init -b main`
+
         
   - You can tell Git which files and directories to ignore when you make a commit by creating a `.gitignore` file in your repository's root directory using the following command: `touch .gitignore`
         
@@ -229,7 +233,7 @@ prints info about your current Git, gert, and GitHub setup. "Sitrep" is short fo
 
 * Restart R!
 
-## Configure Git to use the osxkeychain
+# Configure Git to use the osxkeychain
 
 * By default, git credentials are not cached so you need to tell Git if you want to avoid having to provide them each time Github requires you to authenticate. On Mac, Git comes with an “osxkeychain” mode, which caches credentials in the secure keychain that’s attached to your system account.
 
@@ -251,10 +255,10 @@ prints info about your current Git, gert, and GitHub setup. "Sitrep" is short fo
     `Password for 'https://username@github.com': your_access_token`
 
 
-## Accessing GitHub via SSH
+# Accessing GitHub via SSH
 
 You can also [connect to GitHub using the Secure Shell Protocol (SSH)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), which provides a secure channel over an unsecured network.
 
-## More on Git (via Software Carpentry)
+# More on Git (via Software Carpentry)
 
 [Version Control with Git](https://swcarpentry.github.io/git-novice/)
