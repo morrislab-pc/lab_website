@@ -19,7 +19,7 @@ The advantages of using a markup language like LaTeX rather than a [WYSISYG text
 
 - [What is LaTex?](https://guides.lib.wayne.edu/latex/home)
 
-- [Writing a Latex documemt](https://guides.lib.wayne.edu/latex/write)
+- [Writing a Latex document](https://guides.lib.wayne.edu/latex/write)
 
 - [Compiling a LaTex document](https://guides.lib.wayne.edu/latex/write)
 
