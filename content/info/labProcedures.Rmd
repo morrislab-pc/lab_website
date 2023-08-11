@@ -187,7 +187,7 @@ Here's what your final set up should look like:
 
 36. Once the lexical decision task has come to an end, stop the BrainVision recording.
 
-37. Immediately start a new brainvision recording for the visual statistical learning task. Name your file: m21_S###\_vsl_eeg.
+37. Immediately start a new brainvision recording for the visual statistical learning task. Name your file: m21_S###\_vsl_eeg. Do not append the new file to the old one.
 
 38. Re-enter the experimental room and pull up the Visual Statistical Learning task. Click on the desktop folder and open the file named "m21_VSL_experiment.exp":
 
@@ -203,7 +203,7 @@ Here's what your final set up should look like:
 
 41. Before leaving the room, click on the "num lk" button on the experimental keyboard to turn on the number pad. The light should illuminate to mark that it is active. Participants will need the number pad for this portion of the experiment! Click the enter key once to advance the experiment to the instructions slide.
 
-42. Retreat to the control room. For this portion of the experiment, the participant will see a series of shapes flash across the screen for 10 minutes. After this phase, they will be presented with a series of triplets where they will need to select which seems more familiar. Once they complete the activity, stop the EEG recording. Go into the experimental room and click 'finish' to save their data:
+42. Retreat to the control room. For this portion of the experiment, the participant will see a series of shapes flash across the screen for 10 minutes. After this phase, they will see a screen that prompts the experimenter to press the left control button to continue the experiment. At this point, please stop the BrainVision recording and start a new one with the VSL2 label. Then, instruct the participant to press the left control button. They will be presented with a series of triplets where they will need to select which seems more familiar. Once they complete the activity, stop the EEG recording. Go into the experimental room and click 'finish' to save their data:
 
     -   ![](/img/complete_guide/vslFinishMenu.png){width="500"}
 
@@ -211,7 +211,7 @@ Here's what your final set up should look like:
 
 44. Put dirty towels in the hamper provided. Please let Joanna know when the hamper fills up so she can wash and restock the towels.
 
-45. Disburse money to the participant for their efforts. Make sure to fill out the HPL DISBURSEMENT LOG and have the participant sign that they received the money. Each participant will be paid \$20 for their participation.
+45. Disburse money to the participant for their efforts. Make sure to fill out the HPL DISBURSEMENT LOG and have the participant sign that they received the money. Each participant will be paid \$20- \$25 for their participation.
 
 #### Post-Participant Clean Up
 
