@@ -316,7 +316,7 @@ Select  `ERPLAB > EEG Channel operations`
 
 * Select `ERPLAB > Artifact detection in epoched data > Simple voltage threshold`
 
-* A voltage value of ±75 or ±100 should screen out most large artifacts and leave the good EEG untouched. Run this only on the scalp channels.
+* A voltage value of ±75 or ±100 should screen out most large artifacts and leave the good EEG untouched. **Run this only on the scalp channels, excluding FP1 and FP2**.
 
 * A window with the EEG will pop up with bad trials highlighted in yellow, and the offending channels highlighted in red. Scroll through the final flagged dataset and make sure it’s rejecting the right trials and keeping the good trials. If things are not working (that is, if bad trials are getting through or good trials are being rejected), change the thresholds accordingly and re-run detection until you find a threshold that works correctly.
 
