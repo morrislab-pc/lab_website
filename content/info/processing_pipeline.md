@@ -213,27 +213,16 @@ Select  `ERPLAB > EEG Channel operations`
 
 * The inputs to the function are:
 
-    `eeg_in` - EEGLAB `EEG` data structure to interpolate
+  `EEG` - EEGLAB `EEG` data structure to interpolate
 
-	`replace_chans` - array of channels to replace via interpolation
+	`badchans` - array of channels to replace via interpolation
 
-	`ignored_chans` - array of channels to ignore as input for interpolation`
+	`method` - griddata method used for interpolation. (default is 'invdist'). 'spherical' uses superfast spherical interpolation. 'spacetime' uses griddata3 to  interpolate both in space and time (very slow)
+	
+	 `EEG = eeg_interp(EEG, badchans, method)`
 
 * The output of the function is an EEGLAB `EEG` data structure.
 
-* Example Use
-
-      eeglab;
-
-      %% Load test dataset
-      data_filename = 'S1_Chan.set';
-      data_filepath = './data/;
-      eeg_in = pop_loadset('filename', data_filename, 'filepath', data_filepath);s
-
-      %% Process data
-      replace_chans     = [1 2 3];                        % Replace these channels via interpolation
-      ignored_chans     = [4 5 6 7 8 9 10 11   14 15 16]; % Interpolate using electrodes 12 & 13
-      eeg_out_selective = erplab_selective_eeg_interp(eeg_in, replace_chans, ignored_chans);`
 
 * To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_int_eqs.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
 
