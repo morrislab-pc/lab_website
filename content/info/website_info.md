@@ -19,6 +19,14 @@ The PCHPL website serves as a repository for much of the information you will ne
 
 We use the an R package called [blogdown](https://bookdown.org/yihui/blogdown/) to create our website. Blogdown creates web content using either [Markdown](https://www.markdownguide.org/getting-started/) or [RMarkdown](https://rmarkdown.rstudio.com) . It produces a static website, meaning the website only consists of static files such as HTML, CSS, JavaScript, and images, etc. Static websites can be hosted on any web server. The website is generated from R Markdown documents. All the pages are built from blogdown and [Hugo](https://gohugo.io/about/what-is-hugo/), the static site generator on which blogdown is based.
 
+To install blogdown and Hugo in RStudio, at the console prompt, type:
+
+`install.packages("blogdown")`
+
+and then
+
+`blogdown::install_hugo("0.84.0")`
+
 ([Read about](https://hackernoon.com/rise-of-static-site-generators-and-the-destiny-of-cms-e2b8ff0d5fcc) the pros and cons of content management systems (CMS) vs static website generators.)
 
 Our website source files are under [version control with git](https://ourcodingclub.github.io/tutorials/git/). We store our website pages in a [GitHub repository](https://github.com/morrislab-pc/lab_website) and we deploy our site using [Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).

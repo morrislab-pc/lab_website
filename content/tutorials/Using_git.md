@@ -187,12 +187,10 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
 
   - the `git pull` command is a `git fetch` command followed by a `git merge` command.
 
-  - It has been suggested that one use `git pull --rebase` instead of `git pull`. See [(What is the difference between git `pull` and git `rebase`)](https://mislav.net/2013/02/merge-vs-rebase/)
-
   - Git `sync` does everything in one command meaning `pull` and `push`.
 
 
-# Branching
+# Branching and Merging
 
   - To view the branches in a Git repository, run the command `git branch`
 
@@ -200,14 +198,20 @@ The first argument is the URL that you copied from GitHub. The `destdir` argumen
 
   - To see details of each brach use `git branch -v` or `git branch --verbose`
 
-  - `git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch
+  - `git checkout -b NEW_BRANCH` creates a new branch and checks out the new branch
 
-  - `git branch BRANCH_NAME` creates a new branch but leaves you on the same branch.
+  - `git branch NEW_BRANCH` creates a new branch but leaves you on the same branch.
 
-  - In other words `git checkout -b BRANCH_NAME` does the following for you:
+  - In other words `git checkout -b NEW_BRANCH`  does the following:
 
-       `git branch BRANCH_NAME    # create a new branch`
-       `git switch BRANCH_NAME    # then switch to the new branch`
+       `git branch NEW_BRANCH`  creates a new branch
+       
+       `git switch NEW_BRANCH`  switches to the new branch 
+
+ - To merge the new branch back into the main branch, All you have to do is check out the branch you wish to merge into by typing `git checkout OLD_BRANCH`.  This switches you back to the old branch.
+ 
+- You then run  `git merge NEW_BRANCH` and this merges the new branch into the old branch.
+ 
 
 # Using GitHub with Rstudio
 
