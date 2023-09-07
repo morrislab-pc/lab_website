@@ -257,7 +257,7 @@ Here's what your final set up should look like:
     -   m21_Sxxx_VSL2_EEG.vhdr
     -   m21_Sxxx_VSL2_EEG.vmrk
 
-9.  Altogether, you should upload 12 files to your participant folder.
+9.  Altogether, you should upload 12 files to your participant folder:
    -   ![](/img/complete_guide/completeFilesInDataFolder.png){width="500"}
 
 10. Now you can start undoing the experiment set up. Start by unplugging the ground electrode from the battery, then the splitter band, then the power cord. Plug in the charging cable to recharge the battery while you complete cleaning if needed. Charging cable is in a cord holder on the back wall.
