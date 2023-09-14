@@ -2,10 +2,10 @@
 date: "2016-11-05T18:25:22+05:30"
 draft: false
 showonlyimage: false
-title: Alexandra Saneff
+title: Alex Saneff
 
 ---
 
 PC 2026
-Majors: Psychology
-Minors:
+Major: Psychology
+Minor: Spanish HS
