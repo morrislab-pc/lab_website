@@ -267,7 +267,7 @@ Double check artifact components flagged for rejection by clicking on `Inspect\l
 
 * Save your file as  `EID_S###_TID_TRM_FLT_RSP_REF_ELS_BIN_ICA_INT.set` (EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`TRM` = trimmed; `FLT` = filtered; `RSP` = resampled, `REF` = re-referenced; `ELS` = eventlist attached; `BIN` = bins defined; `ICA` = ica applied).
 
-* Then select EEGLAB > ERPLAB > Preprocess EEG > Selective Electrode Interpolation. Put 11 in the Interpolate Electrodes box (because C5 is Channel 11). We don’t want our bipolar EOG electrodes to be used for the interpolation, because they don’t have the same reference as C5 and would mess up the interpolation, so put 32 33 in the Ignore Electrodes box. Select Spherical as the Interpolation Method and click the Interpolate button.
+* Then select   EEGLAB > ERPLAB > Preprocess EEG > Selective Electrode Interpolation`. Put the number of the channel to be replaced in the Interpolate Electrodes box. Put the channel numbers of the non-scalp channels in the `Ignore Electrodes` box. Select Spherical as the Interpolation Method and click the `Interpolate` button.
 
 * If there is **MORE THAN ONE BAD CHANNEL** you will need to do *selective EEG channel interpolation* via the command `Selective EEG Channel Interpolation` using the command line interface.
 
