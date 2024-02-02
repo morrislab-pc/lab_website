@@ -13,8 +13,8 @@
 # server such as Netlify.
 
 .DS_Store
-themes/
-public/
+
+
 .idea/*
 
 /blogdown/
