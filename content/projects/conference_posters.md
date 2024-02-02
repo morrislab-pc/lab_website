@@ -1,5 +1,5 @@
 ---
-title: "Conference Posters"
+title: "Conference Presentations"
 author: "Joanna Morris"
 date: "2024-02-01"
 draft: no
