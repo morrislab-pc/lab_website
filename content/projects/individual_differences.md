@@ -4,7 +4,6 @@ draft: false
 image: img/portfolio/reading_1.jpg
 showonlyimage: false
 title: Individual differences in reading and visual spatial learning
-weight: 1
 ---
 
 Together with Jay Rueckl and Oliver Sawi at UConn, we are investigating individual differences in complex word recognition.
