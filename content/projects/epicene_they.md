@@ -4,7 +4,6 @@ draft: false
 image: img/portfolio/reading_adult_2.jpg
 showonlyimage: false
 title: Epicene "They"
-
 ---
 
 Over the last two decades, there has been an increase in the use of the pronoun ‘they’ to refer to singular, epicene antecedents.
