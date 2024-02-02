@@ -4,7 +4,7 @@ draft: false
 image: img/portfolio/words_5.jpg
 showonlyimage: false
 title: Morphology and Syntax
-weight: 6
+
 ---
 
 Work on the how we read words that contain derivational and inflectional morphology has contributed to a greater understanding of combinatorial structure in language.
