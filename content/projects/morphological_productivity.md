@@ -4,7 +4,6 @@ draft: false
 image: img/portfolio/words_1.jpg
 showonlyimage: false
 title: Morphologial Productivity
-
 ---
 
 Complex words may be recognized either as whole units retrieved from memory or via their constituents, and affix productivity, as reflected in type frequency, may be one dimension along which this distinction is drawn. 

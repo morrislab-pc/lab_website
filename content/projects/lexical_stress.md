@@ -4,7 +4,6 @@ draft: false
 image: img/portfolio/letters_1.jpg
 showonlyimage: false
 title: Orthographic Cues to Lexical Stress
-
 ---
 
 My dissertation work examined the question of how changes in word stress can be encoded in an alphabetic orthography. 
