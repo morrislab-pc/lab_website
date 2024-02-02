@@ -27,7 +27,7 @@ and then
 
 `blogdown::install_hugo("0.84.0")`
 
-([Read about](https://hackernoon.com/rise-of-static-site-generators-and-the-destiny-of-cms-e2b8ff0d5fcc) the pros and cons of content management systems (CMS) vs static website generators.)
+`blogdown` was originally released in 2017. Important changes were made in [`blogdown 1.0` released in 2021](https://posit.co/blog/blogdown-v1.0/).
 
 Our website source files are under [version control with git](https://ourcodingclub.github.io/tutorials/git/). We store our website pages in a [GitHub repository](https://github.com/morrislab-pc/lab_website) and we deploy our site using [Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
 
