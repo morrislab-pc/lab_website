@@ -31,8 +31,6 @@ params:
       url: graduates/
     - name: Tutorials
       url: tutorials/
-    - name: Lab Blog
-      url: blog
     - name: Get in touch
       url: contact/
     - name: M21 Qualtrics Survey
