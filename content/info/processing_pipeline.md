@@ -115,17 +115,13 @@ Select  `Edit > Channel locations`
 
 * EEG recordings measure differences in electrical potentials between two points (Voltages) and are usually expressed in units of microvolts (μV). The signal displayed at any channel is the difference in electrical potential to some other recording site, generally the ground electrode.
 
-* EEG amplification systems use differential amplifiers which use three electrodes to record activity: an **active electrode** (A), a **reference electrode** (R), and a **ground electrode** (G). The differential amplifier amplifies the difference between the AG voltage and the RG voltage (AG minus RG). Electrical activity picked up by the amplifier’s ground circuit will be the same for the AG and RG voltages and will therefore be eliminated by the subtraction.
+* Many EEG amplification systems use differential amplifiers which use three electrodes to record activity: an **active electrode** (A), a **reference electrode** (R), and a **ground electrode** (G). The differential amplifier amplifies the difference between the AG voltage and the RG voltage (AG minus RG). Electrical activity picked up by the amplifier’s ground circuit will be the same for the AG and RG voltages and will therefore be eliminated by the subtraction.
 
-* The reference itself is not displayed as a channel in your data. Changing the reference offline after recording is called **re-referencing**. The idea behind re-referencing is to express the voltage at the EEG scalp channels with respect to another, new reference. It can be composed of any recorded channel or an average of several channels. This ultimate reference for your data will also affect your analysis.
+* Our current system, BrainVision actiCHamp Plus records the data without a reference electrode. The voltages are the raw voltages between each active electrode and the ground electrode. Offline, we reference the data to `TP9` and `TP10` (for data recorded at the PC lab. For data recorded at the Hampshire lab we reference to the average of the left and right mastoids).   .
 
-* Typically you want the reference site to be *equidistant from all electrodes*, in order to not establish a hemispheric bias. In our case, we want to set the reference as an average of `TP9` and `TP10` (the recording reference).
+* To re-reference the data select  `ERPLAB > EEG Channel operations`. The channel operations GUI will then pop up. You can type equations directly into the channel operations GUI or load in a `.txt` file.
 
-* To re-reference the data select  `ERPLAB > EEG Channel operations`
-
-* The channel operations GUI will then pop up. You can type equations directly into the channel operations GUI or load in a `.txt` file.
-
-* Click on `Load list` and load the file called [`reref_eq_pc.txt`](/files/reref_eq_pchpl.txt)(Right-click or control-click on the link to download the file).  The equations from the `.txt` file will appear in the equations window. Then hit `RUN`.
+* Click on `Load list` and load the file called [`reref_eq_pc.txt`](/files/reref_eq_pchpl.txt) for data recorded at the PC lab. Right-click or control-click on the link to download the file.   (For data recorded at the Hampshire lab load the file called [`reref_eq_brainvision_hampshire.txt`](/files/reref_eq_brainvision_hampshire.txt) )  The equations from the `.txt` file will appear in the equations window. Then hit `RUN`.
 
 * Make sure the `Create new dataset` radio button is checked. The `Modify existing dataset` option does *recursive updating* and `Create new dataset` does *non-recursive updating*.  For re-referencing data, always use the `Create new dataset` option. Keep in mind the syntax for the two options is slightly different. For merely adding channels to the bottom of a list, modifying the data set is fine.
 
