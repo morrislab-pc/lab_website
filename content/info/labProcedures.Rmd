@@ -71,7 +71,7 @@ Please make sure to bring the following items with you:
 
     -   ![](/img/complete_guide/capTagSize60.jpg){width="302"}
 
-4.  Once you have selected the correct cap size, ask the participant to try on the cap if they haven't already. The easiest way to do this is to have the participant hold the ground electrode housing to their forehead while you pull the cap over their head. Make sure the cap is well fitted and the participant is comfortable. 
+4.  Once you have selected the correct cap size, ask the participant to try on the cap if they haven't already. The easiest way to do this is to have the participant hold the ground electrode housing to their forehead while you pull the cap over their head. Make sure the cap is well fitted and the participant is comfortable.
 
 5.  Once you have selected the correct cap and ensured proper fit, ask the participant to remove the cap once more so you can populate the cap with electrodes. The participant can now resume the rest of the Qualtrics questionnaire.
 
@@ -255,7 +255,8 @@ Here's what your final set up should look like:
     -   m21_Sxxx_VSL_EEG.vmrk
 
 9.  Altogether, you should upload 9 files to your participant folder:
-   -   ![](/img/complete_guide/completeFilesInDataFolder.png){width="500"}
+
+-   ![](/img/complete_guide/completeFilesInDataFolder.png){width="500"}
 
 10. Now you can start undoing the experiment set up. Start by unplugging the ground electrode from the battery, then the splitter band, then the power cord. Plug in the charging cable to recharge the battery while you complete cleaning if needed. Charging cable is in a cord holder on the back wall.
 
