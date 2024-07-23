@@ -30,3 +30,11 @@ A statistical model is means to capture the structure of the data as simply as p
 [*Statistical Thinking for the 21st Century* by Russell A. Poldrack. Chapter 5 Fitting models to data.](https://statsthinking21.github.io/statsthinking21-core-site/fitting-models.html)
 
 [*Data Science with R* by Garrett Grolemund. Chapter 3 Model Fitting.](https://garrettgman.github.io/model-fitting/)
+
+# Dealing with Problems in model fitting
+
+## Heteroskedasticity
+
+Heteroscedasticity means unequal scatter. In regression analysis, we talk about heteroscedasticity in the context of the residuals or error term. Specifically, heteroscedasticity is a systematic change in the spread of the residuals over the range of measured values. Heteroscedasticity is a problem because ordinary least squares (OLS) regression assumes that all residuals are drawn from a population that has a constant variance (homoscedasticity).
+
+[*Heteroscedasticity in Regression Analysis* By Jim Frost](https://statisticsbyjim.com/regression/heteroscedasticity-regression/)
