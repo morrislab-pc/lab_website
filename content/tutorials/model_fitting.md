@@ -38,3 +38,7 @@ A statistical model is means to capture the structure of the data as simply as p
 Heteroscedasticity means unequal scatter. In regression analysis, we talk about heteroscedasticity in the context of the residuals or error term. Specifically, heteroscedasticity is a systematic change in the spread of the residuals over the range of measured values. Heteroscedasticity is a problem because ordinary least squares (OLS) regression assumes that all residuals are drawn from a population that has a constant variance (homoscedasticity).
 
 [*Heteroscedasticity in Regression Analysis* By Jim Frost](https://statisticsbyjim.com/regression/heteroscedasticity-regression/)
+
+### How to transform your data to address heteroscedasticity
+
+[Data Transformation](http://sciences.usca.edu/biology/zelmer/305/trans/)
