@@ -21,6 +21,8 @@ R is not just a a statistics application, but a full-fledged programming languag
 
 ### Introductory Texts
 
+
+
 [*R for Non-Programmers: A Guide for Social Scientists* by Daniel Dauber](https://bookdown.org/daniel_dauber_io/r4np_book/)
 
 This introductory textbook does not assume or expect any prior knowledge or skills in programming or statistical analysis. Instead, this book offers a comprehensive entry to R programming for novices and more experienced analysts wishing to migrate from other computational software.
@@ -59,6 +61,7 @@ In early 2011, Danielle Navarro started teaching an introductory statistics clas
 
 [R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz/index.html)
 
+[*Data Analysis* in R by Steve Midway](https://bookdown.org/steve_midway/DAR/)
 
 [R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
 
