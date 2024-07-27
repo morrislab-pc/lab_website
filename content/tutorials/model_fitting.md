@@ -19,6 +19,20 @@ A statistical model is means to capture the structure of the data as simply as p
 
 &nbsp;
 
+# Linear Models
+
+We use regression to predict a dependent variable from one or more independent variables.  Regression gives us an equation that describes the *form* of the relationship between dependent and independent variables and predicts the *value* of the dependent variable based on the independent variable(s)
+
+## Ordinary Least Squares (OLS) regression
+Ordinary least squares fits models of the form
+
+![](/img/tutorials/eqn1.png)
+
+where *n* is the number of observations and *k* is the number of predictor variables.
+
+![](/img/tutorials/eqn2.png) is the predicted value of the dependent variable for observation *i*
+
+
 # Linear Mixed Effects Models
 
 [Introduction to linear mixed models](https://ourcodingclub.github.io/tutorials/mixed-models/)
