@@ -22,7 +22,6 @@ R is not just a a statistics application, but a full-fledged programming languag
 ### Introductory Texts
 
 
-
 [*R for Non-Programmers: A Guide for Social Scientists* by Daniel Dauber](https://bookdown.org/daniel_dauber_io/r4np_book/)
 
 This introductory textbook does not assume or expect any prior knowledge or skills in programming or statistical analysis. Instead, this book offers a comprehensive entry to R programming for novices and more experienced analysts wishing to migrate from other computational software.
@@ -62,6 +61,10 @@ In early 2011, Danielle Navarro started teaching an introductory statistics clas
 [R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz/index.html)
 
 [*Data Analysis* in R by Steve Midway](https://bookdown.org/steve_midway/DAR/)
+
+[An Introduction to R by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau](https://intro2r.com)
+
+I like this book because it focuses on reproducible research practices and covers topics such as  creating reproducible reports and version control. From the text: "the single biggest reason to use R is that it facilitates robust and reproducible research practices... writing code to perform your analysis ensures you have a permanent and accurate record of all the methods you used (and decisions you made) whilst analysing your data...This is one of the tenets of open science."  
 
 [R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
 

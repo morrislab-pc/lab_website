@@ -20,6 +20,8 @@ Python is a popular programming language with a  simple, easy to learn syntax th
 
 To get started with Python follow [this (excellent!) Python tutorial](https://learnpythontherightway.com/#read).
 
+
+
 [LinkedIn Learning](https://ihelp.providence.edu/services/linkedin-learning/) is available to all faculty, staff, and students at PC. Access it by logging into to your LinkedIn account with your Providence College email. 
 
 #### LinkedIn Learning Tutorials
@@ -28,4 +30,12 @@ To get started with Python follow [this (excellent!) Python tutorial](https://le
 
 [Learning Python](https://www.linkedin.com/learning/learning-python-14393370)
 
+
+### Python for Data Analysis
+
+In our lab we use python for programming our studies and R for analysing our data, but we can also analyse our data with Python. The following textbook is a great introduction to python for data analysis.
+
+[Reproducible Data Science with Python by Valentin Danchev](https://valdanchev.github.io/reproducible-data-science-python/intro.html)
+
+This textbook provides an accessible introduction to open, reproducible, and ethical data analysis using hands-on Python coding, modern open-source computational tools, and data science techniques. Topics include open reproducible research workflows, data wrangling, exploratory data analysis, data visualisation, pattern discovery (e.g., clustering), prediction & machine learning, causal inference, and network analysis.
 
