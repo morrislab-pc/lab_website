@@ -1,6 +1,4 @@
-
 baseurl: /
-
 title: Morris Lab
 theme: hugo-creative-portfolio-theme
 ignoreFiles:
@@ -12,7 +10,41 @@ ignoreFiles:
 languageCode: en-us
 disqusShortname: ''
 googleAnalytics: 'G-VT7DER09PC'
+
+# Hugo Configure Markup
+# More info: https://gohugo.io/getting-started/configuration-markup#
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
+# Social links in footer, support github,twitter,stackoverflow,facebook
+social:
+  email: jmorris6@providence.edu
+  facebook: https://www.facebook.com/morris.joanna
+  github: https://github.com/joannamorris
+#   gitlab: full profile url in gitlab
+  googleplus: https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en
+#   instagram: full profile url in instagram
+  linkedin: https://www.linkedin.com/in/joanna-morris-3278278/
+#   stackoverflow: full profile url in stackoverflow
+#   twitter: full profile url in twitter
+#   whatsapp: wa.me service link
+#   youtube: full profile url in youtube
+
+# Site parameters
 params:
+  math: true
   copyright: PCHPL Logo &copy; 2021 Alec Nicholson
   style: default
   description: This is the website for the Human Psychophysiology Lab at PC.
@@ -39,15 +71,5 @@ params:
   sidebarAbout:
     - This is the website for the Human Psychophysiology Lab at Providence College.
 
-  social:
-    email: jmorris6@providence.edu
-    facebook: https://www.facebook.com/morris.joanna
-    github: https://github.com/joannamorris
-#   gitlab: full profile url in gitlab
-    googleplus: https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en
-#   instagram: full profile url in instagram
-    linkedin: https://www.linkedin.com/in/joanna-morris-3278278/
-#   stackoverflow: full profile url in stackoverflow
-#   twitter: full profile url in twitter
-#   whatsapp: wa.me service link
-#   youtube: full profile url in youtube
+
+
