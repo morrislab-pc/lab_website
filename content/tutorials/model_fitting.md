@@ -52,7 +52,7 @@ You can use the `lm()` function in R to fit an OLS regression model, and the `su
 
 ![](/img/tutorials/regression1.png)
 
-When there is more than one predictor, we are dealing with multiple linear regression.
+When there is more than one predictor, we are dealing with multiple linear regression. When there is more than one independent variable, the regression coefficients indicate the increase in the dependent variable  for a unit change in the independent variable, holding the other independent variables constant.
 
 - 
 # Linear Mixed Effects Models
