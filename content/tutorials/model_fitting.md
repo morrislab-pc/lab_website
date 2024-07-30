@@ -3,9 +3,9 @@ date: "`r Sys.Date()`"
 draft: false
 image: img/tutorials/model-fit.png
 showonlyimage: false
-title: Model Fitting Tutorial
+title: Model Fitting 
 weight: 0
-slug: model-fitting-tutorial
+slug: model-fitting
 ---
 
 "All models are wrong but some are useful."  *George Box*
@@ -71,7 +71,7 @@ If the dependent variable is normally distributed for a fixed set of independent
 
 If the dependent variables is linearly related to the independent variables, there should be no systematic relationship between the residuals and the predicted values.
 
-A standardized residual is the raw residual divided by an estimate of the standard deviation of the residuals. standardized residuals is that they quantify how large the residuals are in standard deviation units, and therefore can be easily used to identify outliers--an observation with a standardized residual that is larger than 3 
+A standardized residual is the raw residual divided by an estimate of the standard deviation of the residuals. Standardized residuals quantify how large the residuals are in standard deviation units and  can be easily used to identify outliers--an observation with a standardized residual that is larger than 3.
 
 ## GLMs: Generalized Linear Models
 
