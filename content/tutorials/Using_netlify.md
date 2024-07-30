@@ -19,4 +19,4 @@ Netlify creates its own repository that pushes to Github and its own microservic
  
 This results in pre-built websites that load faster than on traditional hosting networks. Instead of loading the site for each visit, the visitor gets a pre-loaded version straight from the closest server. This sharply reduces load times.
 
-[This website](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)provides a step-by-step guide how to host a static website on Netlify, including setting up continuous deployment.
+[This website](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) provides a step-by-step guide how to host a static website on Netlify, including setting up continuous deployment.
