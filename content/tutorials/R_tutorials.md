@@ -71,6 +71,7 @@ I like this book because it focuses on reproducible research practices and cover
 [YaRrr! The Pirate’s Guide to R by Nathaniel D. Phillips](https://bookdown.org/ndphillips/YaRrr/)
 
 I found this book very helpful when I needed to use base graphics. From the text: "This book is meant to introduce you to the basic analytical tools in R, from basic coding and analyses, to data wrangling, plotting, and statistical inference."  
+
 [R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
 
 [R in Action v.2 by Robert Kabacoff](https://livebook.manning.com/book/r-in-action-third-edition/welcome/v-9/1)
