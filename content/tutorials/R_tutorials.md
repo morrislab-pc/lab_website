@@ -62,9 +62,15 @@ In early 2011, Danielle Navarro started teaching an introductory statistics clas
 
 [*Data Analysis* in R by Steve Midway](https://bookdown.org/steve_midway/DAR/)
 
+This book has an excellent chapter (Chapter 5) on model fitting, model selection and parameter estimation.
+
 [An Introduction to R by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau](https://intro2r.com)
 
-I like this book because it focuses on reproducible research practices and covers topics such as  creating reproducible reports and version control. From the text: "the single biggest reason to use R is that it facilitates robust and reproducible research practices... writing code to perform your analysis ensures you have a permanent and accurate record of all the methods you used (and decisions you made) whilst analysing your data...This is one of the tenets of open science."  
+I like this book because it focuses on reproducible research practices and covers topics such as  creating reproducible reports and version control. From the text: "the single biggest reason to use R is that it facilitates robust and reproducible research practices... writing code to perform your analysis ensures you have a permanent and accurate record of all the methods you used (and decisions you made) whilst analysing your data...This is one of the tenets of open science." 
+
+[YaRrr! The Pirate’s Guide to R by Nathaniel D. Phillips](https://bookdown.org/ndphillips/YaRrr/)
+
+I found this book very helpful when I needed to use base graphics. From the text: "This book is meant to introduce you to the basic analytical tools in R, from basic coding and analyses, to data wrangling, plotting, and statistical inference."  
 
 [R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
 
