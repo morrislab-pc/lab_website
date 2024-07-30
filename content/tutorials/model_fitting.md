@@ -3,9 +3,9 @@ date: "`r Sys.Date()`"
 draft: false
 image: img/tutorials/model-fit.png
 showonlyimage: false
-title: Model Fitting Tutorial
+title: Model Fitting 
 weight: 0
-slug: model-fitting-tutorial
+slug: model-fitting
 ---
 
 "All models are wrong but some are useful."  *George Box*
