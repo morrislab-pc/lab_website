@@ -66,7 +66,7 @@ You can use the `lm()` function in R to fit an OLS regression model, and the `su
 
 Applying the `plot()` functions to the model returned by `lm()` produces 4 graphs: (1) Residuals vs Fitted Values (2) [Standardized residuals](https://online.stat.psu.edu/stat462/node/172/) vs theoretical quantiles (Normal Q-Q plot) (3) Standardized residuals vs fitted values (4) Standardized residuals vs leverage.
 
--  **Normality**: If the dependent variable is normally distributed for a fixed set of independent variable vales, the residuals should be normally distributed with a mean of 0. In this case, the points on the Q-Q plot should fall on a straight 45-degree line. You can also use the `qqPlot()` function in the `car` package to plot the [*studentized or jackknifed residuals*](https://online.stat.psu.edu/stat462/node/247/) against a \\(t\\) distribution with \\(n - p - 1\\) degrees of freedom where \\(n\\) is the sample size and \\(p\\) is the number of regression parameters including the intercept.
+-  **Normality**: If the dependent variable is normally distributed for a fixed set of independent variable vales, the residuals should be normally distributed with a mean of 0. In this case, the points on the Q-Q plot should fall on a straight 45-degree line. You can also use the `qqPlot()` function in the `car` package to plot the [studentized or jackknifed residuals](https://online.stat.psu.edu/stat462/node/247/) against a \\(t\\) distribution with \\(n - p - 1\\) degrees of freedom where \\(n\\) is the sample size and \\(p\\) is the number of regression parameters including the intercept.
 
 - **Linearity**: If the dependent variables is linearly related to the independent variables, there should be no systematic relationship between the *residuals* and the *predicted values* in plot 3. 
 
@@ -95,13 +95,15 @@ A significant anova F-test doesn’t tell you which treatments differ from one a
  
 # Repeated Measures ANOVA
 
-In repeated measures ANOVA, subjects are measured more than once. Running a repeated measures analysis of variance in R can be a bit more difficult than running a standard between-subjects anova. In repeated measures ANOVA, instead of using the same error term as the denominator for every entry in the ANOVA table, the repeated measures ANOVA uses different error terms as denominators and thus factor out subject differences. In R these error terms are the row labeled “Residuals”. You can conduct a repeated measures using the `aov()` function, and including an error term that contains the "subjects" term, plus the within-subjects variables. 
+In repeated measures ANOVA, subjects are measured more than once. Running a repeated measures analysis of variance in R can be a bit more difficult than running a standard between-subjects anova. In repeated measures ANOVA, instead of using the same error term as the denominator for every entry in the ANOVA table, the repeated measures ANOVA uses different error terms as denominators and thus factor out subject differences. In R these error terms are the row labeled `Residuals`. You can conduct a repeated measures using the `aov()` function, and including an error term that contains the 'subjects' term, plus the within-subjects variables. 
 
 ` aov(DV~IV + Error (Subject/IV), data=data)`
 
-Note that within-subject variables are entered twice in the main part of the model as well as in the “Error” term, but between-subject variables are only entered once, in the main part of the model.
+Note that within-subject variables are entered twice in the main part of the model as well as in the 'Error' term, but between-subject variables are only entered once, in the main part of the model.
 
-One drawback of this method is that it does not give any correction factors for violations of sphericity. and include an additional error term as follows:
+One drawback of this method is that it does not give any correction factors for violations of sphericity. It assumes that the variances of the differences between any two levels of the within-groups factor are equal. In real-world data, it’s unlikely that this assumption will be met. This has led to a number of alternative approaches.
+
+- The Greenhouse-Geisser correction estimates epsilon \\(\hat{\epsilon}\\) in order to correct the degrees of freedom of the \\(F\\)-distribution
 
 
 
