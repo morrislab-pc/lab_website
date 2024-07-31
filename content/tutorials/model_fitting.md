@@ -97,23 +97,32 @@ A significant anova F-test doesn’t tell you which treatments differ from one a
 
 In repeated measures ANOVA, subjects are measured more than once. Running a repeated measures analysis of variance in R can be a bit more difficult than running a standard between-subjects anova. In repeated measures ANOVA, instead of using the same error term as the denominator for every entry in the ANOVA table, the repeated measures ANOVA uses different error terms as denominators and thus factor out subject differences. In R these error terms are the row labeled `Residuals`. You can conduct a repeated measures using the `aov()` function, and including an error term that contains the 'subjects' term, plus the within-subjects variables. 
 
-` aov(DV~IV + Error (Subject/IV), data=data)`
+` fitted_model <- aov(DV ~ IV + Error(Subject/IV), data=df)`
 
 Note that within-subject variables are entered twice in the main part of the model as well as in the 'Error' term, but between-subject variables are only entered once, in the main part of the model.
 
-One drawback of this method is that it does not give any correction factors for violations of sphericity. It assumes that the variances of the differences between any two levels of the within-groups factor are equal. In real-world data, it’s unlikely that this assumption will be met. This has led to a number of alternative approaches.
 
-- The Greenhouse-Geisser correction estimates epsilon \\(\hat{\epsilon}\\) in order to correct the degrees of freedom of the \\(F\\)-distribution
+One drawback of this method is that it does not give any correction factors for violations of sphericity. It assumes that the variances of the differences between any two levels of the within-groups factor are equal. The degree to which sphericity is present, or not, is represented by a statistic called epsilon \\(\epsilon\\)). In real-world data, it’s unlikely that the sphericity assumption will be met. To address this you can use the Greenhouse-Geisser (GG) correction which estimates epsilon \\(\hat{\epsilon}\\) in order to correct the degrees of freedom of the \\(F\\)-distribution.
+
+Another option is to use linear mixed effect models. Given that ANOVA is a  linear model where the predictors are factors,  we can run an ANOVA on a linear mixed model as follows using the `lme4` package.
+
+`fitted_model <- lmer(DV ~ IV + (1|Subject), data=df)`.
 
 
-
-
- 
 # Linear Mixed Effects Models
 
-(https://neuropsychology.github.io/psycho.R/2018/05/01/repeated_measure_anovas.html)
-
 [Introduction to linear mixed models](https://ourcodingclub.github.io/tutorials/mixed-models/)
+
+For random factors, you have three basic variants:
+
+- Intercepts only by random factor: `(1 | random.factor)`
+
+- Slopes only by random factor: `(0 + fixed.factor | random.factor)`
+
+- Intercepts and slopes by random factor: `(1 + fixed.factor | random.factor)`
+
+[How to do Repeated Measures ANOVAs in R by  Dominique Makowski](https://neuropsychology.github.io/psycho.R/2018/05/01/repeated_measure_anovas.html)
+
 
 [Mixed Models with R](https://m-clark.github.io/mixed-models-with-R/)
 
