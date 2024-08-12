@@ -95,12 +95,15 @@ A significant anova F-test doesn’t tell you which treatments differ from one a
  
 # Repeated Measures ANOVA
 
-In repeated measures ANOVA, subjects are measured more than once. Running a repeated measures analysis of variance in R can be a bit more difficult than running a standard between-subjects anova. In repeated measures ANOVA, instead of using the same error term as the denominator for every entry in the ANOVA table, the repeated measures ANOVA uses different error terms as denominators and thus factor out subject differences. In R these error terms are the row labeled `Residuals`. You can conduct a repeated measures using the `aov()` function, and including an error term that contains the 'subjects' term, plus the within-subjects variables. 
+In repeated measures ANOVA, subjects are measured more than once. Running a repeated measures analysis of variance in R can be a bit more difficult than running a standard between-subjects anova. In repeated measures ANOVA, instead of using the same error term as the denominator for every entry in the ANOVA table, the repeated measures ANOVA uses different error terms as denominators and thus factor out subject differences. In R these error terms are the row labeled `Residuals`. 
+
+See [this tutorial](https://www.datanovia.com/en/lessons/repeated-measures-anova-in-r/) for more information on conducting repeated measures ANOVA in R.
+
+You can conduct a repeated measures using the `aov()` function, and including an error term that contains the 'subjects' term, plus the within-subjects variables. 
 
 ` fitted_model <- aov(DV ~ IV + Error(Subject/IV), data=df)`
 
 Note that within-subject variables are entered twice in the main part of the model as well as in the 'Error' term, but between-subject variables are only entered once, in the main part of the model.
-
 
 One drawback of this method is that it does not give any correction factors for violations of sphericity. It assumes that the variances of the differences between any two levels of the within-groups factor are equal. The degree to which sphericity is present, or not, is represented by a statistic called epsilon \\(\epsilon\\)). In real-world data, it’s unlikely that the sphericity assumption will be met. To address this you can use the Greenhouse-Geisser (GG) correction which estimates epsilon \\(\hat{\epsilon}\\) in order to correct the degrees of freedom of the \\(F\\)-distribution.
 

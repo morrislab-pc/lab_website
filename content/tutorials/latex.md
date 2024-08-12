@@ -30,3 +30,5 @@ The advantages of using a markup language like LaTeX rather than a [WYSISYG text
 - [About the `biblatex` package](https://www.overleaf.com/learn/latex/Articles/Getting_started_with_BibLaTeX)
 
 - [About the `natbib` package](http://merkel.texture.rocks/Latex/natbib.php)
+
+- [Graphics in Latex](https://www.reed.edu/it/help/LaTeX/Graphics.html)
