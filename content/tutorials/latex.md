@@ -19,6 +19,8 @@ The advantages of using a markup language like LaTeX rather than a [WYSISYG text
 
 - [What is LaTex?](https://guides.lib.wayne.edu/latex/home)
 
+- [How does writing in Latex differ from writing in MS Word?](https://www.baeldung.com/cs/latex-vs-word-main-differences)
+
 - [Writing a Latex document](https://guides.lib.wayne.edu/latex/write)
 
 - [Compiling a LaTex document](https://guides.lib.wayne.edu/latex/write)
