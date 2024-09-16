@@ -190,6 +190,50 @@ Select  `Edit > Channel locations`
 
 *  Save your file as  `EID_S###_TID_TRM_FLT_RSP_REF_ELS_BIN.set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`TRM` = trimmed; `FLT` = filtered; `RSP` = resampled, `REF` = re-referenced; `ELS` = eventlist attached; `BIN` = bins defined).
 
+The next two steps are *interpolation* and *artifact replacement using ICA*.  There is some debate about whether it is preferable to do interpolation before or after ICA. A discussion about this on the eeglab list can be found [here](https://sccn.ucsd.edu/pipermail/eeglablist/2017/012268.html).  The consensus seems to be "that one should drop bad channels before ICA so as to let
+it do it's job better, giving it a better chance of focusing on neural
+ICs".  If you interpolate prior to ICA it is necessary to indicate the reduced rank of the data to the ICA algorithm but in eeglab this is done automatically.
+
+I used to interpolate after, but I now think it is better to interpolate before.
+
+#### 9. Replace a bad channel via interpolation
+
+* If a participant has no channels that need interpolation, you should resave the file, with the `_INT` suffix (see below) which indicates that for this participant, all channels have been checked and cleared. 
+
+* If FP1, FP2 or any non-scalp channels (VEOG, HEOG, etc) are bad, they need not be interpolated because they are excluded from analysis in any case.
+
+* Then select EEGLAB > ERPLAB > Preprocess EEG > Selective Electrode Interpolation. 
+
+* Enter the channel number for the bad channel in the  `Interpolate Electrodes` box 
+
+* Enter the channel numbers for the non-scalp electrides in the `Ignore Electrodes` box.
+
+* To create a record of *which channels* were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `S###_EID_TID_IntEQ.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
+
+* Save your file as  `EID_S###_TID_TRM_FLT_RSP_REF_ELS_BIN_ICA_INT.set` (EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`TRM` = trimmed; `FLT` = filtered; `RSP` = resampled, `REF` = re-referenced; `ELS` = eventlist attached; `BIN` = bins defined; `ICA` = ica applied).
+
+* Then select   EEGLAB > ERPLAB > Preprocess EEG > Selective Electrode Interpolation`. Put the number of the channel to be replaced in the Interpolate Electrodes box. Put the channel numbers of the non-scalp channels in the `Ignore Electrodes` box. Select Spherical as the Interpolation Method and click the `Interpolate` button.
+
+* If there is **MORE THAN ONE BAD CHANNEL** you will need to do *selective EEG channel interpolation* via the command `Selective EEG Channel Interpolation` using the command line interface.
+
+* This is is a modified version of EEGLAB's EEG channel interpolation function `eeg_interp.m` to allow the user to ignore a set of electrodes for interpolating bad channels
+
+* The inputs to the function are:
+
+  `EEG` - EEGLAB `EEG` data structure to interpolate
+
+	`badchans` - array of channels to replace via interpolation
+
+	`method` - griddata method used for interpolation. (default is 'invdist'). 'spherical' uses superfast spherical interpolation. 'spacetime' uses griddata3 to  interpolate both in space and time (very slow)
+	
+	 `EEG = eeg_interp(EEG, badchans, method)`
+
+* The output of the function is an EEGLAB `EEG` data structure.
+
+
+* To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_int_eqs.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
+
+* Save your file as  `EID_S###_TID_FLT_RSP_ICA_REF(_INT).set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated)).
 
 #### 8. Conduct ICA
 
@@ -247,44 +291,7 @@ Double check artifact components flagged for rejection by clicking on `Inspect\l
 * Once you are satisfied with the ocular artifact rejection click `Accept` and save your file as  `EID_S###_TID_TRM_FLT_RSP_REF_ELS_BIN_ICA.set`. (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`TRM` = trimmed; `FLT` = filtered; `RSP` = resampled, `REF` = re-referenced; `ELS` = eventlist attached; `BIN` = bins defined; `ICA` = ica applied)
 
 
-#### 9. Replace a bad channel
 
-* If a participant has no channels that need interpolation, you should resave the file, with the `_INT` suffix (see below) which indicates that for this participant, all channels have been checked and cleared. 
-
-* If FP1, FP2 or any non-scalp channels (VEOG, HEOG, etc) are bad, they need not be interpolated because they are excluded from analysis in any case.
-
-* Then select EEGLAB > ERPLAB > Preprocess EEG > Selective Electrode Interpolation. 
-
-* Enter the channel number for the bad channel in the  `Interpolate Electrodes` box 
-
-* Enter the channel numbers for the non-scalp electrides in the `Ignore Electrodes` box.
-
-* To create a record of *which channels* were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `S###_EID_TID_IntEQ.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
-
-* Save your file as  `EID_S###_TID_TRM_FLT_RSP_REF_ELS_BIN_ICA_INT.set` (EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID;`TRM` = trimmed; `FLT` = filtered; `RSP` = resampled, `REF` = re-referenced; `ELS` = eventlist attached; `BIN` = bins defined; `ICA` = ica applied).
-
-* Then select   EEGLAB > ERPLAB > Preprocess EEG > Selective Electrode Interpolation`. Put the number of the channel to be replaced in the Interpolate Electrodes box. Put the channel numbers of the non-scalp channels in the `Ignore Electrodes` box. Select Spherical as the Interpolation Method and click the `Interpolate` button.
-
-* If there is **MORE THAN ONE BAD CHANNEL** you will need to do *selective EEG channel interpolation* via the command `Selective EEG Channel Interpolation` using the command line interface.
-
-* This is is a modified version of EEGLAB's EEG channel interpolation function `eeg_interp.m` to allow the user to ignore a set of electrodes for interpolating bad channels
-
-* The inputs to the function are:
-
-  `EEG` - EEGLAB `EEG` data structure to interpolate
-
-	`badchans` - array of channels to replace via interpolation
-
-	`method` - griddata method used for interpolation. (default is 'invdist'). 'spherical' uses superfast spherical interpolation. 'spacetime' uses griddata3 to  interpolate both in space and time (very slow)
-	
-	 `EEG = eeg_interp(EEG, badchans, method)`
-
-* The output of the function is an EEGLAB `EEG` data structure.
-
-
-* To create a record for each subject of which channels were interpolated, you should *save the equations with a filename that indicates* ***which subject*** these equations are for. Use the following filneame template: `EID_S###_TID_int_eqs.txt` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`)
-
-* Save your file as  `EID_S###_TID_FLT_RSP_ICA_REF(_INT).set` (`EID` = 3-letter experiment ID; `S###` = S plus 3-digit subject number e.g. `S008`, `S019`; `TID` = 3-letter task ID; `FLT` = filtered, `RSP` = resampled, `TRM` = trimmed, `ICA` = ica applied, `REF` = re-referenced, (`INT`= interpolated)).
 
 
 #### 14. Epoch data
