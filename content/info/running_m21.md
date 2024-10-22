@@ -1,5 +1,5 @@
 ---
-title: "The Complete Guide to the Morph21 EEG Study"
+title: "Lab Procedures for running the Morph21 EEG Study"
 author: "Emma Kealey"
 date: "2023-05-03"
 draft: false
