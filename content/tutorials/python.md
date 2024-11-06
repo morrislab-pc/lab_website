@@ -39,3 +39,25 @@ In our lab we use python for programming our studies and R for analysing our dat
 
 This textbook provides an accessible introduction to open, reproducible, and ethical data analysis using hands-on Python coding, modern open-source computational tools, and data science techniques. Topics include open reproducible research workflows, data wrangling, exploratory data analysis, data visualisation, pattern discovery (e.g., clustering), prediction & machine learning, causal inference, and network analysis.
 
+----
+
+# Conda vs Homebrew for python
+
+Both **Conda** and **Homebrew** provide ways to manage Python installations on macOS, but they serve slightly different purposes and come with their own sets of advantages and disadvantages. Let’s explore both options in detail to help you decide which is more suitable for your workflow.
+
+---
+
+### **Using Conda**
+
+Conda is a powerful package, environment, and dependency manager. It’s designed to manage not only Python but also other languages and packages like R, C, and more. It excels at creating isolated environments for specific projects, with different Python versions and dependencies.
+
+#### **Advantages of Conda**:
+
+1. **Environment Management**:
+   - Conda excels at creating **isolated environments**. Each environment can have its own Python version and set of packages, which allows you to work on multiple projects with conflicting dependencies without interference.
+   - For example, you can create environments with different Python versions (3.8, 3.9, 3.11) and switch between them easily.
+
+   ```bash
+   conda create --name py39 python=3.9
+   conda activate py39
+   ```

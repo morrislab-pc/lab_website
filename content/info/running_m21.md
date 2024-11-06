@@ -57,7 +57,8 @@ Please make sure to bring the following items with you:
 
 10. Next, check the VSL portion of the experiment in Presentation. Open the desktop folder and double click on the VSL_triggers_2023 experiment file (not the scenario file!).
 
-11. Pull up the [Qualtrics questionnaire](https://shorturl.at/uEGMX) in a browser window.
+11. Pull up the [Qualtrics questionnaire](https://providence.az1.qualtrics.com/jfe/form/SV_5BYBWCrPez7ADA2) in a browser window.
+
 
 #### Running a Participant
 

@@ -1,9 +1,0 @@
----
-date: "2016-11-05T18:25:22+05:30"
-draft: false
-showonlyimage: false
-title: Clare Diffin
----
-PC 2027
-Majors: Neuroscience and English
-Minor: Spanish

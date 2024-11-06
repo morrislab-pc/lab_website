@@ -40,22 +40,18 @@ Please make sure to bring the following items with you:
     -   `M18_expB_V4.osexp`
 
 
-7.  If the files are not on your desktop, you'll need to open a browser, log onto GitHub, and download them:
+7.  If the files are not on your desktop, you'll need to log onto Teams, and download them:
 
     -   Create a folder called `M18_local` on your desktop
-    -   Open the morrislab-pc repo in GitHub
-    -   Navigate to the m18_vsl repo
-    -   Click the green *Code* button and select *Local \> Download Zip*
+    -   Open  Teams
+    -   Navigate to the ~/Human Psychophysiology Lab - General/PC_HPLAB/PROJECTS/MORPH18/source code/
+    -   Download both files.  They will download to a zip file in your Downloads folder.
     -   Open the zip file
     -   Drag the M18 OpenSesame Experiment files to your desktop
 
 
-8.  Once the files have been downloaded, we want to make sure we are able to run both portions of the experiment as expected. This way, if there are any technical difficulties, we can troubleshoot them [before]{.underline} the participant arrives and switch accounts if needed.
 
-9.  Double click on one of the OpenSesame files. Make sure you can launch the experiment as expected.
-
-
-10. Pull up the [Qualtrics questionnaire](https://shorturl.at/uEGMX) in a browser window.
+8. Pull up the [Qualtrics questionnaire](https://shorturl.at/uEGMX) in a browser window.
 
 #### Running a Participant
 
@@ -181,18 +177,18 @@ Here's what your final set up should look like:
 
     -   ![](/img/complete_guide/openSesamePlayExperiment.png){width="500"}
 
-34. When prompted to enter the participant number, please enter the full naming convention: M18_S0103\_A. Save the file to the M18_local folder on your desktop.
+34. When prompted to enter the participant number, please enter the subject number e.g. 204. Save the file to the M18_local folder on your desktop.
 
 35. The starting screen for the participant should start to load. At this point, you should turn off the second monitor in the experimental room (the one showing the EEG recording). Then you can retreat to the control room while the participant completes the rhyming task.
 
 36. Once the rhyming task has come to an end, stop the BrainVision recording.
 
 
-43. After the participant finishes the activities, help them take off the EEG cap. Offer them a towel from the supply closet to dry off their hair.
+37. After the participant finishes the activities, help them take off the EEG cap. Offer them a towel from the supply closet to dry off their hair.
 
-44. Put dirty towels in the hamper provided. Please let Joanna know when the hamper fills up so she can wash and restock the towels.
+38. Put dirty towels in the hamper provided. Please let Joanna know when the hamper fills up so she can wash and restock the towels.
 
-45. Disburse money to the participant for their efforts if they signed up for payment rather than credit. Make sure to fill out the HPL DISBURSEMENT LOG and have the participant sign that they received the money. Each participant will be paid \$20- \$25 for their participation.
+39. Disburse money to the participant for their efforts if they signed up for payment rather than credit. Make sure to fill out the HPL DISBURSEMENT LOG and have the participant sign that they received the money. Each participant will be paid \$20- \$25 for their participation.  If this is a SONA participant, make sure they receive credit in the SONA system.
 
 #### Post-Participant Clean Up
 
@@ -222,18 +218,14 @@ Here's what your final set up should look like:
 
     -   an excel spreadsheet labeled "subject - s#"
     -   s#\_results.txt
-    -   s#-VSL_triggers_2023.log
 
 8.  Upload the following files from the control computer:
 
-    -   m21_Sxxx_LDT_EEG.eeg
-    -   m21_Sxxx_LDT_EEG.vhdr
-    -   m21_Sxxx_LDT_EEG.vmrk
-    -   m21_Sxxx_VSL_EEG.eeg
-    -   m21_Sxxx_VSL_EEG.vhdr
-    -   m21_Sxxx_VSL_EEG.vmrk
+    -   m18_Sxxx.eeg
+    -   m18_Sxxx.vhdr
+    -   m18_Sxxx.vmrk
 
-9.  Altogether, you should upload 9 files to your participant folder:
+9.  Altogether, you should upload 4 files to your participant folder:
 
 -   ![](/img/complete_guide/completeFilesInDataFolder.png){width="500"}
 
