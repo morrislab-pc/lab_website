@@ -1,20 +1,30 @@
 ---
-title: "Conference Presentations"
+title: "Conference Posters"
 author: "Joanna Morris"
 date: "2024-02-01"
 draft: no
 image: img/morrisLabPresenters.jpg
 showonlyimage: no
-slug: data-processing-pipeline
 ---
 
-**Psychonomic Society 64th Annual Meeting November 2023**
+**Psychonomic Society 65th Annual Meeting November 2024**
 
 <!--more-->
 
-![](/img/portfolio/events-psynom-2023.jpg)
+Click on link to download our posters.
 
-Click on links to download our posters.
+[Pseudo-morphological priming with phonologically inconsistent targets: Evidence from response time and ERP Data](/files/PSYCHONOMICS_2024.pdf)
+
+Pseudo-morphological priming with phonologically inconsistent targets: Evidence from response time and ERP data
+
+Masked morphological priming effects have been found whenever a prime and a target share orthographically defined (pseudo-) morphemes, suggesting the existence of form-based morphological (morpho-orthographic) representations. However, in the bimodel interactive activation model of word recognition, orthographic representations are mapped onto their corresponding phonological representations at a central orthography-phonology interface, which suggests that both types of form representations affect morphological constituency, and should influence complex word recognition. To test this hypothesis, we investigated masked morphological priming effects using phonologically consistent (corner-corn) and inconsistent (tower-tow) pseudo-morphological prime-target pairs, and measured ERPs to track the time course of any effects.  Differential priming effects are discussed within the framework of the bi-modal interactive-activation model. 
+
+----
+**Psychonomic Society 64th Annual Meeting November 2023**
+
+
+
+Click on link to download our posters.
 
 [ERP responses reflect  individual differences in visual statistical learning](/files/PSYCHONOMICS2023.pdf)
 
@@ -24,6 +34,8 @@ Do individual differences in mechanisms of implicit learning play a role in lear
 &nbsp;
 
 &nbsp;
+
+----
 
 **2023 Rhode Island IDeA Network of Biomedical Research Excellence (RI-INBRE) Summer Undergraduate Research Symposium Presentation July 2023**
 ![](/img/portfolio/inbreLogo.jpeg)
@@ -44,6 +56,8 @@ See animated scalp maps below:
 &nbsp;
 
 &nbsp;
+
+----
 
 **The Cognitive Neuroscience Society (CNS) 30th Anniversary Meeting March 2023**
 
