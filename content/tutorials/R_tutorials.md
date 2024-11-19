@@ -52,6 +52,10 @@ This is an R handbook for ESM (Evaluation, Statistics, and Methodology) students
 
 In early 2011, Danielle Navarro started teaching an introductory statistics class for psychology students offered at the University of Adelaide, using the R statistical package as the primary tool. The lecture notes for the class were expanded into a book which is freely available, and as of version 0.6 it is released under a creative commons licence (CC BY-SA 4.0)
 
+
+
+
+
 ### Advanced Texts 
 
 [Advanced R by Hadley Wickham](https://adv-r.hadley.nz/index.html)
@@ -71,6 +75,10 @@ I like this book because it focuses on reproducible research practices and cover
 [YaRrr! The Pirate’s Guide to R by Nathaniel D. Phillips](https://bookdown.org/ndphillips/YaRrr/)
 
 I found this book very helpful when I needed to use base graphics. From the text: "This book is meant to introduce you to the basic analytical tools in R, from basic coding and analyses, to data wrangling, plotting, and statistical inference."  
+
+[*Functional Programming*](https://dcl-prog.stanford.edu)
+
+This book is a practical introduction to functional programming using the tidyverse. I like it because it focuses on the basics: common data structures such as atomic vectors, lists, and tibbles,  different types of functions such as vector, scalar, predicate, and anonymous, and finally it introduces the `purrr` package which contains a set of useful functions for iterating over data structures
 
 [R in Action by Robert Kabacoff](http://www.cs.uni.edu/~jacobson/4772/week11/R_in_Action.pdf)
 

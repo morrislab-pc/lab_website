@@ -19,6 +19,8 @@ The advantages of using a markup language like LaTeX rather than a [WYSISYG text
 
 - [What is LaTex?](https://guides.lib.wayne.edu/latex/home)
 
+- [How does writing in Latex differ from writing in MS Word?](https://www.baeldung.com/cs/latex-vs-word-main-differences)
+
 - [Writing a Latex document](https://guides.lib.wayne.edu/latex/write)
 
 - [Compiling a LaTex document](https://guides.lib.wayne.edu/latex/write)
@@ -32,3 +34,8 @@ The advantages of using a markup language like LaTeX rather than a [WYSISYG text
 - [About the `natbib` package](http://merkel.texture.rocks/Latex/natbib.php)
 
 - [Graphics in Latex](https://www.reed.edu/it/help/LaTeX/Graphics.html)
+
+***Note for Bibliographies***
+APA style requires that in text citations with mutliple authors use the word "and" but  parenthetical citations with multiple authors should use an ampersand.  To do this wrap the citation in the command `{\renewcommand\&{and}}`  as follows:
+
+`{\renewcommand\&{and}\citet{rastleMorphologicalDecompositionBased2008}}`

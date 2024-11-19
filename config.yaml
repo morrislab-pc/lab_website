@@ -65,8 +65,7 @@ params:
       url: tutorials/
     - name: Get in touch
       url: contact/
-    - name: M21 Qualtrics Survey
-      url: https://providence.az1.qualtrics.com/jfe/form/SV_5BYBWCrPez7ADA2
+   
 
   sidebarAbout:
     - This is the website for the Human Psychophysiology Lab at Providence College.
