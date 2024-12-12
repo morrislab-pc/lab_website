@@ -268,3 +268,5 @@ You can also [connect to GitHub using the Secure Shell Protocol (SSH)](https://d
 # More on Git (via Software Carpentry)
 
 [Version Control with Git](https://swcarpentry.github.io/git-novice/)
+
+# Here is [The Simple Guide](http://rogerdudler.github.io/git-guide/)
