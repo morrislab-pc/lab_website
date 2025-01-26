@@ -30,7 +30,7 @@ This introductory textbook does not assume or expect any prior knowledge or skil
 
 A comprehensive data science textbook for undergraduates that incorporates statistical and computational thinking to solve real-world problems with data.
 
-[*Statistical Inference via Data Science: A ModernDive into R and the Tidyverse* by Chester Ismay and Albert Y. Kim](https://moderndive.netlify.app/index.html)
+[*Statistical Inference via Data Science: A ModernDive into R and the Tidyverse* by Chester Ismay and Albert Y. Kim](https://moderndive.com/v2/)
 
 In this book, students gain experience with the whole data analysis pipeline. In particular, *ModernDive* is one of the few intro stats textbooks that teaches students how to wrangle data. *ModernDive* carefully walks the students through each new function it presents and provides frequent reinforcement through the many Learning checks dispersed throughout the chapters.
 
