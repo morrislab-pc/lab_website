@@ -22,7 +22,7 @@ R is not just a a statistics application, but a full-fledged programming languag
 ### Introductory Texts
 
 
-[*R for Non-Programmers: A Guide for Social Scientists* by Daniel Dauber](https://bookdown.org/daniel_dauber_io/r4np_book/)
+[*R for Non-Programmers: A Guide for Social Scientists* by Daniel Dauber](https://r4np.com/)
 
 This introductory textbook does not assume or expect any prior knowledge or skills in programming or statistical analysis. Instead, this book offers a comprehensive entry to R programming for novices and more experienced analysts wishing to migrate from other computational software.
 
