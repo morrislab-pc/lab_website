@@ -162,34 +162,33 @@ Here's what your final set up should look like:
 
     -   ![](/img/complete_guide/AIPhone.jpeg){width="302"}
 
-29. Bring up your BrainVision Recorder window. Click on the eye icon then on the green start button to begin recording. Name your file according to lab conventions (with participant number!) and choose where to save your file. The file should be named M18_S####\_AorB_EEG:
+29. Bring up your BrainVision Recorder window. Click on the eye icon then on the green start button to begin recording. Name your file according to lab conventions (with participant number!) and choose where to save your file. The file should be named M18_S####\_AorB:
 
     -   ![](/img/complete_guide/brainVisionStartSaveAs.png){width="500"}
 
-30. Ask the participant to move different parts of their body or perform different actions to check that the EEG is working properly and to view the effects on the brain waves. Some good options are (i) blink, (ii) talk, (iii) laugh etc. You can show them how their actions affect their brainwaves.
 
-31. Once you have confirmed that the EEG is working as expected, it is time to start the experiment. Go back into the experimental room and open OpenSesame.
+30. Once you have confirmed that the EEG is working as expected, it is time to start the experiment. Go back into the experimental room and open OpenSesame.
 
-32. Click *File \> Open* and select the correct version of the experiment from your desktop. You'll either use the A version of the experiment or the B version. Please refer to participant numbering (we're starting at 100 and going up consecutively -- odd numbered participants receive A and even numbered participants receive B) and sorting guidelines to determine which set of the experiment to use.
+31. Click *File \> Open* and select the correct version of the experiment from your desktop. You'll either use the A version of the experiment or the B version. Please refer to participant numbering (we're starting at 100 and going up consecutively -- odd numbered participants receive A and even numbered participants receive B) and sorting guidelines to determine which set of the experiment to use.
 
     -   ![](/img/complete_guide/openSesameFileOpen.png){width="500"}
 
-33. Once the experiment has loaded, press the green play button to launch the presentation in full screen.
+32. Once the experiment has loaded, press the green play button to launch the presentation in full screen.
 
     -   ![](/img/complete_guide/openSesamePlayExperiment.png){width="500"}
 
-34. When prompted to enter the participant number, please enter the subject number e.g. 204. Save the file to the M18_local folder on your desktop.
+33. When prompted to enter the participant number, please enter the subject number e.g. 204. Save the file to the M18_local folder on your desktop.
 
-35. The starting screen for the participant should start to load. At this point, you should turn off the second monitor in the experimental room (the one showing the EEG recording). Then you can retreat to the control room while the participant completes the rhyming task.
+34. The starting screen for the participant should start to load. At this point, you should turn off the second monitor in the experimental room (the one showing the EEG recording). Then you can retreat to the control room while the participant completes the rhyming task.
 
-36. Once the rhyming task has come to an end, stop the BrainVision recording.
+35. Once the rhyming task has come to an end, stop the BrainVision recording.
 
 
-37. After the participant finishes the activities, help them take off the EEG cap. Offer them a towel from the supply closet to dry off their hair.
+36. After the participant finishes the activities, help them take off the EEG cap. Offer them a towel from the supply closet to dry off their hair.
 
-38. Put dirty towels in the hamper provided. Please let Joanna know when the hamper fills up so she can wash and restock the towels.
+37. Put dirty towels in the hamper provided. Please let Joanna know when the hamper fills up so she can wash and restock the towels.
 
-39. Disburse money to the participant for their efforts if they signed up for payment rather than credit. Make sure to fill out the HPL DISBURSEMENT LOG and have the participant sign that they received the money. Each participant will be paid \$20- \$25 for their participation.  If this is a SONA participant, make sure they receive credit in the SONA system.
+38. Disburse money to the participant for their efforts if they signed up for payment rather than credit. Make sure to fill out the HPL DISBURSEMENT LOG and have the participant sign that they received the money. Each participant will be paid \$20- \$25 for their participation.  If this is a SONA participant, make sure they receive credit in the SONA system.
 
 #### Post-Participant Clean Up
 
