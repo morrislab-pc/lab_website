@@ -62,7 +62,7 @@ In early 2011, Danielle Navarro started teaching an introductory statistics clas
 
 [Advanced R Solutions](https://advanced-r-solutions.rbind.io) This is the website for “Advanced R Solutions” which provides solutions to the exercises from Hadley Wickham’s Advanced R, 2nd edition.
 
-[R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz/index.html)
+[R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.hadley.nz)
 
 [*Data Analysis* in R by Steve Midway](https://bookdown.org/steve_midway/DAR/)
 
