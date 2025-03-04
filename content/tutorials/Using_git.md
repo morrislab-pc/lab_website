@@ -43,14 +43,27 @@ There are also a few ways to install Git on Windows. The most official build is 
   * **Invisible files and folders** (On the Mac these start with a period e.g. `.git`)
 
   * **File extensions** (This is the part of the filename at the *end* after a period. For example in the filename `test.doc`  the extension is `.doc`)
+  
+   - Many of the files that git needs to function are files that begin with a period which are **invisible files** on the Mac OS (operating system).
 
-  ![View Options Window with 'Show Invisibles' and 'Always show file options' checked](/img/tutorials/invisible_files.png)
+##### How to show file extensions and invisible files on a Mac
 
-  - Many of the files that git needs to function are files that begin with a period which are **invisible files** on the Mac OS (operating system).
+To show invisible files on a Mac, open Finder, navigate to the desired folder, and press `Command + Shift + . (period)` on your keyboard; this keyboard shortcut will reveal hidden files, which will appear slightly grayed out compared to regular files. 
+To show file extensions on a Mac, (a) open the `Finder` app,  (b) select `Finder > Settings`, (c) click `Advanced` (d) select `Show all filename extensions`
+
+  ![Show all filename extensions](/img/tutorials/finder_settings.png)
+  
+##### How to show file extensions and invisible files on a Windows PC
+
+To show hidden files and file extensions in Windows 11, Open `File Explorer`, select the `View` tab, select `Show`, select `File name extensions` to view file extensions, select `Hidden items` to view hidden files and folders
+
+![Show hidden files and folders](/img/tutorials/hidden_files_windows.png)
+
+ 
+ 
+# Creating A Repository
 
 To get started you can either clone someone else's repository from GitHub, or create a repository from scratch on your computer and then upload it to GitHub
-
-# Creating A Repository
 
 ## Method 1: Cloning a repository from GitHub 
 
