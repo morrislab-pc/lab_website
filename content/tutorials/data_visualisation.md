@@ -24,4 +24,6 @@ Here are some websites for help with data visualization in R.
 
 [The Best Data Visualization Blogs](https://www.tableau.com/learn/articles/best-data-visualization-blogs)
 
+[*Fundamentals of Data Visualization* by Claus O. Wilke](https://clauswilke.com/dataviz/)
+
 If you don't want to deal with R, here is a cloud based data visualization tool called [RawGraphs](https://www.rawgraphs.io)
