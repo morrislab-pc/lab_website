@@ -7,4 +7,4 @@ title: Ethan Moore
 weight: 2
 ---
 PC 2026
-Majors: Biology, Psychology, and Healthy Policy & Management
+Majors: Biology and Psychology
