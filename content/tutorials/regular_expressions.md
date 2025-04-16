@@ -156,3 +156,5 @@ A quick reference for building regular expressions — useful for coding, text a
 ---
 
 > ✅ Pro Tip: Use `.*` to allow any number of characters between key words, and `\s*` to allow optional spaces.
+
+[Download Dave Child's regex cheatsheet](/static/files/davechild_regular-expressions.pdf)
