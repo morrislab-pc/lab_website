@@ -1,0 +1,48 @@
+---
+date: '2025-05-22'
+draft: false
+image: img/info/reproducible.png
+showonlyimage: false
+title: Reproducible Research
+---
+
+
+
+<p>Reproducible research is important because it ensures that scientific findings are trustworthy, transparent, and can be built upon by others.
+<!--more--></p>
+<p>Cognitive psychology and cognitive neuroscience rely on <a href="https://academic.oup.com/nsr/article/7/9/1418/5856589">complex experimental designs, sophisticated statistical analyses, and often large volumes of data</a> from behavioral, neuroimaging, or electrophysiological measures.</p>
+<p>When researchers share their data, code, and analysis steps in a way that others can see and repeat, it allows people to double-check the results and catch any mistakes, whether accidental or not.</p>
+<p>Reproducibility also supports the idea that <a href="https://www.csmonitor.com/Science/2017/0421/Breakthroughs-arise-from-a-precise-mix-of-old-and-new-knowledge-say-scientists">science builds on previous work</a>. In cognitive neuroscience we test new ideas based on earlier studies about how the brain supports thinking and behavior. If earlier findings can’t be reproduced, it becomes harder to know whether newer studies are on solid ground.</p>
+<p>Reproducibility also makes it easier to see how researchers made their choices about data cleaning, analysis methods, or statistical models—which matters a lot, since <a href="https://www.psychologicalscience.org/publications/observer/one-size-doesnt-fit-all.html">small changes in how the data are handled can lead to different outcomes</a>. This is especially true in high-dimensional data contexts such as EEG, fMRI, or large-scale behavioral experiments.</p>
+<p>Lately, there has been growing concern about <a href="https://www.psychologytoday.com/us/basics/replication-crisis">whether psychology research can be reliably repeated</a>; Making research reproducible helps address this problem and rebuild confidence in the results. It lets other scientists, reviewers, and readers clearly understand how the research was done, from collecting data to interpreting the findings.</p>
+<p>In cognitive psychology and cognitive neuroscience, where researchers often look for subtle effects in complex data, reproducibility isn’t just a good idea—it’s necessary for making real progress.</p>
+<div id="why-r-and-r-markdown-are-great-for-reproducible-research" class="section level3">
+<h3>Why R and R Markdown are GREAT for reproducible Research</h3>
+<p><a href="https://rmarkdown.rstudio.com">R Markdown</a> and <a href="https://www.r-project.org">R</a> are powerful tools for reproducible research because they bring together data analysis, visualization, and documentation in one dynamic document.</p>
+<div class="float">
+<img src="/img/info/notebook-demo.png" alt="R Markdown" />
+<div class="figcaption">R Markdown</div>
+</div>
+<p>One of their biggest advantages is that they let you combine plain text—such as research questions, methods, and results—with chunks of R code. This approach, called literate programming, means that things like tables, graphs, and statistical results are created automatically when the document is compiled. That way, the results shown in the final report always match the code that produced them.</p>
+<p>Another helpful feature is how easily the document updates. If you make changes to your data, your analysis method, or your model settings, you can simply re-knit the document, and all the results, graphs, and numbers will update automatically. This saves time and helps prevent mistakes that can happen when copying and pasting results by hand.</p>
+<p>R and R Markdown also make your workflow very transparent. Readers can see exactly what data were used, how the data were processed, what analyses were run, and how the graphs and tables were created. This level of openness builds trust and allows others to double-check your results if needed.</p>
+<p>R Markdown files are written as plain text, which means they work well with <a href="#git">version control systems like Git</a>. This makes it easier to keep track of changes over time, work with collaborators, and save specific versions of your analysis for future reference.</p>
+<p>R Markdown is also flexible in how it presents the final output. You can create a PDF for submitting to a journal, a Word document for sharing with people who don’t use R, or an interactive HTML page for the web. This means you can share your work in whatever format works best, without having to recreate it each time.</p>
+<p>Finally, R Markdown makes it easy to keep a record of which R packages and versions were used in your analysis, using tools like <code>sessionInfo()</code> or <code>renv</code>. This is important because it allows others to recreate the same software setup you used, even years later.</p>
+<p>Overall, R and R Markdown help unify your analysis and your report, reduce errors, make your work more transparent and easier to repeat, and simplify collaboration and sharing. These features make them essential tools for doing modern, reproducible research.</p>
+</div>
+<div id="git" class="section level3">
+<h3>Git</h3>
+<p>Version control systems like Git play a crucial role in reproducible research by helping researchers track, manage, and share changes to their code, data, and documentation over time. In the context of reproducible research, Git provides a reliable way to record the full history of a project, making it easier to understand how analyses evolved and to return to earlier versions if needed.</p>
+<p>One of Git’s key benefits is that it allows you to document every change made to a file—what was changed, when, and by whom. This helps ensure transparency and accountability, especially in collaborative projects where multiple people are working on the same materials. If a result changes, you can easily trace it back to a specific update in the code or data.</p>
+<p>Git also enables branching and experimentation. Researchers can try out new methods or alternative analyses in a separate branch of the project without affecting the main version. If the new approach works, it can be merged back in; if not, it can be discarded—without losing any work or breaking the original workflow.</p>
+<p>When paired with hosting platforms like GitHub or GitLab, Git makes it easy to share code and materials publicly, enhancing reproducibility and openness. Others can download the entire history of a project, reproduce the exact analyses, and contribute improvements or corrections.</p>
+<p>Finally, Git supports integration with tools like R Markdown and Jupyter Notebooks, which combine code, narrative, and output. When these documents are version controlled, the entire research pipeline—from data input to final report—is preserved and reproducible.</p>
+<p>In short, Git helps maintain a clear, detailed, and sharable record of the research process, which is essential for verifying results, collaborating effectively, and building trustworthy science.</p>
+</div>
+<div id="why-spss-is-not-good-for-reproducibility" class="section level3">
+<h3>Why SPSS is not good for reproducibility</h3>
+<p>SPSS is not well suited for reproducible research because it separates the statistical analysis from the reporting and does not naturally support a transparent, script-based workflow. While it is possible to write syntax in SPSS, many users rely heavily on the point-and-click interface, which makes it difficult to track exactly what steps were taken in an analysis. This lack of an explicit, editable record can make it hard for others—or even the original researcher—to reproduce the results later.</p>
+<p>Moreover, SPSS does not integrate code, data, and narrative in a single document the way tools like R Markdown do. Reports created in SPSS are often disconnected from the code or syntax used to produce them, which increases the risk of copy-paste errors and makes it harder to update results consistently if changes are made to the data or analyses.</p>
+<p>SPSS also lacks built-in tools for version control or documenting package versions and computational environments, which are key for ensuring that analyses can be replicated over time. In short, while SPSS is user-friendly and widely used, especially in the social sciences, it does not support the kind of transparent, flexible, and automated workflow that is essential for modern reproducible research.</p>
+</div>

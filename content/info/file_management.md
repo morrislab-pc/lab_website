@@ -47,5 +47,4 @@ On MacOS [Commander One](https://mac.eltima.com/file-manager.html), also free, p
 
 
 
-
 Feel free to explore the tutorial links on this page as well as the other tutorials and guides on our website!
