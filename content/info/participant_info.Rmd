@@ -1,12 +1,9 @@
 ---
-title: ERP Participant Information
-author: R package build
-date: '2022-06-01'
-slug: []
-categories: []
-tags: []
+date: '`r Sys.Date()`'
+draft: false
 image: img/info/P_BrainCap_MR_semilateral.png
 showonlyimage: false
+title: ERP Participant Information
 ---
 
 

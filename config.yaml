@@ -9,7 +9,7 @@ ignoreFiles:
   - \.utf8\.md$
 languageCode: en-us
 disqusShortname: ''
-googleAnalytics: 'G-VT7DER09PC'
+googleAnalytics: 'G-G1VNKNRF5D'
 
 # Hugo Configure Markup
 # More info: https://gohugo.io/getting-started/configuration-markup#
@@ -53,16 +53,16 @@ params:
     - home: yes
       name: Lab Home
       url: about/
-    - name: Research Projects
-      url: projects/
     - name: General Lab Information
       url: info/
+    - name: Research Projects
+      url: projects/
+    - name: Tutorials
+      url: tutorials/
     - name: Our Current Students
       url: team/
     - name: Our Graduates
       url: graduates/
-    - name: Tutorials
-      url: tutorials/
     - name: Get in touch
       url: contact/
    

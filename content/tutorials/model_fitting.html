@@ -1,0 +1,104 @@
+---
+date: "2025-05-22"
+draft: false
+image: img/tutorials/model-fit.png
+showonlyimage: false
+title: Model Fitting 
+weight: 0
+slug: model-fitting
+---
+
+
+
+<p>“All models are wrong but some are useful.” <em>George Box</em>
+<!--more--></p>
+<p>“Everything should be as simple as it can be, but not simpler.” <em>Albert Einstein</em></p>
+<p>Model is perhaps the most used term in a statistical context. A statistical model is means to capture the structure of the data as simply as possible. Put another way, our goal is to find the model that most efficiently and accurately summarizes how the data were generated.</p>
+<p>Models are described via <em>parameters</em> and <em>mathematical operators</em>. Parameters are unobservable, but we can still estimate them and their effects by using the data we have. <em>Estimation</em> is how we determine the value of the parameters.</p>
+<p><strong>Frequentist estimation</strong> is the most common type. It assumes a parametric distribution and is interested in the long run of frequencies within the data. Most statistical software uses frequentist estimation—typically least squares estimation which involves minimizing the sum of squared errors. A more complex version is maximum likelihood estimation, or MLE which maximizes the log function by minimizing the negative log likelihood.</p>
+<p><strong>Monte Carlo estimation</strong>, or sometimes bootstrapping or resampling, requires very few assumptions and uses the observed data over and over to draw inferences.</p>
+<p><strong>Bayesian estimation</strong> assumes a parametric distribution. It also includes a <em>prior distribution</em> or prior knowledge about the parameter.</p>
+<p> </p>
+<div id="linear-models" class="section level1">
+<h1>Linear Models</h1>
+<p>We use regression to predict a dependent variable from one or more independent variables. Regression gives us an equation that describes the <em>form</em> of the relationship between dependent and independent variables and predicts the <em>value</em> of the dependent variable based on the independent variable(s)</p>
+<div id="ordinary-least-squares-ols-regression" class="section level2">
+<h2>Ordinary Least Squares (OLS) regression</h2>
+<p>Ordinary least squares fits models of the form:</p>
+<p><img src="/img/tutorials/eqn1.png" /></p>
+<p>where \(n\) is the number of <strong>observations</strong> and \(k\) is the number of <strong>predictor variables</strong>.</p>
+<p>\(_i\) is the predicted value of the dependent variable for observation \(i\)</p>
+<p>\(X_{ki}\) is the value of the \(k\)th independent variable for \(X = i\).</p>
+<p>\(_0\) is the predicted value of \(Y\) when all the predictor variables are \(0\), i.e. the <strong>intercept</strong>.</p>
+<p>\(_k\) is the slope representing the change in \(Y\) for a unit change in \(X_k\), i.e .the <strong>regression coeffient</strong> for the \(k\)th predictor.</p>
+<p>When there is more than one predictor, we are dealing with multiple linear regression. When there is more than one independent variable, the regression coefficients indicate the increase in the dependent variable for a unit change in the independent variable, holding the other independent variables constant.</p>
+<p>You can use the <code>lm()</code> function in R to fit an OLS regression model, and the <code>summary()</code> function to obtain model parameters and summary statistics.</p>
+</div>
+<div id="statistical-assumptions-underlying-ols-regression" class="section level2">
+<h2>Statistical assumptions underlying OLS regression</h2>
+<ul>
+<li><p><strong>Normality</strong>: For fixed values of \(X_{1 n}\), \(Y\) is normally distributed</p></li>
+<li><p><strong>Independence</strong>: The values of Y for a given X are independent of each other</p></li>
+<li><p><strong>Linearity</strong>: The relationship between the independent variables and the dependent variable is linear</p></li>
+<li><p><strong>Homoscedasticity</strong>: The variance of dependent variable is constant across all levels of the independent variable.</p></li>
+</ul>
+<p><img src="/img/tutorials/regression1.png" /></p>
+</div>
+<div id="regression-diagnostics" class="section level2">
+<h2>Regression Diagnostics</h2>
+<p>Applying the <code>plot()</code> functions to the model returned by <code>lm()</code> produces 4 graphs: (1) Residuals vs Fitted Values (2) <a href="https://online.stat.psu.edu/stat462/node/172/">Standardized residuals</a> vs theoretical quantiles (Normal Q-Q plot) (3) Standardized residuals vs fitted values (4) Standardized residuals vs leverage.</p>
+<ul>
+<li><p><strong>Normality</strong>: If the dependent variable is normally distributed for a fixed set of independent variable vales, the residuals should be normally distributed with a mean of 0. In this case, the points on the Q-Q plot should fall on a straight 45-degree line. You can also use the <code>qqPlot()</code> function in the <code>car</code> package to plot the <a href="https://online.stat.psu.edu/stat462/node/247/">studentized or jackknifed residuals</a> against a \(t\) distribution with \(n - p - 1\) degrees of freedom where \(n\) is the sample size and \(p\) is the number of regression parameters including the intercept.</p></li>
+<li><p><strong>Linearity</strong>: If the dependent variables is linearly related to the independent variables, there should be no systematic relationship between the <em>residuals</em> and the <em>predicted values</em> in plot 3.</p></li>
+<li><p><strong>Homoscedasticity</strong>: If the homoscedasticity assumption is met, the points should form a random horizontal band around a horizontal line of best fit in plot 3. Heteroscedasticity is a systematic change in the spread of the residuals over the range of measured values. Heteroscedasticity is a problem because ordinary least squares (OLS) regression assumes that all residuals are drawn from a population that has a constant variance. Heteroscedasticity tends to be present in variables with a large range.</p></li>
+</ul>
+</div>
+<div id="dealing-with-violations-of-assumption" class="section level2">
+<h2>Dealing with violations of assumption</h2>
+<ul>
+<li><p>Deleting outliers can often improve a dataset’s fit to the normality assumption. The largest outlier or influential observation is deleted, and the model is refit. If there are still outliers or influential observations, the process is repeated until an acceptable fit is obtained. <strong>Caution should be used when considering the deletion of observations.</strong></p></li>
+<li><p>When models don’t meet the normality, linearity, or homoscedasticity assumptions, transforming one or more variables can often improve or correct the situation. Transformations typically involve replacing a variable \(Y\) with \(Y^{}\).</p></li>
+</ul>
+<p>You can <a href="http://sciences.usca.edu/biology/zelmer/305/trans/">transform your data</a> to address homoscedasticity</p>
+</div>
+</div>
+<div id="anova" class="section level1">
+<h1>ANOVA</h1>
+<p>When factors are included as explanatory variables, the methodology is referred to as analysis of variance (ANOVA). An ANOVA that controls for the effects of at least one continuous covariate is referred to as analysis of covariance (ANCOVA). When there’s more than one dependent variable, the design is called a multivariate analysis of variance (MANOVA). If there are covariates present, it’s called a multivariate analysis of covariance (MANCOVA).</p>
+<p>ANOVA and regression are both special cases of the general linear model. As with regression, the basic function for fitting a linear model is <code>lm()</code>. You can also use the <code>aov()</code> function. The results of <code>lm()</code> and <code>aov()</code> are equivalent.</p>
+<p>The order in which the effects appear in a formula matters when there is more than one factor and the design is unbalanced, or covariates are present. By default, R employs the Type I (sequential) approach to calculating ANOVA effects. The greater the imbalance in sample sizes, the greater the impact that the order of the terms will have on the results. Given this, more fundamental effects should be listed earlier in the formula. The <code>Anova()</code> function in the <code>car</code> package provides the option of using the Type II or Type III approach, rather than the Type I approach used by the <code>aov()</code> function.</p>
+<p>A significant anova F-test doesn’t tell you which treatments differ from one another. To answer this question you can use the <code>TukeyHSD()</code> function to test all pairwise differences between group means. You can plot the output of this function (all the pairwise comparisons) with the <code>plot()</code> function <code>plot(TukeyHSD(aovmodel))</code>. In addition, the <code>effects</code> package provides a powerful method of obtaining adjusted means for complex research designs and pre- senting them visually.</p>
+<p>In a 2-way ANOVA with the presence of interactions, you can use the <code>interaction.plot()</code> function to display them.</p>
+</div>
+<div id="repeated-measures-anova" class="section level1">
+<h1>Repeated Measures ANOVA</h1>
+<p>In repeated measures ANOVA, subjects are measured more than once. Running a repeated measures analysis of variance in R can be a bit more difficult than running a standard between-subjects anova. In repeated measures ANOVA, instead of using the same error term as the denominator for every entry in the ANOVA table, the repeated measures ANOVA uses different error terms as denominators and thus factor out subject differences. In R these error terms are the row labeled <code>Residuals</code>.</p>
+<p>See <a href="https://www.datanovia.com/en/lessons/repeated-measures-anova-in-r/">this tutorial</a> for more information on conducting repeated measures ANOVA in R.</p>
+<p>You can conduct a repeated measures using the <code>aov()</code> function, and including an error term that contains the ‘subjects’ term, plus the within-subjects variables.</p>
+<p><code>fitted_model &lt;- aov(DV ~ IV + Error(Subject/IV), data=df)</code></p>
+<p>Note that within-subject variables are entered twice in the main part of the model as well as in the ‘Error’ term, but between-subject variables are only entered once, in the main part of the model.</p>
+<p>One drawback of this method is that it does not give any correction factors for violations of sphericity. It assumes that the variances of the differences between any two levels of the within-groups factor are equal. The degree to which sphericity is present, or not, is represented by a statistic called epsilon \(\)). In real-world data, it’s unlikely that the sphericity assumption will be met. To address this you can use the Greenhouse-Geisser (GG) correction which estimates epsilon \(\) in order to correct the degrees of freedom of the \(F\)-distribution.</p>
+<p>Another option is to use linear mixed effect models. Given that ANOVA is a linear model where the predictors are factors, we can run an ANOVA on a linear mixed model as follows using the <code>lme4</code> package.</p>
+<p><code>fitted_model &lt;- lmer(DV ~ IV + (1|Subject), data=df)</code>.</p>
+</div>
+<div id="linear-mixed-effects-models" class="section level1">
+<h1>Linear Mixed Effects Models</h1>
+<p><a href="https://ourcodingclub.github.io/tutorials/mixed-models/">Introduction to linear mixed models</a></p>
+<p>For random factors, you have three basic variants:</p>
+<ul>
+<li><p>Intercepts only by random factor: <code>(1 | random.factor)</code></p></li>
+<li><p>Slopes only by random factor: <code>(0 + fixed.factor | random.factor)</code></p></li>
+<li><p>Intercepts and slopes by random factor: <code>(1 + fixed.factor | random.factor)</code></p></li>
+</ul>
+<p><a href="https://neuropsychology.github.io/psycho.R/2018/05/01/repeated_measure_anovas.html">How to do Repeated Measures ANOVAs in R by Dominique Makowski</a></p>
+<p><a href="https://m-clark.github.io/mixed-models-with-R/">Mixed Models with R</a></p>
+<p><a href="https://daviddalpiaz.github.io/r4sl/modeling-basics-in-r.html"><em>R for Statistical Learning</em> by David Dalpiaz. Chapter 4 Modeling Basics in R</a></p>
+<p><a href="https://statsthinking21.github.io/statsthinking21-core-site/fitting-models.html"><em>Statistical Thinking for the 21st Century</em> by Russell A. Poldrack. Chapter 5 Fitting models to data.</a></p>
+<p><a href="https://garrettgman.github.io/model-fitting/"><em>Data Science with R</em> by Garrett Grolemund. Chapter 3 Model Fitting.</a></p>
+</div>
+<div id="model-selection" class="section level1">
+<h1>Model Selection</h1>
+<p>Model selection always involves a compromise between simplicity and predictive accuracy. All things being equal, given two models with approximately equal predictive accuracy, choose the simpler one.</p>
+<p>You can compare the fit of two nested models using the <code>anova()</code> function. A nested model is one whose terms are completely included in the other model.</p>
+<p>The Akaike Information Criterion (AIC) provides another method for comparing models. The index takes into account a model’s statistical fit and the number of parameters needed to achieve this fit. Models with smaller AIC values are preferred.</p>
+</div>
