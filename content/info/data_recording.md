@@ -5,6 +5,7 @@ image: img/info/BrainVision_Recorder.jpg
 showonlyimage: false
 title: Data Recording Procedures
 slug: recording_procedures
+weight: 3
 ---
 
 To record brainwaves from participants we use the **BrainVision Recorder** software program from Brain Products.
