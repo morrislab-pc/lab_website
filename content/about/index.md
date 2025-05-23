@@ -11,7 +11,7 @@ Welcome to the Providence College Human Psychophysiology Lab (PC-HPL) run by [Dr
 
 #### What we do
 
-In our lab run studies using [event related potentials or ERPs](https://www.sciencedirect.com/topics/neuroscience/event-related-potential ) as our dependent measure.
+In our lab run studies using [event related potentials or ERPs](https://en.wikipedia.org/wiki/Event-related_potential) as our dependent measure. (Here is a paper—[Sur & Sinha, 2009](https://pmc.ncbi.nlm.nih.gov/articles/PMC3016705/)—that gives a brief overview).
 
 ERPs are a specific pattern of electrical activity produced in the brain when a person is engaged in a perceptual or cognitive act. There are a number of different ERP components, and different cognitive operations have been associated with each one.
 
