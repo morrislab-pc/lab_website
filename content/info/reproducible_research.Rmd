@@ -61,7 +61,7 @@ One of Git’s key benefits is that it allows you to document every change made 
 
 Git also enables [branching](https://www.techtarget.com/searchitoperations/definition/branching) and experimentation. Researchers can try out new methods or alternative analyses in a separate branch of the project without affecting the main version. If the new approach works, it can be merged back in; if not, it can be discarded—without losing any work or breaking the original workflow.
 
-When paired with hosting platforms like GitHub or GitLab, Git makes it easy to share code and materials publicly, enhancing reproducibility and openness. Others can download the entire history of a project, reproduce the exact analyses, and contribute improvements or corrections.
+When paired with hosting platforms like [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/), Git makes it easy to share code and materials publicly, enhancing reproducibility and openness. Others can download the entire history of a project, reproduce the exact analyses, and contribute improvements or corrections.
 
 Finally, Git supports integration with tools like [R Markdown](https://rmarkdown.rstudio.com) and [Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/en/latest/), which combine code, narrative, and output. When these documents are version controlled, the entire research pipeline—from data input to final report—is preserved and reproducible.
 
