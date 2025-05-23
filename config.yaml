@@ -29,18 +29,9 @@ markup:
         enable: true
 
 # Social links in footer, support github,twitter,stackoverflow,facebook
-social:
-  email: jmorris6@providence.edu
-  facebook: https://www.facebook.com/morris.joanna
-  github: https://github.com/joannamorris
-#   gitlab: full profile url in gitlab
-  googleplus: https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en
-#   instagram: full profile url in instagram
-  linkedin: https://www.linkedin.com/in/joanna-morris-3278278/
-#   stackoverflow: full profile url in stackoverflow
-#   twitter: full profile url in twitter
-#   whatsapp: wa.me service link
-#   youtube: full profile url in youtube
+
+
+
 
 # Site parameters
 params:
@@ -48,7 +39,8 @@ params:
   copyright: PCHPL Logo &copy; 2021 Alec Nicholson
   style: default
   description: This is the website for the Human Psychophysiology Lab at PC.
-  email: https://formspree.io/f/xyylqddv
+  formspree_id: xyylqddv
+
   navlinks:
     - home: yes
       name: Lab Home
@@ -66,7 +58,12 @@ params:
     - name: Get in touch
       url: contact/
    
-
+  social:
+    email: 'jmorris6@providence.edu'
+    github: 'https://github.com/joannamorris'
+    googleplus: 'https://scholar.google.com/citations?user=Qw8c8lQAAAAJ&hl=en'
+    linkedin: 'https://www.linkedin.com/in/joanna-morris-3278278/'
+  
   sidebarAbout:
     - This is the website for the Human Psychophysiology Lab at Providence College.
 
