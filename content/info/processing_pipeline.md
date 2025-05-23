@@ -6,6 +6,7 @@ draft: no
 image: img/info/pipeline_2.jpg
 showonlyimage: no
 slug: data-processing-pipeline
+weight: 3
 ---
 
 The following presents an outline of the pre-processing pipeline. ERP data analysis involves many processing steps.
