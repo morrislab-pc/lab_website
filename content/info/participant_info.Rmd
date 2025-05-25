@@ -1,5 +1,5 @@
 ---
-date: '`r Sys.Date()`'
+date: '2025-05-25'
 draft: false
 image: img/info/P_BrainCap_MR_semilateral.png
 showonlyimage: false
