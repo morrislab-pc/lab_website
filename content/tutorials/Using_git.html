@@ -1,0 +1,223 @@
+---
+date: "2025-05-27"
+draft: false
+image: img/tutorials/Git-Logo-2Color.png
+showonlyimage: false
+title: Git Tutorial
+weight: 0
+slug: git-tutorial
+---
+
+
+
+<p>In the lab we use Git for <a href="https://about.gitlab.com/topics/version-control/">version control</a>. Git maintains a history of all changes made to our files, so we have a record of what has been done, and we can revert to specific versions should we ever need to.</p>
+<!--more-->
+<p>When several people collaborate in the same project, it’s possible to accidentally overlook or overwrite someone’s changes. The version control system automatically notifies users whenever there’s a conflict between one person’s work and another’s.</p>
+<p>Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on .</p>
+<p><a href="https://guides.nyu.edu/data_management/version-control">Here</a> is a comprehensive argument for why researchers should <em>always</em> use version control software.</p>
+<p>For a comprehensive overview, log in to your <a href="https://www.linkedin.com/learning">LinkedIn Learning</a> account with your PC ID and complete the <a href="https://www.linkedin.com/learning/git-from-scratch">Git from Scratch</a> course.</p>
+<div id="installing-git" class="section level1">
+<h1>Installing <code>git</code></h1>
+<p>To use git you should:</p>
+<ol style="list-style-type: decimal">
+<li>Make sure that you have git installed on your computer.</li>
+</ol>
+<p>There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.</p>
+<p><code>$ git --version</code></p>
+<p>If you don’t have it installed already, it will prompt you to install it.</p>
+<p>There are also a few ways to install Git on Windows. The most official build is available for download on the <a href="https://git-scm.com/download/win">Git website</a> and the download will start automatically. Note that this is a project called <a href="https://gitforwindows.org">Git for Windows</a>, which is separate from Git itself.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Sign up for a GitHub account</p></li>
+<li><p>In your computer’s <strong>file browser</strong> ensure that you can see:</p></li>
+</ol>
+<ul>
+<li><p><strong>Invisible files and folders</strong> (On the Mac these start with a period e.g. <code>.git</code>)</p></li>
+<li><p><strong>File extensions</strong> (This is the part of the filename at the <em>end</em> after a period. For example in the filename <code>test.doc</code> the extension is <code>.doc</code>)</p></li>
+<li><p>Many of the files that git needs to function are files that begin with a period which are <strong>invisible files</strong> on the Mac OS (operating system).</p></li>
+</ul>
+<div id="how-to-show-file-extensions-and-invisible-files-on-a-mac" class="section level5">
+<h5>How to show file extensions and invisible files on a Mac</h5>
+<p>To show invisible files on a Mac, open Finder, navigate to the desired folder, and press <code>Command + Shift + . (period)</code> on your keyboard; this keyboard shortcut will reveal hidden files, which will appear slightly grayed out compared to regular files.
+To show file extensions on a Mac, (a) open the <code>Finder</code> app, (b) select <code>Finder &gt; Settings</code>, (c) click <code>Advanced</code> (d) select <code>Show all filename extensions</code></p>
+<div class="float">
+<img src="/img/tutorials/finder_settings.png" alt="Show all filename extensions" />
+<div class="figcaption">Show all filename extensions</div>
+</div>
+</div>
+<div id="how-to-show-file-extensions-and-invisible-files-on-a-windows-pc" class="section level5">
+<h5>How to show file extensions and invisible files on a Windows PC</h5>
+<p>To show hidden files and file extensions in Windows 11, Open <code>File Explorer</code>, select the <code>View</code> tab, select <code>Show</code>, select <code>File name extensions</code> to view file extensions, select <code>Hidden items</code> to view hidden files and folders</p>
+<div class="float">
+<img src="/img/tutorials/hidden_files_windows.png" alt="Show hidden files and folders" />
+<div class="figcaption">Show hidden files and folders</div>
+</div>
+</div>
+</div>
+<div id="creating-a-repository" class="section level1">
+<h1>Creating A Repository</h1>
+<p>To get started you can either clone someone else’s repository from GitHub, or create a repository from scratch on your computer and then upload it to GitHub</p>
+<div id="method-1-cloning-a-repository-from-github" class="section level2">
+<h2>Method 1: Cloning a repository from GitHub</h2>
+<p>Here is the GitHub Workflow for Repos that you don’t own:</p>
+<ul>
+<li><p>Start by <strong>forking</strong> (made an individual copy of) the repo to your github.com account.</p></li>
+<li><p>Now, you should <strong>clone</strong> the forked repo, i.e.g make a copy of it on your local computer.</p></li>
+<li><p>You can then <strong>edit</strong> the files in your local copy of the repo and <strong>commit</strong> the changes.</p></li>
+<li><p>You can then <strong>push</strong> those changes back up to your forked repo on github.com.</p></li>
+<li><p>Finally, you can make a <strong>pull request</strong>
+to update the central repository with our changes.</p></li>
+</ul>
+<p>A repository on GitHub exists as a <strong>remote repository</strong>. To work on the files on your own computer, you should <strong>clone</strong> the repository which will create a local copy on your computer.</p>
+<p>Choose <em>one</em> of the following methods:</p>
+<p><strong>(1) R Studio Method</strong></p>
+<ul>
+<li>Find and copy the <strong>URL</strong> for the repository on GitHub</li>
+</ul>
+<div class="float">
+<img src="/img/tutorials/git-url.png" alt="Find the URL for the repository on GitHub" />
+<div class="figcaption">Find the URL for the repository on GitHub</div>
+</div>
+<ul>
+<li>Run the following command:</li>
+</ul>
+<p><code>usethis::create_from_github("https://github.com/YOU/YOUR_REPO.git", destdir = "~/path/to/where/you/want/the/local/repo/")</code></p>
+<p>The first argument is the URL that you copied from GitHub. The <code>destdir</code> argument specifies the parent directory where you want the new folder (and local Git repo) to live. If you don’t specify <code>destdir</code>, usethis defaults to the desktop.</p>
+<p><strong>(2) Generic Method</strong></p>
+<ul>
+<li>Find the <strong>URL</strong> for the repository on GitHub</li>
+</ul>
+<div class="float">
+<img src="/img/tutorials/git-url.png" alt="Find the URL for the repository on GitHub" />
+<div class="figcaption">Find the URL for the repository on GitHub</div>
+</div>
+<ul>
+<li><p>In the terminal, navigate to the <strong>directory</strong> on your computer to which you want to copy the repository e.g <code>cd ~/my_git_repos</code></p></li>
+<li><p>Once in that directory, type <code>git clone https: [your_repository]</code>. For example <code>git clone https://github.com/joannamorris/lab_tutorials.git</code></p></li>
+</ul>
+<p><strong>A note on ‘forking’ vs ‘cloning’</strong></p>
+<ul>
+<li><p>A <strong>fork</strong> is a copy of a repository that is on your GitHub account, as opposed to the account of the original repository owner.</p></li>
+<li><p>When you ‘fork’ a repository, you clone a <strong>remote</strong> copy of the repository on your GitHub account.</p></li>
+<li><p>You can then make another clone of the forked repository on your local computer.</p></li>
+<li><p>When you edit files in the cloned repository (on your local computer), you can <strong>push</strong> (or upload) the changes to the forked repository on your GitHub account.</p></li>
+<li><p>These changes to the forked repository can be merged with the original repository via a <strong>pull request</strong> which is a request to the original the repository owner to merge your changes with (or <strong>pull</strong> your changes into) the original repository.</p></li>
+<li><p>Summary of the steps to editing files in a github repositories that you don’t own:</p>
+<ul>
+<li><p><strong><em>Step 1</em></strong>: <strong>Fork</strong> a repository to your_repository own GitHub account.</p></li>
+<li><p><strong><em>Step 2</em></strong>: <strong>Clone</strong> the repository to your local machine.</p></li>
+<li><p><strong><em>Step 3</em></strong>: Edit the files and <strong>commit</strong> these edits to the local repository. You can apply a single commit or multiple commits to the repository. But everything happens on your local system.</p></li>
+<li><p><strong><em>Step 4</em></strong>: <strong>Push</strong> the modifications to the upstream repository on your account (the fork).</p></li>
+<li><p><strong><em>Step 5</em></strong>: Send a request to the owner of the original repository to merge (pull) the changes into the main central repository. This is a <strong>pull request</strong>.</p></li>
+</ul></li>
+</ul>
+<p><strong>Linking local and remote repositories</strong></p>
+<ul>
+<li><p>Using the terminal, The <code>remote</code> command shows which remote repositories are currently connected to your local repository.</p></li>
+<li><p>Each connection to your local repository has a <em>name</em> and a <em>URL</em>.</p></li>
+<li><p>When you <strong>clone</strong> a repository, the command automatically adds that <strong>remote repository</strong> under the name <code>origin</code>.</p></li>
+<li><p>When you <strong>fork</strong> a repository, it’s good practice to regularly sync your fork with the <strong>upstream repository</strong>. Otherwise, changes made to the original repository will not be propagated down to the copy on your GitHub account (the fork) or the clone of the fork on your local compute r.</p></li>
+<li><p>You must configure a remote that points to the upstream repository in Git to sync changes you make in a fork with the original repository. This also allows you to sync changes made in the original repository with the fork.</p></li>
+<li><p>To summarise, you should connect the <strong>fork</strong> on your GitHub account to the original repository, and connect your local clone of the fork to <em>both</em> the fork and the upstream original repo.</p></li>
+<li><p>Recall that when you cloned the repository on your computer, the <code>git clone</code> command automatically added (linked) a remote repository called ‘origin’.</p></li>
+<li><p>You should now add <em>another</em> link to the original upstream repo called ‘upstream’ that will allow you to pull changes from the original repo
+<code>$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git</code></p></li>
+</ul>
+</div>
+<div id="method-2-creating-a-repository-from-local-files-on-your-computer" class="section level2">
+<h2>Method 2: Creating a repository from local files on your computer</h2>
+<ul>
+<li><p>If your project already exists locally (on your computer), but is not yet under version control with git, you must transform the folder containing your files into a Git repository. This is only run once, even if other collaborators share the project.</p></li>
+<li><p>Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with <em>README</em>, license, or <code>.gitignore</code> files. You can add these files after your project has been pushed to GitHub.</p></li>
+<li><p>In the command line, navigate to the root directory of your project.</p></li>
+<li><p>If you’re using <strong><em>Git 2.27.1 or an earlier version</em></strong>, you can set the name of the default branch the following command: <code>git init &amp;&amp; git symbolic-ref HEAD refs/heads/main</code></p>
+<ul>
+<li>Initialize the local directory as a Git repository. If you’re using <strong><em>Git 2.28.0 or a later version</em></strong>, you can set the name of the default branch using the command <code>git init -b main</code></li>
+</ul></li>
+<li><p>You can tell Git which files and directories to ignore when you make a commit by creating a <code>.gitignore</code> file in your repository’s root directory using the following command: <code>touch .gitignore</code></p></li>
+<li><p>You can then edit the file to include the list of file to ignore. GitHub maintains an official list of recommended <code>.gitignore</code> files for many popular operating systems, environments, and languages in the <a href="https://github.com/github/gitignore"><code>github/gitignore</code> public repository</a>.</p></li>
+<li><p>To share the ignore rules with other users who clone the repository, commit the <code>.gitignore</code> file in to your repository.</p></li>
+<li><p>Add the files in your new local repository using the command <code>git add</code>. This stages them for the first commit.</p></li>
+<li><p>Commit the files that you’ve staged: <code>git commit -m "initial commit"</code></p></li>
+<li><p>Copy the URL for the remote repository on Github and set the remote locally using the following command: <code>git remote add origin &lt;REMOTE_URL&gt;</code></p></li>
+<li><p>Verify the new remote URL: <code>git remote -v</code></p></li>
+<li><p>Push the changes in your local repository to GitHub.com: <code>git push -u origin main</code></p></li>
+</ul>
+</div>
+</div>
+<div id="fetching-pulling-pushing-merging-and-syncing" class="section level1">
+<h1>Fetching, Pulling, Pushing, Merging and Syncing</h1>
+<ul>
+<li><p>The git commands <code>fetch</code>, <code>pull</code>, <code>merge</code>, <code>push</code> and <code>sync</code></p></li>
+<li><p>In git you are not supposed to commit work on remote branches (you are supposed to do your work on local branches)</p></li>
+<li><p>Remote branches should contain copies of commits coming from remotes, never commits created locally.</p></li>
+<li><p>The command <code>git fetch origin</code> <strong>fetches</strong> any new work that has been <strong>pushed</strong> to that server since you <strong>cloned</strong> (or last <strong>fetched</strong> from) it.</p></li>
+<li><p>The <code>git fetch</code> command only downloads the data to your local repository.</p></li>
+<li><p>If I want get changes from the remote repository called <code>origin</code> into my local repository I type <code>git fetch origin</code>.</p></li>
+<li><p>It doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.</p></li>
+<li><p>the <code>git pull</code> command is a <code>git fetch</code> command followed by a <code>git merge</code> command.</p></li>
+<li><p>Git <code>sync</code> does everything in one command meaning <code>pull</code> and <code>push</code>.</p></li>
+</ul>
+</div>
+<div id="branching-and-merging" class="section level1">
+<h1>Branching and Merging</h1>
+<ul>
+<li><p>To view the branches in a Git repository, run the command <code>git branch</code></p></li>
+<li><p>To see both local and remote branches use <code>git branch -a</code> or <code>git branch --all</code></p></li>
+<li><p>To see details of each brach use <code>git branch -v</code> or <code>git branch --verbose</code></p></li>
+<li><p><code>git checkout -b NEW_BRANCH</code> creates a new branch and checks out the new branch</p></li>
+<li><p><code>git branch NEW_BRANCH</code> creates a new branch but leaves you on the same branch.</p></li>
+<li><p>In other words <code>git checkout -b NEW_BRANCH</code> does the following:</p>
+<p><code>git branch NEW_BRANCH</code> creates a new branch</p>
+<p><code>git switch NEW_BRANCH</code> switches to the new branch</p></li>
+<li><p>To merge the new branch back into the main branch, All you have to do is check out the branch you wish to merge into by typing <code>git checkout OLD_BRANCH</code>. This switches you back to the old branch.</p></li>
+<li><p>You then run <code>git merge NEW_BRANCH</code> and this merges the new branch into the old branch.</p></li>
+</ul>
+</div>
+<div id="using-github-with-rstudio" class="section level1">
+<h1>Using GitHub with Rstudio</h1>
+<ul>
+<li><p>Configure git with Rstudio</p></li>
+<li><p>Set your user name and email:
+<code>usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")</code></p></li>
+<li><p>Create a personal access token for authentication:
+<code>usethis::create_github_token()</code></p></li>
+<li><p>Call <code>gitcreds::gitcreds_set()</code> to register this token in the local Git credential store</p></li>
+</ul>
+<p>OR</p>
+<ul>
+<li><p>Set personal access token:
+<code>credentials::set_github_pat("YourPAT")</code></p></li>
+<li><p>Verify settings:
+<code>usethis::git_sitrep()</code></p></li>
+</ul>
+<p>prints info about your current Git, gert, and GitHub setup. “Sitrep” is short for “situation report”.</p>
+<ul>
+<li>Restart R!</li>
+</ul>
+</div>
+<div id="configure-git-to-use-the-osxkeychain" class="section level1">
+<h1>Configure Git to use the osxkeychain</h1>
+<ul>
+<li><p>By default, git credentials are not cached so you need to tell Git if you want to avoid having to provide them each time Github requires you to authenticate. On Mac, Git comes with an “osxkeychain” mode, which caches credentials in the secure keychain that’s attached to your system account.</p></li>
+<li><p>You can tell Git you want to store credentials in the osxkeychain by running the following:-
+<code>git config --global credential.helper osxkeychain</code></p></li>
+<li><p>To actually <em>add</em> your credentials to the osxkeychain you need to issue a command to interact with Github which requires authentication, e.g. <code>git clone</code> or <code>git pull</code>.</p></li>
+<li><p>When you are prompted to supply your <em>Password for ‘<a href="https://username@github.com" class="uri">https://username@github.com</a>’</em> : you enter your <strong>access token</strong> instead.</p></li>
+<li><p>Your token should now get cached in the osxkeychain automatically.</p>
+<p><code>$ git clone https://github.com/username/repo.git</code></p>
+<p><code>Cloning into 'repo'...</code></p>
+<p><code>Username for 'https://github.com': your_github_username</code></p>
+<p><code>Password for 'https://username@github.com': your_access_token</code></p></li>
+</ul>
+</div>
+<div id="accessing-github-via-ssh" class="section level1">
+<h1>Accessing GitHub via SSH</h1>
+<p>You can also <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh">connect to GitHub using the Secure Shell Protocol (SSH)</a>, which provides a secure channel over an unsecured network.</p>
+</div>
+<div id="more-on-git-via-software-carpentry" class="section level1">
+<h1>More on Git (via Software Carpentry)</h1>
+<p><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a></p>
+</div>
+<div id="here-is-the-simple-guide" class="section level1">
+<h1>Here is <a href="http://rogerdudler.github.io/git-guide/">The Simple Guide</a></h1>
+</div>
