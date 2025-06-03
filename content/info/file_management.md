@@ -5,6 +5,7 @@ image: img/tutorials/file_management.jpg
 showonlyimage: false
 title: Managing Files
 slug: file_managment
+weight: 4
 ---
 
 

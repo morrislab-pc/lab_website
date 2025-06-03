@@ -4,6 +4,7 @@ draft: false
 image: img/info/reproducible.png
 showonlyimage: false
 title: Reproducible Research
+weight: 1
 ---
 
 [Reproducible research](https://book.the-turing-way.org/reproducible-research/reproducible-research.html) is important because it ensures that scientific findings are trustworthy, transparent, and can be built upon by others.

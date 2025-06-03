@@ -4,6 +4,7 @@ draft: false
 image: img/info/P_BrainCap_MR_semilateral.png
 showonlyimage: false
 title: ERP Participant Information
+weight: 5
 ---
 
 

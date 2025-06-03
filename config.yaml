@@ -44,9 +44,9 @@ params:
   navlinks:
     - home: yes
       name: Lab Home
-      url: about/
-    - name: General Lab Information
       url: info/
+    - name: About
+      url: about/
     - name: Research Projects
       url: projects/
     - name: Tutorials

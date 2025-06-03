@@ -298,28 +298,44 @@ Here's what your final set up should look like:
 
 
 All file names should follow this format:
-ExperimentID_ _ _Subject! D _ T askl D _ Data Type
+
+ExperimentID_Subject_ID_ Task_ID_Data Type
+
 Experiment ID is a 3-character code that tells us which experiment the data was
 collected for. Currently the lab is only running one experiment, Morph21, so the only
 Experiment ID (EID) is M21. There may be more in the future.
+
 Subject ID is the 4-character code that tells us which subject the data comes from.
+
 It should be S followed by the three-digit subject number. So 5201. In the future, we
 may also use P for practice/preliminary participants
+
 Task ID is a 3- or 4-character code that tells us which task the data shows. There
 are 2 tasks in our current M21 experiment; the Lexical Decision Task (LDT) and the
 Visual Statistical Learning task (VSL).
+
 Data Type is a 3-character code that tells us the type of data contained in the file.
 There are two options - BEH for behavioral data, i.e. data collected on the
 experimental computer (think reaction times, responses, etc.) and EEG for data
 collected from BrainVision on the control computer.
+
 When the experiment is over, you should have the following files to upload to
 Teams:
-1. M21 S### LDT_EEG.vhdr
-2 M21- S###-LDT EEG.vrmk ,. - - -
-3 M21 S### LDT EEG.eeg
-4~ M21=S###=VSL=EEG.vhdr
+
+1. M21_S###_LDT_EEG.vhdr
+
+2. M21_S###_LDT_EEG.vrmk
+
+3. M21_S###_LDT_EEG.eeg
+
+4. M21_S###_VSL_EEG.vhdr
+
 5. M21_S###_VSL_EEG.vrmk
+
 6. M21_S###_VSL_EEG.eeg
-7. M21_S###_LDT_ BEH.csv
-8. M21 S### VSL BEH results
-9. M2(~ ##1( VSL=BEH=-vsL
+
+7. M21_S###_LDT_BEH.csv (renamed from "subject - s#" xls spreadsheet)
+
+8. M21_S###_VSL_BEH.txt (renamed from "s#\_results.txt")
+
+9. M21_S###_VSL_BEH.log (renamed from "s#-VSL_triggers_2023.log")  
