@@ -89,6 +89,8 @@ Finally, [Git](https://book.the-turing-way.org/reproducible-research/vcs/vcs-git
 
 In short, [Git](https://book.the-turing-way.org/reproducible-research/vcs/vcs-git-general) helps maintain a clear, detailed, and sharable record of the research process, which is essential for verifying results, collaborating effectively, and building trustworthy science.
 
+Do note however that Git works best with small text files.  Because of this Git is *not* well suited for data versioning—where files are large and often binary—even though it is helpful to track the subset or version of data a certain analysis or result is based upon.  However, several tools are available to handle version controlling and sharing large files.  You can read about them [here](https://book.the-turing-way.org/reproducible-research/vcs/vcs-data.html).
+
 ### Why SPSS is not good for reproducibility 
 
 ![](/img/tutorials/spss-1-logo-png-transparent.png){width="150"} 

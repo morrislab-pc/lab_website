@@ -43,10 +43,10 @@ params:
 
   navlinks:
     - home: yes
-      name: Lab Home
-      url: info/
-    - name: About
+      name: About
       url: about/
+    - name: General Lab Information
+      url: info/
     - name: Research Projects
       url: projects/
     - name: Tutorials
