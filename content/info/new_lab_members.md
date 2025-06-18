@@ -5,7 +5,7 @@ image: img/tutorials/pchpl-logo-wht-bkg.png
 showonlyimage: false
 title: New to the Lab? Start Here!
 slug: new-to-the-lab
-weight: 1
+weight: 0
 ---
 
 

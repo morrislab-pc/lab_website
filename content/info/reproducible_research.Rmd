@@ -4,6 +4,7 @@ draft: false
 image: img/info/reproducible.png
 showonlyimage: false
 title: Reproducible Research
+weight: 1
 ---
 
 [Reproducible research](https://book.the-turing-way.org/reproducible-research/reproducible-research.html) is important because it ensures that scientific findings are trustworthy, transparent, and can be built upon by others.
@@ -87,6 +88,8 @@ When paired with hosting platforms like [GitHub](https://github.com/) or [GitLab
 Finally, [Git](https://book.the-turing-way.org/reproducible-research/vcs/vcs-git-general) supports integration with tools like [R Markdown](https://rmarkdown.rstudio.com) and [Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/en/latest/), which combine code, narrative, and output. When these documents are version controlled, the entire research pipeline—from data input to final report—is preserved and reproducible.
 
 In short, [Git](https://book.the-turing-way.org/reproducible-research/vcs/vcs-git-general) helps maintain a clear, detailed, and sharable record of the research process, which is essential for verifying results, collaborating effectively, and building trustworthy science.
+
+Do note however that Git works best with small text files.  Because of this Git is *not* well suited for data versioning—where files are large and often binary—even though it is helpful to track the subset or version of data a certain analysis or result is based upon.  However, several tools are available to handle version controlling and sharing large files.  You can read about them [here](https://book.the-turing-way.org/reproducible-research/vcs/vcs-data.html).
 
 ### Why SPSS is not good for reproducibility 
 

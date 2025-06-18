@@ -43,7 +43,7 @@ params:
 
   navlinks:
     - home: yes
-      name: Lab Home
+      name: About
       url: about/
     - name: General Lab Information
       url: info/
